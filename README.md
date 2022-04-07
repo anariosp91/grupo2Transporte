@@ -23,7 +23,7 @@ Integrantes del equipo
 - Mi nombre es Micaela, tengo 27 años y vivo en CABA. Soy productora audiovisual. pero actualmente trabajo en una fintech de tecnología abocada al servicio financiero, donde manejo la parte de comunicación y marketing.
 - Mi nombre es Ana, tengo 30 años y vivo en Medellín. Soy madre de Cristobal, que tiene 18 meses, e ingeniera biomédica, actualmente soy asesora de nutrición. 
 - Mi nombre es Sofia, tengo 17 años y vivo en Buenos Aires. Soy estudiante de programación, en mi tiempo libre me gusta leer. 
-- Mi nombre es Nicolás, tengo 
+- Mi nombre es Nicolás, tengo 22 años y vivo en La Plata. Soy estudiante de diseño gráfico. Me gusta leer e ir al gimnasio.
 
 Referencias de sitio
     https://www.turismo-elpuente.com.ar 
