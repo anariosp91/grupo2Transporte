@@ -25,16 +25,16 @@ Integrantes del equipo
 - Mi nombre es Sofia, tengo 17 años y vivo en Buenos Aires. Soy estudiante de programación, en mi tiempo libre me gusta leer. 
 - Mi nombre es Nicolás, tengo 22 años y vivo en La Plata. Soy estudiante de diseño gráfico. Me gusta leer e ir al gimnasio.
 
-Referencias de sitio:
+Referencias de sitios:
 
     https://www.turismo-elpuente.com.ar 
     Elegimos este sitio web porque creemos que es una buena base con respecto a los servicios que ofrece.
 
     https://www.francetourisme.fr/
-    Este sitio lo elegimos por la estética, las descripciones y diversidad de ofertas que ofrece. La distribución de la información en cuanto a promociones nos parece muy completa.  
+    Este sitio lo elegimos por la estética, las descripciones y diversidad de ofertas que ofrece. La distribución de la información en cuanto a promociones nos parece     muy completa.  
 
     https://www.puntacanatoursrd.com/es
-    Optamos por este sitio como referencia por la presentación de destinos con la que cuenta, se podría ajustar a nuestra idea de presentar las ofertas destacadas en el home. 
+    Optamos por este sitio como referencia por la presentación de destinos con la que cuenta, se podría ajustar a nuestra idea de presentar las ofertas destacadas en       el home. 
 
     https://www.tatitotours.com/
     De este sitio tomamos la idea del mapa para referir puntos de encuentro y tomar perspectiva de distancias. 
