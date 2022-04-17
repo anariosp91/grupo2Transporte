@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anariosp91/grupo2Transporte#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
   }
 }
