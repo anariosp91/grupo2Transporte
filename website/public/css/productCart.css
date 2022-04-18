@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Fira Sans', sans-serif;
+}
+
+/* Barra de navegacion */
+
+header {
+    background-image: url("https://mediaim.expedia.com/destination/1/220c8c7ced5ebeda571f9ff5754001f4.jpg");
+    background-position: center;
+    height: 20vh;
+}
+
+.navbar i {
+    color: rgb(160, 160, 160);
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.logo {
+    margin-left: 10px ;
+}
+
+.fa-van-shuttle {
+    
+    font-size:  30px;
+}
+
+.li-menu-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.main-navbar { 
+    background-color: RGBA(1, 1 , 1 , 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navbar ul {
+    display: flex;
+}
+
+.main-navbar li {
+    margin: 0 20px;
+}
