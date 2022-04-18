@@ -32,18 +32,21 @@ header {
     font-size: 17px;
 }
 
-.logo {
+.container-nav-logo {
     margin-left: 10px ;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
 
-.fa-van-shuttle {
-    
-    font-size:  30px;
+.nav-logo {
+    width: 15%;
 }
 
 .li-menu-item {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-menu {
@@ -51,7 +54,7 @@ header {
 }
 
 .main-navbar { 
-    background-color: RGBA(1, 1 , 1 , 0.3);
+    background-color: rgba(1, 1, 1, 0.35);
     display: flex;
     justify-content: space-between;
 }
@@ -62,4 +65,39 @@ header {
 
 .main-navbar li {
     margin: 0 20px;
+}
+
+/* Footer */
+
+
+
+.main-footer {
+    background-color: rgb(100, 107, 147);
+    display: flex;
+    justify-content: space-around;
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+.container-footer-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo-footer {
+    width: 50%;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.main-footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
