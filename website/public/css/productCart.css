@@ -28,12 +28,11 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: inline-block;
-    padding: 5px 0;
-    font-size: 17px;
+    padding: 0px 0px;
+    font-size: 10px;
 }
 
 .container-nav-logo {
-    margin-left: 10px ;
     margin-top: auto;
     margin-bottom: auto;
 
@@ -73,13 +72,11 @@ header {
 
 .main-footer {
     background-color: rgb(100, 107, 147);
-    display: flex;
-    justify-content: space-around;
     min-height: 20vh;
-    flex-wrap: wrap;
 }
 
 .container-footer-logo {
+    display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -100,4 +97,30 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+@media (min-width: 768px) {
+    .main-navbar a {
+        font-size: 17px;
+        padding: 5px 0px;
+    }
+    .container-nav-logo{
+        padding-left: 10px;
+    }
+    .container-footer-logo{
+        display: block;
+        order: 1 ;
+    }
+    .main-footer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-footer-logo{
+        display: block;
+        order: 0 ;
+    }
 }
