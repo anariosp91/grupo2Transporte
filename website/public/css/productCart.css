@@ -14,61 +14,66 @@ header {
     height: 20vh;
 }
 
-.navbar i {
-    color: rgb(160, 160, 160);
-}
-
-.main-navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.main-navbar { 
+    background-color: rgba(1, 1, 1, 0.60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .main-navbar a {
     text-decoration: none;
     color: #ffffff;
-    display: inline-block;
-    padding: 0px 0px;
-    font-size: 10px;
+    font-size: 17px;
+}
+
+.main-navbar i {
+    color: rgb(160, 160, 160);
 }
 
 .container-nav-logo {
+    width: 50px;
+    padding-left: 10px;
     margin-top: auto;
     margin-bottom: auto;
-
 }
 
 .nav-logo {
-    width: 15%;
+    width: 50px;
 }
 
-.li-menu-item {
+.menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-navbar label {
+    display: inline-flex;
     align-items: center;
 }
 
-.nav-menu {
-    display: flex;
+#toggler {
+    display: none;
 }
 
-.main-navbar { 
-    background-color: rgba(1, 1, 1, 0.35);
-    display: flex;
-    justify-content: space-between;
+#toggler:checked ~ .menu {
+    max-height: 100%;
 }
 
-.main-navbar ul {
-    display: flex;
-}
 
-.main-navbar li {
-    margin: 0 20px;
-}
 
 /* Footer */
-
-
 
 .main-footer {
     background-color: rgb(100, 107, 147);
@@ -100,13 +105,47 @@ header {
 }
 
 @media (min-width: 768px) {
-    .main-navbar a {
-        font-size: 17px;
-        padding: 5px 0px;
+    .main-navbar{
+        background-color: rgba(1, 1, 1, 0.35);
     }
-    .container-nav-logo{
-        padding-left: 10px;
+    .container-nav-logo {
+        width: 100px;
     }
+    .nav-logo {
+        width: 100%;
+    }
+
+    .menu {
+        width:  fit-content;
+        max-height: fit-content;
+        overflow: visible;
+    }
+    .list{
+        
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    #toggler, .main-navbar label {
+    display: none;
+    }
+
+    .li-menu-item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .main-navbar ul {
+        display: flex;
+    }
+    
+    .main-navbar li {
+        margin: 0 20px;
+    }
+
+    /* footer */
+
     .container-footer-logo{
         display: block;
         order: 1 ;
