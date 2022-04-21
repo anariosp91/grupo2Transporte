@@ -31,11 +31,57 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main class="main-cart">
+        <div class="cart-list">
+            <div class="cart-tabs">
+                <div>
+                    <ul class="tabs">
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</li></a>
+                        <li><a href="#"><i class="fa-solid fa-heart"></i> Favoritos</li></a>
+                    </ul>
+                </div>
+                <div class="comprar">
+                <table class="articulos">
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Personas</th>
+                        <th>Fecha</th>
+                        <th>Precio por persona</th>
+                        <th>Precio total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td> <span><img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg" alt="Piedra del Peñol"> </span>   Piedra del Peñol </td>
+                        <td> <input type="number"> </td>
+                        <td> <input type="date"> </td>
+                        <td>$5.000</td>
+                        <td>$10.000</td>
+                        <td><a  href="#" class="buy-button">Comprar Ahora</a> <a href="#" class="favorite"><i class="fa-light fa-heart"></i></a> <a href="#" class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td> <span><img src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg" alt="Piedra del Peñol"> </span> Tour de graffitis </td>
+                        <td> <input  class="cantidad-personas" type="number"> </td>
+                        <td> <input type="date"> </td>
+                        <td>$5.000</td>
+                        <td>$10.000</td>
+                        <td><a  href="#" class="buy-button">Comprar Ahora</a> <a href="#" class="favorite"><i class="fa-light fa-heart"></i></a> <a href="#" class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
+                    </tr>
+                    <tr class="compra-total">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> <div class="precio-total">Precio Total</div> </td>
+                        <td> <div class="suma-total">$20.000</div></td>
+                        <td><a  href="#" class="buy-button">Comprar Ahora</a></td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
     </main>
-    <footer class="main-footer">
-        <div class="container-footer-logo">
+    <footer class="footer">
+        <section class="main-footer">
+           <div class="container-footer-logo">
             <img class="logo-footer" src="/img/logo.svg" alt="Logo-Medellin-Travel">
         </div>
         <ul class="footer-links">
@@ -55,7 +101,9 @@
             <li><a href="">Lunes a viernes 09hs a 18hs.</a></li>
             <li><a href="">Sábados 09hs a 15hs</a></li>
             <li><a href="">0800 222 5665</a></li>
-        </ul>
+        </ul>  
+        </section>
+       
     </footer>
 </body>
 

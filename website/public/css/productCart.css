@@ -29,7 +29,7 @@ header {
     font-size: 17px;
 }
 
-.main-navbar i {
+ i {
     color: rgb(160, 160, 160);
 }
 
@@ -71,13 +71,90 @@ header {
     max-height: 100%;
 }
 
+/* Cuerpo De Pagina*/
+
+.main-cart li , a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.cart-list {
+    display: flex;
+    margin: 30px;
+    
+}
+
+.cart-tabs {
+    display: block;
+}
+
+.tabs {
+    font-size: 32px;
+    display: flex;
+    gap: 30px;
+    font-weight: 400;
+}
+
+.comprar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 14px;
+    color: rgba(112, 112, 112, 1);
+    
+}
+
+.articulos tr {
+    flex-wrap: wrap;
+}
+
+.articulos tr, th, td {
+    text-align: left;
+    padding: 5px 20px;
+}
+
+
+.articulos img {
+    width: 109px;
+    vertical-align: middle;
+}
+
+.articulos td {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: solid 1px rgba(112, 112, 112, 1);
+}
+
+
+.articulos .buy-button {
+        text-decoration:none;
+        font-weight:600;
+        color:#ffffff;
+        padding: 8px 8px;
+    background-color: rgb(106, 107, 147);
+}
+
+.articulos .compra-total td {
+
+    padding-top: 50px;
+    border-bottom: none;
+}
+
+
+.articulos  .suma-total {
+    padding: 5px;
+    background-color: rgba(196, 196, 196, 0.5)
+}
+
+
 
 
 /* Footer */
 
 .main-footer {
     background-color: rgb(100, 107, 147);
-    min-height: 20vh;
+    padding: 20px;
 }
 
 .container-footer-logo {
