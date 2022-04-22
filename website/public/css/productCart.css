@@ -2,27 +2,19 @@
     box-sizing: border-box;
 }
 
-.html {
-    min-height: 84vh;
-    position: relative;
-}
-
 .body {
-    margin: 0;
-    margin-bottom: 40px;
     font-family:'Fira Sans', sans-serif;
-}
-
-
+    margin: 0;
+    
+  }
 
 .footer {
-    background-color: black;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    color: white;
 }
+
 
 
 
@@ -31,6 +23,7 @@
 .main-header {
     background-image: url("https://mediaim.expedia.com/destination/1/220c8c7ced5ebeda571f9ff5754001f4.jpg");
     background-position: center;
+    width: 100%;
     height: 20vh;
 }
 
@@ -41,12 +34,19 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 1px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 .main-navbar a {
     text-decoration: none;
     color: #ffffff;
     font-size: 17px;
+}
+
+.main-navbar ul, li {
+    list-style: none;
 }
 
  i {
@@ -70,6 +70,16 @@
     overflow: hidden;
 }
 
+
+
+.list-iniciar, .list-iniciado, .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
 .main-navbar .list-iniciar {
     display: none;
 }
@@ -78,16 +88,6 @@
     display: none;
 }*/
 
-
-
-
-.list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
 
 .main-navbar label {
     display: inline-flex;
@@ -108,6 +108,7 @@
 
 
 .t-container {
+
     width: 90%;
     max-width: 120em;
     padding: 1em;
@@ -140,15 +141,18 @@
 }
 
 .t-container .section {
+    
     background-color: #ffffff;
     padding: 1em;
     margin: 1em;
     position: absolute;
     opacity: 0;
+    bottom: 500px;
 }
 
 .t-container .section.activo {
     opacity: 1;
+    top: -30%
 }
 
 
@@ -158,11 +162,14 @@
     flex-wrap: wrap;
 }
 
+.articulos td {
+    width: fit-content;
+}
+
 .articulos tr, th, td {
     text-align: left;
     padding: 5px 20px;
 }
-
 
 .articulos img {
     width: 109px;
@@ -173,9 +180,12 @@
     color: #000;
     font-weight: bold;
     font-size: 16px;
-    border-bottom: solid 1px rgba(112, 112, 112, 1);
 }
 
+.articulos .contador-personas {
+    padding: 0px 2px;
+    background-color: rgba(160, 160, 160, 0.35);
+}
 
 .articulos .buy-button {
     text-decoration:none;
@@ -191,52 +201,50 @@
     border-bottom: none;
 }
 
-
 .articulos  .suma-total {
     padding: 5px;
     background-color: rgba(196, 196, 196, 0.5)
 }
 
+
 /* Tab Favoritos */ 
 
 .fav-articles {
-    padding-bottom: 20px;
-    align-content: center;
-    display: flex;   
-    justify-content: space-around;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: space-around;
 }
+
+.fav-articles article {
+    padding: 10px;
+}
+
 
 .fav-articles a {
     text-decoration: none;
     color: #000;
 }
 
+.fav-articles .product-description {
+    padding: 5px;
+}
+
 .fav-articles .reservar {
-    text-decoration:none;
+    text-decoration: none;
+    text-align: center;
     font-weight:600;
     color:#ffffff;
     padding: 8px 8px;
     background-color: rgb(106, 107, 147);
 }
 
-.fav-articles article {
-    margin: 10px;
-}
-
-.fav-articles div {
-    display: flex;
-    flex-direction: row;
-}
-
 .fav-articles article img {
-    width: 109px;
+    width: 224px;
+    height: 109px;
     vertical-align: top;
 }
-
-
 
 
 /* Footer */
@@ -270,9 +278,63 @@
     padding: 0;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 768px){
+
+    .articulos img {
+        width: 75px;
+        vertical-align: middle;
+    }
+
+    .fav-articles img {
+        width: 75px;
+    } 
+
+    .articulos {
+        border-collapse: collapse ;
+        width: 100%;
+    }
+    
+    .articulos tr {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px gray;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articulos thead {
+        display: none;
+    }
+    
+    .articulos td[data-titulo]{
+        display: flex;
+    }
+    
+    .articulos td[data-titulo]::before{
+        content: attr(data-titulo);
+        width: 90%;
+        color: gray;
+        font-weight: bold;
+        padding-right: 1px;
+    }
+    
+    .articulos th, td {
+        padding: 5px 20px;
+    }
+
+    .articulos .compra-total td {
+
+        padding-top: 5px;
+        border-bottom: none;
+    }
+    .footer {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .main-navbar{
-        background-color: rgba(1, 1, 1, 0.35);
+        background-color: rgba(1, 1, 1, 0.65);
     }
     .container-nav-logo {
         width: 100px;
@@ -286,7 +348,7 @@
         max-height: fit-content;
         overflow: visible;
     }
-    .list{
+    .list, .list-iniciado, .list-iniciar{
         
         flex-direction: row;
         align-items: flex-end;
@@ -310,7 +372,15 @@
         margin: 0 20px;
     }
 
+    /* Cuerpo */ 
+
+   
+
+
     /* footer */
+    .footer {
+        display: none;
+    }
 
     .container-footer-logo{
         display: block;
@@ -324,6 +394,9 @@
 }
 
 @media (min-width: 1200px) {
+    .footer {
+        display: block;
+    }
     .container-footer-logo{
         display: block;
         order: 0 ;
