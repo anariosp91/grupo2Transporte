@@ -40,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 1px;
 }
 
 .main-navbar a {
@@ -64,11 +64,22 @@
     width: 50px;
 }
 
-.menu {
+.menu{
     width: 100%;
     max-height: 0;
     overflow: hidden;
 }
+
+.main-navbar .list-iniciar {
+    display: none;
+}
+
+/*.main-navbar .list-iniciado {
+    display: none;
+}*/
+
+
+
 
 .list {
     list-style: none;
