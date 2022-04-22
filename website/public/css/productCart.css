@@ -2,13 +2,33 @@
     box-sizing: border-box;
 }
 
-body {
+.html {
+    min-height: 84vh;
+    position: relative;
+}
+
+.body {
+    margin: 0;
+    margin-bottom: 40px;
     font-family:'Fira Sans', sans-serif;
 }
 
+
+
+.footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+
+
 /* Barra de navegacion */
 
-header {
+.main-footer {
     background-image: url("https://mediaim.expedia.com/destination/1/220c8c7ced5ebeda571f9ff5754001f4.jpg");
     background-position: center;
     height: 20vh;
@@ -20,7 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 10px;
 }
 
 .main-navbar a {
@@ -73,36 +93,55 @@ header {
 
 /* Cuerpo De Pagina*/
 
-.main-cart li , a{
-    text-decoration: none;
+/* Diseño de Tabs */
+
+
+.t-container {
+    width: 90%;
+    max-width: 120em;
+    padding: 1em;
+}
+
+.t-container .t-tabs {
+    font-size: 20px;
+    font-weight: bolder;
     list-style: none;
-}
-
-.cart-list {
+    width: 100%;
     display: flex;
-    margin: 30px;
-    
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
-.cart-tabs {
-    display: block;
+.t-container .li {
+    padding: 1em;
+    margin: 0 1em 0 0;
 }
 
-.tabs {
-    font-size: 32px;
-    display: flex;
-    gap: 30px;
-    font-weight: 400;
+.t-container .li.activo {
+    border-bottom: solid 1px #000;
 }
 
-.comprar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-size: 14px;
-    color: rgba(112, 112, 112, 1);
-    
+.t-container .sub-container {
+    min-height: 10vh;
+    position: relative;
 }
+
+.t-container .section {
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1em;
+    position: absolute;
+    opacity: 0;
+}
+
+.t-container .section.activo {
+    opacity: 1;
+}
+
+
+/* Tab Carrito */
 
 .articulos tr {
     flex-wrap: wrap;
@@ -128,10 +167,10 @@ header {
 
 
 .articulos .buy-button {
-        text-decoration:none;
-        font-weight:600;
-        color:#ffffff;
-        padding: 8px 8px;
+    text-decoration:none;
+    font-weight:600;
+    color:#ffffff;
+    padding: 8px 8px;
     background-color: rgb(106, 107, 147);
 }
 
@@ -145,6 +184,45 @@ header {
 .articulos  .suma-total {
     padding: 5px;
     background-color: rgba(196, 196, 196, 0.5)
+}
+
+/* Tab Favoritos */ 
+
+.fav-articles {
+    padding-bottom: 20px;
+    align-content: center;
+    display: flex;   
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.fav-articles a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fav-articles .reservar {
+    text-decoration:none;
+    font-weight:600;
+    color:#ffffff;
+    padding: 8px 8px;
+    background-color: rgb(106, 107, 147);
+}
+
+.fav-articles article {
+    margin: 10px;
+}
+
+.fav-articles div {
+    display: flex;
+    flex-direction: row;
+}
+
+.fav-articles article img {
+    width: 109px;
+    vertical-align: top;
 }
 
 
