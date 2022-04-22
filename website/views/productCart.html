@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap">
     <link rel="stylesheet" href="/css/normalize.css">
+    <script defer src="js/productCart.js"></script>
     <link rel="stylesheet" href="/css/productCart.css">
 </head>
 
-<body>
+<body class="body">
     <header class="main-header">
         <nav class="main-navbar">
             <div class="container-nav-logo">
@@ -31,79 +32,115 @@
             </div>
         </nav>
     </header>
+
     <main class="main-cart">
-        <div class="cart-list">
-            <div class="cart-tabs">
-                <div>
-                    <ul class="tabs">
-                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</li></a>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i> Favoritos</li></a>
-                    </ul>
+        <div class="t-container">
+            <ul class="t-tabs">
+                <li class="li activo"><i class="fa-solid fa-cart-shopping"></i> Carrito</li></a>
+                <li class="li"><i class="fa-solid fa-heart"></i> Favoritos</li></a>
+            </ul>
+
+            <div class="sub-container">
+                <div class="section">
+                    <table class="articulos">
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Personas</th>
+                            <th>Fecha</th>
+                            <th>Precio por persona</th>
+                            <th>Precio total</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td> <span><img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg"
+                                        alt="Piedra del Peñol">
+                                </span> Piedra del Peñol </td>
+                            <td> <input type="number"> </td>
+                            <td> <input type="date"> </td>
+                            <td>$5.000</td>
+                            <td>$10.000</td>
+                            <td><a href="#" class="buy-button">Comprar Ahora</a> <a href="#" class="favorite"><i
+                                        class="fa-light fa-heart"></i></a> <a href="#" class="trash"> <i
+                                        class="fa-solid fa-trash-can"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td> <span><img
+                                        src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg"
+                                        alt="Piedra del Peñol"> </span> Tour de graffitis </td>
+                            <td> <input class="cantidad-personas" type="number"> </td>
+                            <td> <input type="date"> </td>
+                            <td>$5.000</td>
+                            <td>$10.000</td>
+                            <td><a href="#" class="buy-button">Comprar Ahora</a> <a href="#" class="favorite"><i
+                                        class="fa-light fa-heart"></i></a> <a href="#" class="trash"> <i
+                                        class="fa-solid fa-trash-can"></i></a></td>
+                        </tr>
+                        <tr class="compra-total">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="precio-total">Precio Total</div>
+                            </td>
+                            <td>
+                                <div class="suma-total">$20.000</div>
+                            </td>
+                            <td><a href="#" class="buy-button">Comprar Ahora</a></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="comprar">
-                <table class="articulos">
-                    <tr>
-                        <th>Artículo</th>
-                        <th>Personas</th>
-                        <th>Fecha</th>
-                        <th>Precio por persona</th>
-                        <th>Precio total</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td> <span><img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg" alt="Piedra del Peñol"> </span>   Piedra del Peñol </td>
-                        <td> <input type="number"> </td>
-                        <td> <input type="date"> </td>
-                        <td>$5.000</td>
-                        <td>$10.000</td>
-                        <td><a  href="#" class="buy-button">Comprar Ahora</a> <a href="#" class="favorite"><i class="fa-light fa-heart"></i></a> <a href="#" class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td> <span><img src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg" alt="Piedra del Peñol"> </span> Tour de graffitis </td>
-                        <td> <input  class="cantidad-personas" type="number"> </td>
-                        <td> <input type="date"> </td>
-                        <td>$5.000</td>
-                        <td>$10.000</td>
-                        <td><a  href="#" class="buy-button">Comprar Ahora</a> <a href="#" class="favorite"><i class="fa-light fa-heart"></i></a> <a href="#" class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
-                    </tr>
-                    <tr class="compra-total">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td> <div class="precio-total">Precio Total</div> </td>
-                        <td> <div class="suma-total">$20.000</div></td>
-                        <td><a  href="#" class="buy-button">Comprar Ahora</a></td>
-                    </tr>
-                </table>
-                
+                <div class="section">
+                    <div class="fav-articles">
+                        <article>
+                            <div>
+                                <img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg" alt="Piedra del Peñol">
+                                <div class="description-prduct">
+                                    Piedra del Peñol <a href="#" class="favorite"><i class="fa-solid fa-heart"></i>
+                                        <a href="#" class="reservar"> Reservar</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg" alt="Piedra del Peñol">
+                                <div class="description-prduct">
+                                    Piedra del Peñol <a href="#" class="favorite"><i class="fa-solid fa-heart"></i>
+                                        <a href="#" class="reservar"> Reservar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
+
         </div>
     </main>
+
     <footer class="footer">
         <section class="main-footer">
-           <div class="container-footer-logo">
-            <img class="logo-footer" src="/img/logo.svg" alt="Logo-Medellin-Travel">
-        </div>
-        <ul class="footer-links">
-            <li><a href="">Quienes Somos</a></li>
-            <li><a href="">Políticas de privacidad</a></li>
-            <li><a href="">Políticas de seguridad</a></li>
-            <li><a href="">Términos y condiciones</a></li>
-        </ul>
-        <ul class="footer-links">
-            <li><a href="">Contáctenos</a></li>
-            <li><a href="">¿Necesitas ayuda?</a></li>
-            <li><a href="">Nuestros servicios</a></li>
-            <li><a href="">Envianos tu CV</a></li>
-        </ul>
-        <ul class="footer-links">
-            <li><a href="">Números y horarios de atención</a></li>
-            <li><a href="">Lunes a viernes 09hs a 18hs.</a></li>
-            <li><a href="">Sábados 09hs a 15hs</a></li>
-            <li><a href="">0800 222 5665</a></li>
-        </ul>  
+            <div class="container-footer-logo">
+                <img class="logo-footer" src="/img/logo.svg" alt="Logo-Medellin-Travel">
+            </div>
+            <ul class="footer-links">
+                <li><a href="">Quienes Somos</a></li>
+                <li><a href="">Políticas de privacidad</a></li>
+                <li><a href="">Políticas de seguridad</a></li>
+                <li><a href="">Términos y condiciones</a></li>
+            </ul>
+            <ul class="footer-links">
+                <li><a href="">Contáctenos</a></li>
+                <li><a href="">¿Necesitas ayuda?</a></li>
+                <li><a href="">Nuestros servicios</a></li>
+                <li><a href="">Envianos tu CV</a></li>
+            </ul>
+            <ul class="footer-links">
+                <li><a href="">Números y horarios de atención</a></li>
+                <li><a href="">Lunes a viernes 09hs a 18hs.</a></li>
+                <li><a href="">Sábados 09hs a 15hs</a></li>
+                <li><a href="">0800 222 5665</a></li>
+            </ul>
         </section>
-       
+
     </footer>
 </body>
 
