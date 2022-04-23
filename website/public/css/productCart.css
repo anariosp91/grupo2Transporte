@@ -176,7 +176,7 @@ td {
 }
 
 .cart-buttons {
-    min-width: 150px;
+  min-width: 150px;
 }
 
 .articulos .contador-personas {
@@ -387,7 +387,6 @@ td {
 
   /* footer */
 
-
   .main-footer {
     display: flex;
     justify-content: flex-start;
@@ -400,7 +399,7 @@ td {
 }
 
 @media (min-width: 1200px) {
-  .main-footer{
+  .main-footer {
     display: flex;
     justify-content: space-around;
   }
@@ -408,5 +407,4 @@ td {
   .main-footer a {
     font-size: 17px;
   }
-
 }
