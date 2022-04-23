@@ -2,4 +2,122 @@ body{
     font-family: 'Fira Sans', sans-serif;
     box-sizing: border-box;
 }
+.d-block{
+    height: 30%;
+}
+.servicios{
+    font-size: 1.5em;
+    text-align: center;
+}
+.servicio{
+    margin: 2%;
+}
+.servicio h3{
+    font-weight: bold;
+}
+.tituloServicio{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.servicio p{
+    font-size: 0.6em;
+}
+.nosotros{
+    font-size: 1em;
+    margin: 3%;
+    text-align: center;
+}
+.formulario{
+    text-align: center;
+    font-size:1em;
+    margin:3%;
+}
+.contactanos p{
+    margin:2%;
+    text-align: center;
+}
+.formulario{
+    padding:20px 15px;
+    margin: 10px;
+}
+.campo{
+    margin-bottom: 15px;
+}
+.campo label{
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+.persona{
+    width: 100%;
+    padding: 2px;
+}
+.botonFormulario{
+    background-color: #081454;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
+@media(min-width: 481px){
+    .servicios{
+        display:flex;
+        flex-wrap: wrap;
+        align-self: flex-start;
+        justify-content: center;
+    }
+    .servicio{
+        width: 40%;
+        padding: 10px;
+        height: 40%;
+    }
+    .servicio p{
+        font-size: 0.6em;
+    }
+    .tituloServicio{
+        text-align: center;
+    }
+    .formulario{
+        padding: 20px 122px;
+    }
+}
+
+@media(min-width:769px){
+    .servicio{
+        width:20%;
+        padding: 0%;
+        margin:3%;
+    }
+    .mensaje{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contactanos{
+        width: 30%;
+    }
+    .persona{
+        width: 90%;
+        padding: 2px;
+    }
+    .campo label{
+        padding-left:15px;
+    }
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 55px;
+        width: 60%;
+    }
+    .campo{
+        width: 50%;
+    }
+    .botonEnviar{
+        width: 50%;
+        align-self: center;
+    }
+}

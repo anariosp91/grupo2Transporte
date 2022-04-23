@@ -53,7 +53,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://i.imgur.com/sa518Hq.png" class="d-block w-100" alt="...">
+            <img src="https://i.imgur.com/zLjKkiY.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>PARQUE EXPLORA</h5>
               <p>Un lugar lleno de aprendizajes y diversión</p>
@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://i.imgur.com/PaU6CGQ.jpg" class="d-block w-100" alt="...">
+            <img src="https://i.imgur.com/jfUrKMD.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>PARAPENTE</h5>
               <p>Diversión Extrema</p>
@@ -90,48 +90,81 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <h2 class="tituloServicio">SERVICIOS</h2>
      <section class="servicios">
-         <h2>SERVICIOS</h2>
+       <div class="servicio">
          <h3>Asesoramiento</h3>
-         <span>Asesoramiento sobre <br>qué lugares visitar,<br>dependiendo del tiempo que<br>tenga y las actividades que deseas.</span>
+         <p>Asesoramiento sobre qué lugares visitar, dependiendo del tiempo que tenga y las actividades que deseas.</p>
+       </div>
+       <div class="servicio">
          <h3>Traslados</h3>
-         <span>Traslados desde el<br>aeropuerto hasta el hotel o<br>terminal y desde el hotel al tour.</span>
+         <p>Traslados desde el aeropuerto hasta el hotel o terminal y desde el hotel al tour.</p>
+       </div>
+       <div class="servicio">
          <h3>Tours cortos</h3>
-         <span>Ofrecemos tours desde 2hs<br>para aquellas personas<br>que cuentan con poco tiempo<br>para conocer la Ciudad.</span>
+         <p>Ofrecemos tours desde 2hs para aquellas personas que cuentan con poco tiempo para conocer la Ciudad.</p>
+       </div>
+       <div class="servicio">
          <h3>Transporte ejecutivo</h3>
-         <span>Traslado por trabajo dentro y<br>fuera de la Ciudad.</span>
+         <p>Traslado por trabajo dentro y fuera de la Ciudad.</p>
+       </div>
+       <div class="servicio">
          <h3>Tours</h3>
-         <span>Brindamos la posibilidad<br>de conocer la Ciudad completa<br> y todos sus alrededores en nuestras<br>ofertas de tours</span>
+         <p>Brindamos la posibilidad de conocer la Ciudad completa y todos sus alrededores en nuestras ofertas de tours
+         </p>
+       </div>
+       <div class="servicio">
          <h3>Viajes intermunicipales</h3>
-         <span>Conozca los pueblos que conectan<br>la cultura de Medellín.</span>
-    </section>
+         <p>Conozca los pueblos que conectan la cultura de Medellín.</p>
+       </div>
+
+     </section>
     <section class="Destacados">
 
     </section>
     <section class="somos">
-        <h2>QUIENES SOMOS</h2>
-        <p>Nosotros ofrecemos servicios de transporte para personas recién llegadas<br>
-            a Medellín, Colombia. Nuestro objetivo es que quienes nos elijan se sientan cómodas y<br>
-            relajadas desde que bajan del avión hasta que se suben, nuevamente, para irse.<br>
-            Si viene para disfrutar de la Ciudad o a trabajar estamos a su disposición para<br>
-            transportarlo a dónde necesite con un servicio excepcional.</p>
-        <article class="contactanos">
-            <h2>Contáctanos</h2>
-            <span>Si tienes dudas o quieres<br> más información sobre <br> nuestros servicios,<br> estamos para
-                ayudarle.<br> ¡Contáctenos para una <br> mejor atención!</span>
-            <span>Nombre</span>
-            <input type="text">
-            <span>Whatsapp</span>
-            <input type="text">
-            <span>Tipo de Servicio/Tour</span>
-            <input type="text">
-            <span>Correo Electrónico</span>
-            <input type="text">
-            <span>Mensaje</span>
-            <input type="text">
-            <button>Enviar</button>
-            <button>Whatsapp</button>
-        </article>
+      <h2 class="tituloServicio">QUIENES SOMOS</h2>
+      <div class="nosotros"> 
+        <p>Nosotros ofrecemos servicios de transporte para personas recién llegadas
+          a Medellín, Colombia. Nuestro objetivo es que quienes nos elijan se sientan cómodas y
+          relajadas desde que bajan del avión hasta que se suben, nuevamente, para irse.
+          Si viene para disfrutar de la Ciudad o a trabajar estamos a su disposición para
+          transportarlo a dónde necesite con un servicio excepcional.</p>
+      </div>
+       <div class="mensaje">
+         <article class="contactanos">
+           <h2 class="tituloServicio">Contáctanos</h2>
+           <p>Si tienes dudas o quieres más información sobre nuestros servicios, estamos para
+             ayudarle.¡Contáctenos para una mejor atención!</p>
+         </article>
+         <form action="/prospectos" method="POST" class="formulario">
+           <div class="campo">
+             <label>Nombre:</label>
+             <input type="text" name="nombre" class="persona">
+           </div>
+           <div class="campo">
+             <label>Whatsapp:</label>
+             <input type="number" name="telefono" class="persona">
+           </div>
+           <div class="campo">
+             <label>Tipo de Servicio/Tour:</label>
+             <input type="text" name="servicio" class="persona">
+           </div>
+           <div class="campo">
+             <label>Correo electronico:</label>
+             <input type="email" name="email" class="persona">
+           </div>
+           <div class="campo">
+             <label>Mensaje:</label>
+             <textarea type="text" name="mensaje" class="persona"></textarea>
+           </div>
+           <div class="botonEnviar">
+            <button type="submit" class="botonFormulario">Enviar</button>
+           </div>
+        
+         </form>
+       </div>
+      
     </section>
     <footer class="main-footer">
         <div class="container-footer-logo">
