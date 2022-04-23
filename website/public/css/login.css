@@ -1,0 +1,77 @@
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align:center;
+    color:rgb(255, 255, 255);
+    font-size:50px;
+    font-weight: bold;
+    
+}
+
+/* styling background image */
+.bg-img {
+    background-image: url(
+"Medellin.jpg");
+    min-height: 380px;
+    background-size: cover;
+}
+
+/* Styling the form container */
+.container {
+    position: absolute;
+    left: auto;
+    right:auto;
+    top: 200px;
+    
+    margin-left: 33%;
+    max-width: 700px;
+    padding: 25px;
+    background-color: rgba(37, 37, 37,0.5);
+}
+
+b {
+    color: rgb(255, 255, 255);
+    font-size:26px;
+    
+}
+
+/* Full-width input */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    
+}
+
+
+
+/* Styling the submit button */
+.button {
+    background-color: #081454;
+    color: white;
+    padding: 16px ;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    font-size:25px;
+    
+}
+
+.d-block {
+    height: 40%;
+}
+
+
+.button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
