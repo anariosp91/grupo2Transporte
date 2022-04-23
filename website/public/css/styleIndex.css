@@ -23,6 +23,24 @@ body{
 .servicio p{
     font-size: 0.6em;
 }
+.destacados{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(100 107 147);
+    justify-content: center;
+    padding: 15px 0;
+}
+.tour{
+    width: 100%;
+}
+.card1{
+    width:100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    margin: 10px;
+    padding: 10px;
+}
 .nosotros{
     font-size: 1em;
     margin: 3%;
@@ -92,6 +110,12 @@ body{
     .tituloServicio{
         text-align: center;
     }
+    .card1{
+        width:40%;
+    }
+    .ultimoCard{
+        display: none;
+    }
     .formulario{
         padding: 20px 122px;
     }
@@ -107,6 +131,13 @@ body{
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .card1{
+        width:30%;
+        justify-content:center;
+    }
+    .ultimoCard{
+        display: block;
     }
     .contactanos{
         width: 30%;
