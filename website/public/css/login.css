@@ -34,7 +34,7 @@ h1 {
     margin-left: 33%;
     max-width: 700px;
     padding: 25px;
-    background-color: rgba(37, 37, 37,0.5);
+    background-color: rgba(33, 33, 33, 0.5);
 }
 
 b {
@@ -75,3 +75,26 @@ input[type=password] {
     transform: scale(1.1);
     transition: transform 0.3s;
 }
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .main-header-login {
+    background-image: url("https://i.imgur.com/aLmdQDm.png");
+    background-position: center;
+    width: 100vw;
+    height: 40vh;
+  }
