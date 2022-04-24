@@ -1,0 +1,53 @@
+.maincontainer{
+    display: flex;
+}
+.contenedor1{
+margin: 0;
+padding: 10%;
+}
+
+.contenedor2{
+margin: 0;
+padding-top: 10%;
+}
+
+.reloj{
+    font-size: 150%;
+}
+
+.horario{
+    display: flex;
+}
+
+.margen{
+    margin-left: 10px;
+}
+
+.myButton {
+	background-color:#081454;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"Fira Sans";
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+    margin: 10px; 
+    min-width: 100%;
+    text-align:center;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.Color2{
+    background-color:#081454;
+    opacity: 60%;
+}
