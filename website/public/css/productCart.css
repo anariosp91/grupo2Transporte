@@ -185,6 +185,8 @@ td {
 }
 
 .articulos .buy-button {
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
   color: #ffffff;
@@ -230,6 +232,8 @@ td {
 }
 
 .fav-articles .reservar {
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
   text-align: center;
   font-weight: 600;
