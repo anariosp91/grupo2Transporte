@@ -176,9 +176,11 @@ div.scrollmenu {
     text-align: center;
     padding: 50px;
     text-decoration: none;
-    width: 33%;
+    width: 30%;
   }
   
   div.scrollmenu a:hover {
     background-color: #777;
   }
+
+  .mySlides {display:none;}
