@@ -163,3 +163,24 @@ body{
         align-self: center;
     }
 }
+
+div.scrollmenu {
+    background-color: rgb(100 107 147);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    width: 30%;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+  .mySlides {display:none;}
