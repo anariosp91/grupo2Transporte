@@ -1,3 +1,5 @@
+/* Diseño general */
+
 * {
   box-sizing: border-box;
 }
@@ -94,11 +96,11 @@ li {
   display: none;
 }
 
-#toggler:checked ~ .menu {
+#toggler:checked~.menu {
   max-height: 100%;
 }
 
-/* Cuerpo De Pagina*/
+/* Cuerpo De Pagina */
 
 /* Diseño de Tabs */
 
@@ -145,6 +147,7 @@ li {
   opacity: 1;
   top: -30%;
 }
+
 
 /* Tab Carrito */
 
@@ -278,57 +281,6 @@ td {
   padding: 0;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-  .articulos img {
-    width: 75px;
-    vertical-align: middle;
-  }
-
-  .fav-articles img {
-    width: 75px;
-  }
-
-  .articulos {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  .articulos tr {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px gray;
-    margin-bottom: 1em;
-  }
-
-  .articulos thead {
-    display: none;
-  }
-
-  .articulos td[data-titulo] {
-    display: flex;
-  }
-
-  .articulos td[data-titulo]::before {
-    content: attr(data-titulo);
-    width: 90%;
-    color: gray;
-    font-weight: bold;
-  }
-
-  .articulos .compra-total td {
-    padding-top: 5px;
-    border-bottom: none;
-  }
-
-  .container-footer-logo {
-    text-align: center;
-    max-width: 100px;
-  }
-
-  .container-footer-logo img {
-    text-align: center;
-  }
-}
 
 @media (min-width: 768px) {
   .main-navbar {
