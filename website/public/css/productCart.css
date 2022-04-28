@@ -7,13 +7,10 @@
 .body-cart {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 
-
-/* Barra de navegacion */
+/* Barra de navegacion Responsive */
 
 .main-header {
   background-image: url("https://i.imgur.com/aLmdQDm.png");
@@ -110,7 +107,7 @@ li {
   font-size: 20px;
   font-weight: bolder;
   list-style: none;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -138,6 +135,7 @@ li {
   position: absolute;
   opacity: 0;
   bottom: 500px;
+  width: 95%
 }
 
 .t-container .section.activo {
@@ -148,23 +146,30 @@ li {
 
 /* Tab Carrito */
 
-.articulos tr {
-  flex-wrap: wrap;
+
+.container-table {
+  width: 100%;
+  display: flex;
 }
 
-.articulos td {
-  width: fit-content;
+.articulos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
 }
 
-.articulos 
-th,
-td {
+.articulos th {
   text-align: left;
-  padding: 5px 40px;
+  padding: 5px;
 }
 
 .articulos td {
-  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0px;
 }
 
 .articulos img {
@@ -172,18 +177,9 @@ td {
   vertical-align: middle;
 }
 
-.articulos td {
-  color: #000;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.cart-buttons {
-  min-width: 150px;
-}
 
 .articulos .contador-personas {
-  padding: 0px 2px;
+  padding: 0px 4px;
   background-color: rgba(160, 160, 160, 0.35);
 }
 
@@ -197,20 +193,12 @@ td {
   background-color: rgb(106, 107, 147);
 }
 
-.more-buttons {
-  min-width: 215px;
-}
-
 .articulos .compra-total td {
   padding-top: 50px;
   border-bottom: none;
 }
 
-.compra-total .cart-buttons  {
-  text-align: left;
-}
-
-.articulos .suma-total {
+.articulos .container-total-suma {
   padding: 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
@@ -222,7 +210,6 @@ td {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-around;
 }
 
 .fav-articles article {
@@ -257,15 +244,17 @@ td {
 
 /* Footer */
 
+.footer {
+  margin-top: 400px;
+}
+
 .main-footer {
   background-color: rgb(100, 107, 147);
   padding: 10px;
 }
 
 .container-footer-logo {
-  display: inline-block;
-  margin-top: auto;
-  margin-bottom: auto;
+  max-width: 100px;
 }
 
 .logo-footer {
@@ -334,12 +323,15 @@ td {
 
   /* Cuerpo */
 
-  .sub-container {
-    display: flex;
-    justify-content: center;
+  .articulos .buy-button {
+    font-size: 14px;
   }
 
   /* footer */
+
+  .footer {
+    margin-top: 400px;
+  }
 
   .main-footer {
     display: flex;
@@ -353,12 +345,6 @@ td {
 }
 
 @media (min-width: 1200px) {
-
-  /* Cuerpo */
-
-  .sub-container {
-    justify-content: flex-start;
-  }
 
   /* Footer */
 
