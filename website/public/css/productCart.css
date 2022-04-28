@@ -190,7 +190,7 @@ li {
   font-weight: 600;
   color: #ffffff;
   padding: 8px 8px;
-  background-color: rgb(106, 107, 147);
+  background-color:#081454;
 }
 
 .articulos .buy-button:hover {
@@ -238,7 +238,7 @@ li {
   font-weight: 600;
   color: #ffffff;
   padding: 8px 8px;
-  background-color: rgb(106, 107, 147);
+  background-color:#081454;
 }
 
 .fav-articles .reservar:hover {
