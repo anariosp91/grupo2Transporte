@@ -18,9 +18,9 @@
 
 .main-header {
   background-image: url("https://i.imgur.com/aLmdQDm.png");
-  background-position: center;
-  width: 100vw;
-  height: 15vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
 }
 
 .main-navbar {
@@ -105,7 +105,6 @@ li {
 .t-container {
   width: 90%;
   max-width: 120em;
-  padding: 1em;
 }
 
 .t-container .t-tabs {
@@ -252,7 +251,7 @@ td {
 
 .main-footer {
   background-color: rgb(100, 107, 147);
-  padding: 20px;
+  padding: 10px;
 }
 
 .container-footer-logo {
@@ -298,7 +297,6 @@ td {
     display: flex;
     flex-direction: column;
     border: solid 1px gray;
-    padding: 1em;
     margin-bottom: 1em;
   }
 
@@ -315,12 +313,6 @@ td {
     width: 90%;
     color: gray;
     font-weight: bold;
-    padding-right: 1px;
-  }
-
-  .articulos th,
-  td {
-    padding: 5px 20px;
   }
 
   .articulos .compra-total td {
@@ -335,10 +327,6 @@ td {
 
   .container-footer-logo img {
     text-align: center;
-  }
-
-  .footer {
-    display: none;
   }
 }
 
@@ -389,6 +377,11 @@ td {
 
   /* Cuerpo */
 
+  .sub-container {
+    display: flex;
+    justify-content: center;
+  }
+
   /* footer */
 
   .main-footer {
@@ -403,6 +396,15 @@ td {
 }
 
 @media (min-width: 1200px) {
+
+  /* Cuerpo */
+
+  .sub-container {
+    justify-content: flex-start;
+  }
+
+  /* Footer */
+
   .main-footer {
     display: flex;
     justify-content: space-around;
