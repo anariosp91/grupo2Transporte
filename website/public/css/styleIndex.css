@@ -187,3 +187,20 @@ div.scrollmenu {
   }
 
   .mySlides {display:none;}
+
+  .masTours {
+      
+      width: 10%;
+      margin: auto;
+
+      background-color: rgb(100 107 147);
+      
+  }
+  .masTours2 {
+      
+    width: 100%;
+    background-color: rgb(100 107 147);
+    
+
+    
+}
