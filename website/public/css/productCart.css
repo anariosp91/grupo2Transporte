@@ -190,7 +190,12 @@ li {
   font-weight: 600;
   color: #ffffff;
   padding: 8px 8px;
-  background-color: rgb(106, 107, 147);
+  background-color:#081454;
+}
+
+.articulos .buy-button:hover {
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    color:#ffffff;
 }
 
 .articulos .compra-total td {
@@ -233,7 +238,12 @@ li {
   font-weight: 600;
   color: #ffffff;
   padding: 8px 8px;
-  background-color: rgb(106, 107, 147);
+  background-color:#081454;
+}
+
+.fav-articles .reservar:hover {
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    color:#ffffff;
 }
 
 .fav-articles article img {
