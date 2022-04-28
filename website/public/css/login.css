@@ -58,8 +58,10 @@ input[type=password] {
 /* Styling the submit button */
 .button {
     background-color: #081454;
+    border-radius: 5px;
     color: white;
-    padding: 16px ;
+    border-radius: 5px;
+    padding: 16px 8px;
     border: none;
     cursor: pointer;
     width: 35%;
