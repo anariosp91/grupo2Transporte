@@ -20,8 +20,10 @@ h1 {
 .bg-img {
     background-image: url(
 "Medellin.jpg");
-    min-height: 380px;
+    min-height: 500px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 /* Styling the form container */
@@ -30,9 +32,8 @@ h1 {
     left: auto;
     right:auto;
     top: 200px;
-    
-    margin-left: 33%;
-    max-width: 700px;
+    width: 40%;
+    height: 65%;
     padding: 25px;
     background-color: rgba(33, 33, 33, 0.5);
 }
@@ -97,4 +98,13 @@ input[type=password] {
     background-position: center;
     width: 100vw;
     height: 40vh;
+  }
+
+  .masOpciones {
+      font-size:17px;
+  }
+
+  .botones {
+      text-align: center;
+      margin: 2%;
   }
