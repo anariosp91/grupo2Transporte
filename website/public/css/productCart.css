@@ -12,9 +12,7 @@
   min-height: 100vh;
 }
 
-.footer {
-  margin-top: auto;
-}
+
 
 /* Barra de navegacion */
 
@@ -105,7 +103,7 @@ li {
 /* Diseño de Tabs */
 
 .t-container {
-  width: 90%;
+  width: 100%;
   max-width: 120em;
 }
 
@@ -159,11 +157,15 @@ li {
   width: fit-content;
 }
 
-.articulos tr,
+.articulos 
 th,
 td {
   text-align: left;
-  padding: 5px 20px;
+  padding: 5px 40px;
+}
+
+.articulos td {
+  text-align: center;
 }
 
 .articulos img {
@@ -203,6 +205,10 @@ td {
 .articulos .compra-total td {
   padding-top: 50px;
   border-bottom: none;
+}
+
+.compra-total .cart-buttons  {
+  text-align: left;
 }
 
 .articulos .suma-total {
@@ -356,6 +362,10 @@ td {
   }
 
   /* Footer */
+
+  .footer {
+    margin-top: 371px;
+  }
 
   .main-footer {
     display: flex;
