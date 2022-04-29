@@ -2,7 +2,6 @@ body {
     font-family: 'Fira Sans', sans-serif;
     box-sizing: border-box;
 }
-
 .servicios {
     font-size: 1.5em;
     text-align: center;
@@ -38,7 +37,17 @@ body {
     width: 100%;
 
 }
-
+.descripcion{
+    white-space: normal;
+}
+.descripcion p{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
 div.scrollmenu {
     background-color: rgb(100 107 147);
     overflow: auto;
@@ -49,9 +58,9 @@ div.scrollmenu a {
     display: inline-block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 20px;
+    padding: 6px;
     text-decoration: none;
-    width: 30%;
+    width: 50%;
     background-color: #ffffff;
     margin: 1%;
     text-align: left;
@@ -147,15 +156,9 @@ div.scrollmenu a:hover {
     .tituloServicio {
         text-align: center;
     }
-
-    .card1 {
-        width: 40%;
+    div.scrollmenu a {
+        width: 36%;
     }
-
-    .ultimoCard {
-        display: none;
-    }
-
     .formulario {
         padding: 20px 122px;
     }
@@ -174,13 +177,8 @@ div.scrollmenu a:hover {
         justify-content: center;
     }
 
-    .card1 {
-        width: 30%;
-        justify-content: center;
-    }
-
-    .ultimoCard {
-        display: block;
+    div.scrollmenu a {
+        width: 25%;
     }
 
     .contactanos {
