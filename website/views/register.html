@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="main-header">
+    <header class="main-header-login">
         <nav class="main-navbar">
             <div class="container-nav-logo">
                 <img class="nav-logo" src="/img/logo.svg" alt="Logo-Medellin-Travel">
@@ -21,20 +21,13 @@
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="fa-solid fa-bars"></i></label>
             <div class="menu">
-                <ul class="list-iniciado">
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-house"></i></a></li>
+                <ul class="list">
+                    <li class="li-menu-item"><a href="/"><i class="fa-solid fa-house"></i></a></li>
                     <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
                     <li class="li-menu-item"><a href="">Transportes</a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-user-large"></i></a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-                <ul class="list-iniciar">
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-house"></i></a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                    <li class="li-menu-item"><a href="">Transportes</a></li>
-                    <li class="li-menu-item"><a href=""> Registrarse </a></li>
-                    <li class="li-menu-item"><a href=""> Inicia Sesión</a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="li-menu-item"><a href="/register"> Registrarse </a></li>
+                    <li class="li-menu-item"><a href="/login"> Inicia Sesión</a></li>
+                    <li class="li-menu-item"><a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -43,49 +36,64 @@
 	<div class="bg-img">
 		
 		
-		<form class="container">
-            <br><h1>Registrate</h1><br>
+		<form class="container2">
+ <br><h1>Registrate</h1><br>
+ <div class="row">
+    <div class="column" ">
+      <b>Nombre</b>
+      <input type="text" 
+        name="username" placeholder= "Juan" required>
+        <b>Teléfono</b>
+      <input type="text" 
+        name="username" placeholder= "+549238328"required>
+        <b>Contraseña</b>
+      <input type="password" 
+        name="username" placeholder="●●●●●●●●" required>
+    </div>
+    <div class="column" ">
+        <b>Apellido</b>
+      <input type="text" 
+        name="password" placeholder="Perez" required>
+        <b>Correo</b>
+      <input type="text" 
+        name="password" placeholder="jperez@gmail.com" required>
+        <b>Confirmación de contraseña</b>
+        <input type="password" 
+          name="password" placeholder="●●●●●●●●" required>
+    </div>
+  </div>
 
-
-
-
-            <div class="row">
-                <div class="column" ">
-                  <b>Nombre</b>
-                  <input type="text" 
-					name="username" required>
-                    <b>Teléfono</b>
-                  <input type="text" 
-					name="username" required>
-                    <b>Contraseña</b>
-                  <input type="text" 
-					name="username" required>
-                </div>
-                <div class="column" ">
-                    <b>Apellido</b>
-                  <input type="password" 
-					name="password" required>
-                    <b>Correo</b>
-                  <input type="password" 
-					name="password" required>
-                    <b>Confirmación de contraseña</b>
-                    <input type="password" 
-                      name="password" required>
-                </div>
-              </div>
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br>
-			
-
-					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="button">Continuar</button> <br><br>
-					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Inicia sesión</b>
+  <br><br><br><br><br><br>
+                    <div class="botones">
+					<button type="submit" class="button">Continuar</button> <br><br>
+					<a href=""><b class="masOpciones">Inicia sesión</b></a><br>
+                     </div>
 		</form>
 	</div>
+    <br><br><br><br><br><br><br><br>
+    <footer class="main-footer">
+        <div class="container-footer-logo">
+            <img class="logo-footer" src="/img/logo.svg" alt="Logo-Medellin-Travel">
+        </div>
+        <ul class="footer-links">
+            <li><a href="">Quienes Somos</a></li>
+            <li><a href="">Políticas de privacidad</a></li>
+            <li><a href="">Políticas de seguridad</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+        </ul>
+        <ul class="footer-links">
+            <li><a href="">Contáctenos</a></li>
+            <li><a href="">¿Necesitas ayuda?</a></li>
+            <li><a href="">Nuestros servicios</a></li>
+            <li><a href="">Envianos tu CV</a></li>
+        </ul>
+        <ul class="footer-links">
+            <li><a href="">Números y horarios de atención</a></li>
+            <li><a href="">Lunes a viernes 09hs a 18hs.</a></li>
+            <li><a href="">Sábados 09hs a 15hs</a></li>
+            <li><a href="">0800 222 5665</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

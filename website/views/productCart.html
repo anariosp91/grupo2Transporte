@@ -23,19 +23,19 @@
             <label for="toggler"><i class="fa-solid fa-bars"></i></label>
             <div class="menu">
                 <ul class="list-iniciado">
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-house"></i></a></li>
+                    <li class="li-menu-item"><a href="/"><i class="fa-solid fa-house"></i></a></li>
                     <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
                     <li class="li-menu-item"><a href="">Transportes</a></li>
                     <li class="li-menu-item"><a href=""><i class="fa-solid fa-user-large"></i></a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="li-menu-item"><a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
                 <ul class="list-iniciar">
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-house"></i></a></li>
+                    <li class="li-menu-item"><a href="/"><i class="fa-solid fa-house"></i></a></li>
                     <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
                     <li class="li-menu-item"><a href="">Transportes</a></li>
                     <li class="li-menu-item"><a href=""> Registrarse </a></li>
                     <li class="li-menu-item"><a href=""> Inicia Sesión</a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="li-menu-item"><a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -50,68 +50,71 @@
             </ul>
 
             <div class="sub-container">
-                <div class="section">
-                    <table class="articulos">
-                        <thead>
-                            <tr>
-                                <th>Artículo</th>
-                                <th>Personas</th>
-                                <th>Fecha</th>
-                                <th>Precio por persona</th>
-                                <th>Precio total</th>
-                                <th class="more-buttons"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-titulo="Artículo:"> <span><img
-                                            src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg"
-                                            alt="Piedra del Peñol">
-                                    </span> Piedra del Peñol </td>
-                                <td data-titulo="Personas:"> - <span class="contador-personas">2</span> + </td>
-                                <td data-titulo="Fecha:"> <input type="date"> </td>
-                                <td data-titulo="Precio por persona:">$5.000</td>
-                                <td data-titulo="Precio Total:">$10.000</td>
-                                <td class="cart-buttons"><a href="#" class="buy-button">Comprar Ahora</a> <a href="#"
-                                        class="favorite"><i class="fa-solid fa-heart"></i></a> <a href="#"
-                                        class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td data-titulo="Artículo:"> <span><img
-                                            src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg"
-                                            alt="Tour de graffitis"> </span> Tour de graffitis </td>
-                                <td data-titulo="Personas:"> - <span class="contador-personas">5</span> + </td>
-                                <td data-titulo="Fecha:"> <input type="date"> </td>
-                                <td data-titulo="Precio por persona:">5.000</td>
-                                <td data-titulo="Precio Total:">$25.000</td>
-                                <td class="cart-buttons"><a href="#" class="buy-button">Comprar Ahora</a> <a href="#"
-                                        class="favorite"><i class="fa-solid fa-heart"></i></a> <a href="#"
-                                        class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
-                            </tr>
-                            <tr class="compra-total">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <div class="precio-total">Precio Total</div>
-                                </td>
-                                <td>
-                                    <div class="suma-total">$35.000</div>
-                                </td>
-                                <td><a href="#" class="buy-button">Comprar Ahora</a></td>
-                            </tr>
-                    </table>
-                    </tbody>
+                <div class="section activo">
+                    <div class="container-table">
+                        <table class="articulos">
+                            <thead>
+                                <tr>
+                                    <th>Artículo</th>
+                                    <th>Personas</th>
+                                    <th>Fecha</th>
+                                    <th>Precio por persona</th>
+                                    <th>Precio total</th>
+                                    <th class="more-buttons"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-titulo="Artículo:"> <span><img
+                                                src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg"
+                                                alt="Piedra del Peñol">
+                                        </span> Piedra del Peñol </td>
+                                    <td data-titulo="Personas:"> - <span class="contador-personas">2</span> + </td>
+                                    <td data-titulo="Fecha:"> <input type="date"> </td>
+                                    <td data-titulo="Precio por persona:">$5.000</td>
+                                    <td data-titulo="Precio Total:">$10.000</td>
+                                    <td class="cart-buttons"><a href="#" class="buy-button">Comprar Ahora</a> <a
+                                            href="#" class="favorite"><i class="fa-solid fa-heart"></i></a> <a href="#"
+                                            class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td data-titulo="Artículo:"> <span><img
+                                                src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg"
+                                                alt="Tour de graffitis"> </span> Tour de graffitis </td>
+                                    <td data-titulo="Personas:"> - <span class="contador-personas">5</span> + </td>
+                                    <td data-titulo="Fecha:"> <input type="date"> </td>
+                                    <td data-titulo="Precio por persona:">5.000</td>
+                                    <td data-titulo="Precio Total:">$25.000</td>
+                                    <td class="cart-buttons"><a href="#" class="buy-button">Comprar Ahora</a> <a
+                                            href="#" class="favorite"><i class="fa-solid fa-heart"></i></a> <a href="#"
+                                            class="trash"> <i class="fa-solid fa-trash-can"></i></a></td>
+                                </tr>
+                                <tr class="compra-total">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="precio-total">Precio Total</div>
+                                    </td>
+                                    <td>
+                                        <div class="suma-total"> <span class="container-total-suma">$35.000</span></div>
+                                    </td>
+                                    <td class="cart-buttons"><a href="#" class="buy-button">Comprar Ahora</a></td>
+                                </tr>
+                        </table>
+                        </tbody>
+                    </div>
                 </div>
+
                 <div class="section">
                     <div class="fav-articles">
                         <article>
                             <img src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg"
                                 alt="Tour de graffitis">
-                                <h2>
-                                  Tour de graffitis <a href="#" class="favorite"><i class="fa-solid fa-heart"></i>  
-                                </h2>
-                                <a href="#" class="reservar"> Reservar</a>
+                            <h2>
+                                Tour de graffitis <a href="#" class="favorite"><i class="fa-solid fa-heart"></i>
+                            </h2>
+                            <a href="#" class="reservar"> Reservar</a>
                         </article>
                         <article>
                             <img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg" alt="Piedra del Peñol">

@@ -1,186 +1,217 @@
-body{
+body {
     font-family: 'Fira Sans', sans-serif;
     box-sizing: border-box;
 }
-.d-block{
-    height: 30%;
-}
-.servicios{
+
+.servicios {
     font-size: 1.5em;
     text-align: center;
 }
-.servicio{
+
+.servicio {
     margin: 2%;
 }
-.servicio h3{
+
+.servicio h3 {
     font-weight: bold;
 }
-.tituloServicio{
+
+.tituloServicio {
     text-align: center;
     font-weight: bold;
     padding-top: 30px;
 }
-.servicio p{
+
+.servicio p {
     font-size: 0.6em;
 }
-.destacados{
-    display:flex;
+
+.destacados {
+    display: flex;
     flex-wrap: wrap;
     background-color: rgb(100 107 147);
     justify-content: center;
     padding: 15px 0;
 }
-.tour{
+
+.tour {
     width: 100%;
-}
-.card1{
-    width:100%;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px rgb(100 100 100);
-    margin: 10px;
-    padding: 10px;
-}
-.nosotros{
-    font-size: 1em;
-    margin: 3%;
-    text-align: center;
-}
-.formulario{
-    text-align: center;
-    font-size:1em;
-    margin:3%;
-}
-.contactanos p{
-    margin:2%;
-    text-align: center;
-}
-.formulario{
-    padding:20px 15px;
-    margin: 10px;
-}
-.campo{
-    margin-bottom: 15px;
-}
-.campo label{
-    margin-bottom: 5px;
-    display: block;
-    text-align: left;
-    font-weight: bold;
-}
-.persona{
-    width: 100%;
-    padding: 2px;
-}
-.botonFormulario{
-    background-color: #081454;
-    border: none;
-    font-size: 20px;
-    color:#ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-.fa-brands{
-    background-color: none;
-    color: #39b54a;
-    font-size: 48px;
-}
-.wpp{
-    position:fixed;
-    top:570px;
-    right:1px;
-}
 
-
-@media(min-width: 481px){
-    .servicios{
-        display:flex;
-        flex-wrap: wrap;
-        align-self: flex-start;
-        justify-content: center;
-    }
-    .servicio{
-        width: 40%;
-        padding: 10px;
-        height: 40%;
-    }
-    .servicio p{
-        font-size: 0.6em;
-    }
-    .tituloServicio{
-        text-align: center;
-    }
-    .card1{
-        width:40%;
-    }
-    .ultimoCard{
-        display: none;
-    }
-    .formulario{
-        padding: 20px 122px;
-    }
-}
-
-@media(min-width:769px){
-    .servicio{
-        width:20%;
-        padding: 0%;
-        margin:3%;
-    }
-    .mensaje{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .card1{
-        width:30%;
-        justify-content:center;
-    }
-    .ultimoCard{
-        display: block;
-    }
-    .contactanos{
-        width: 30%;
-    }
-    .persona{
-        width: 90%;
-        padding: 2px;
-    }
-    .campo label{
-        padding-left:15px;
-    }
-    .formulario{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px 55px;
-        width: 60%;
-    }
-    .campo{
-        width: 50%;
-    }
-    .botonEnviar{
-        width: 50%;
-        align-self: center;
-    }
 }
 
 div.scrollmenu {
     background-color: rgb(100 107 147);
     overflow: auto;
     white-space: nowrap;
-  }
-  
-  div.scrollmenu a {
+}
+
+div.scrollmenu a {
     display: inline-block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     text-decoration: none;
     width: 30%;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: #777;
-  }
+    background-color: #ffffff;
+    margin: 1%;
+    text-align: left;
+}
 
-  .mySlides {display:none;}
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+.masTours2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(100 107 147);
+}
+
+.myButton {
+    min-width: 70px;
+    padding: 10% 10%;
+    margin: 10px;
+    height: 64px;
+    font-size: 15px;
+}
+
+.nosotros {
+    font-size: 1em;
+    margin: 3%;
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+    font-size: 1em;
+    margin: 3%;
+}
+
+.contactanos p {
+    margin: 2%;
+    text-align: center;
+}
+
+.formulario {
+    padding: 20px 15px;
+    margin: 10px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.persona {
+    width: 100%;
+    padding: 2px;
+}
+
+.fa-brands {
+    background-color: none;
+    color: #39b54a;
+    font-size: 48px;
+}
+
+.wpp {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+}
+
+
+@media(min-width: 481px) {
+    .servicios {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: flex-start;
+        justify-content: center;
+    }
+
+    .servicio {
+        width: 40%;
+        padding: 10px;
+        height: 40%;
+    }
+
+    .servicio p {
+        font-size: 0.6em;
+    }
+
+    .tituloServicio {
+        text-align: center;
+    }
+
+    .card1 {
+        width: 40%;
+    }
+
+    .ultimoCard {
+        display: none;
+    }
+
+    .formulario {
+        padding: 20px 122px;
+    }
+}
+
+@media(min-width:769px) {
+    .servicio {
+        width: 20%;
+        padding: 0%;
+        margin: 3%;
+    }
+
+    .mensaje {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card1 {
+        width: 30%;
+        justify-content: center;
+    }
+
+    .ultimoCard {
+        display: block;
+    }
+
+    .contactanos {
+        width: 30%;
+    }
+
+    .persona {
+        width: 90%;
+        padding: 2px;
+    }
+
+    .campo label {
+        padding-left: 15px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 55px;
+        width: 60%;
+    }
+
+    .campo {
+        width: 50%;
+    }
+
+    .botonEnviar {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+

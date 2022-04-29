@@ -20,8 +20,10 @@ h1 {
 .bg-img {
     background-image: url(
 "Medellin.jpg");
-    min-height: 380px;
+    min-height: 500px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 /* Styling the form container */
@@ -30,9 +32,23 @@ h1 {
     left: auto;
     right:auto;
     top: 200px;
-    
-    margin-left: 33%;
-    max-width: 700px;
+    width: 40%;
+    height: 65%;
+    bottom: 200px;
+    max-height: 600px;
+    padding: 25px;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+.container2 {
+    position: absolute;
+    left: auto;
+    right:auto;
+    top: 200px;
+    bottom: 200px;
+    width: 70%;
+    height: 80%;
+    max-height: 750px;
     padding: 25px;
     background-color: rgba(33, 33, 33, 0.5);
 }
@@ -57,8 +73,10 @@ input[type=password] {
 /* Styling the submit button */
 .button {
     background-color: #081454;
+    border-radius: 5px;
     color: white;
-    padding: 16px ;
+    border-radius: 5px;
+    padding: 16px 8px;
     border: none;
     cursor: pointer;
     width: 35%;
@@ -72,8 +90,8 @@ input[type=password] {
 
 
 .button:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s;
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    color:#ffffff;
 }
 
 
@@ -98,3 +116,13 @@ input[type=password] {
     width: 100vw;
     height: 40vh;
   }
+
+  .masOpciones {
+      font-size:17px;
+  }
+
+  .botones {
+      text-align: center;
+      margin: 0%;
+  }
+
