@@ -48,6 +48,10 @@ body {
            line-clamp: 2; 
    -webkit-box-orient: vertical;
 }
+.descripcion h3{
+    white-space: nowrap;
+    overflow: scroll;
+}
 div.scrollmenu {
     background-color: rgb(100 107 147);
     overflow: auto;
