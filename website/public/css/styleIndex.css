@@ -67,13 +67,12 @@ div.scrollmenu a:hover {
     width: 100%;
     background-color: rgb(100 107 147);
 }
-
+.buttonForm{
+    width: 35%;
+    margin: auto;
+}
 .myButton {
-    min-width: 70px;
-    padding: 10% 10%;
-    margin: 10px;
-    height: 64px;
-    font-size: 15px;
+    padding: 10px;
 }
 
 .nosotros {
@@ -211,6 +210,12 @@ div.scrollmenu a:hover {
     .botonEnviar {
         width: 50%;
         align-self: center;
+    }
+    .buttonForm{
+        width: unset;
+    }
+    .myButton{
+        min-width: 0%;
     }
 }
 
