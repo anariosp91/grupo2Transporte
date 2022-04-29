@@ -34,6 +34,21 @@ h1 {
     top: 200px;
     width: 40%;
     height: 65%;
+    bottom: 200px;
+    max-height: 600px;
+    padding: 25px;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+.container2 {
+    position: absolute;
+    left: auto;
+    right:auto;
+    top: 200px;
+    bottom: 200px;
+    width: 70%;
+    height: 80%;
+    max-height: 750px;
     padding: 25px;
     background-color: rgba(33, 33, 33, 0.5);
 }
@@ -108,5 +123,6 @@ input[type=password] {
 
   .botones {
       text-align: center;
-      margin: 2%;
+      margin: 0%;
   }
+
