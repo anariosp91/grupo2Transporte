@@ -109,10 +109,11 @@ input[type=password] {
   }
 
   .main-header-login {
-    background-image: url("https://i.imgur.com/aLmdQDm.png");
+    background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
     background-position: center;
     width: 100vw;
     height: 40vh;
+    background-repeat: no-repeat;
   }
 
   .masOpciones {
