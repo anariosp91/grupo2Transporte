@@ -50,7 +50,7 @@ body {
 }
 .descripcion h3{
     white-space: nowrap;
-    overflow: scroll;
+    font-size: 16px;
 }
 div.scrollmenu {
     background-color: rgb(100 107 147);
@@ -218,6 +218,10 @@ div.scrollmenu a:hover {
     }
     .myButton{
         min-width: 0%;
+    }
+
+    .descripcion h3 {
+        font-size: 18px;
     }
 }
 
