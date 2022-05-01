@@ -162,7 +162,8 @@ li {
 
 .articulos th {
   text-align: left;
-  padding: 5px;
+  padding: 5px 0px;
+  font-weight: 900;
 }
 
 .articulos td {
