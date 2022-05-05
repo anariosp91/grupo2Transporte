@@ -146,10 +146,15 @@ li {
 
 /* Tab Carrito */
 
+.clasificacion {
+  background-color: rgba(33, 33, 33, 0.1);
+}
 
 .container-table {
   width: 100%;
   display: flex;
+  box-shadow: 0px 0px 10px rgb(100 100 100);
+  padding: 3%;
 }
 
 .articulos {
@@ -377,3 +382,4 @@ li {
     font-size: 17px;
   }
 }
+
