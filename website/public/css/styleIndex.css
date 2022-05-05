@@ -134,8 +134,11 @@ div.scrollmenu a:hover {
 
 .wpp {
     position: fixed;
-    bottom: 1px;
-    right: 1px;
+    bottom: 7px;
+    right: 7px;
+    background-color: #EDEDED;
+    border-radius: 40px;
+    padding: 5px 12px;
 }
 
 
