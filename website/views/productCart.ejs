@@ -2,45 +2,13 @@
 <html class="html" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> productCart </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <%- include("partials/head") %> 
     <script defer src="js/productCart.js"></script>
-    <link rel="stylesheet" href="/css/styleIndex.css">
-    <link rel="stylesheet" href="/css/productCart.css">
 </head>
 
 <body class="body-cart">
     <header class="main-header">
-        <nav class="main-navbar">
-            <div class="container-nav-logo">
-                <img class="nav-logo" src="/img/logo.svg" alt="Logo-Medellin-Travel">
-            </div>
-            <input type="checkbox" id="toggler">
-            <label for="toggler"><i class="fa-solid fa-bars"></i></label>
-            <div class="menu">
-                <ul class="list-iniciado">
-                    <li class="li-menu-item"><a href="/"><i class="fa-solid fa-house"></i></a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                    <li class="li-menu-item"><a href="">Transportes</a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-user-large"></i></a></li>
-                    <li class="li-menu-item"><a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-                <ul class="list-iniciar">
-                    <li class="li-menu-item"><a href="/"><i class="fa-solid fa-house"></i></a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                    <li class="li-menu-item"><a href="">Transportes</a></li>
-                    <li class="li-menu-item"><a href=""> Registrarse </a></li>
-                    <li class="li-menu-item"><a href=""> Inicia Sesión</a></li>
-                    <li class="li-menu-item"><a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-
+         <%- include("partials/header-logged") %> 
     </header>
 
     <main class="main-cart">
@@ -129,32 +97,10 @@
 
         </div>
     </main>
-
-    <footer class="footer">
-        <section class="main-footer">
-            <div class="container-footer-logo">
-                <img class="logo-footer" src="/img/logo.svg" alt="Logo-Medellin-Travel">
-            </div>
-            <ul class="footer-links">
-                <li><a href="">Quienes Somos</a></li>
-                <li><a href="">Políticas de privacidad</a></li>
-                <li><a href="">Políticas de seguridad</a></li>
-                <li><a href="">Términos y condiciones</a></li>
-            </ul>
-            <ul class="footer-links">
-                <li><a href="">Contáctenos</a></li>
-                <li><a href="">¿Necesitas ayuda?</a></li>
-                <li><a href="">Nuestros servicios</a></li>
-                <li><a href="">Envianos tu CV</a></li>
-            </ul>
-            <ul class="footer-links">
-                <li><a href="">Números y horarios de atención</a></li>
-                <li><a href="">Lunes a viernes 09hs a 18hs.</a></li>
-                <li><a href="">Sábados 09hs a 15hs</a></li>
-                <li><a href="">0800 222 5665</a></li>
-            </ul>
-        </section>
-    </footer>
+    <div class="footer">
+        <<%- include("partials/footer") %> > 
+    </div>
+   
 </body>
 
 </html>

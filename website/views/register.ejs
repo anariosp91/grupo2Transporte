@@ -3,34 +3,15 @@
 <html>
 
 <head>
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link rel="stylesheet" href="/css/login.css">
-        <link rel="stylesheet" href="/css/productCart.css">
-
+    <%- include("partials/head") %> 
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Registrarse</title>
 </head>
 
 <body>
 
     <header class="main-header-login">
-        <nav class="main-navbar">
-            <div class="container-nav-logo">
-                <img class="nav-logo" src="/img/logo.svg" alt="Logo-Medellin-Travel">
-            </div>
-            <input type="checkbox" id="toggler">
-            <label for="toggler"><i class="fa-solid fa-bars"></i></label>
-            <div class="menu">
-                <ul class="list">
-                    <li class="li-menu-item"><a href="/"><i class="fa-solid fa-house"></i></a></li>
-                    <li class="li-menu-item"><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                    <li class="li-menu-item"><a href="">Transportes</a></li>
-                    <li class="li-menu-item"><a href="/register"> Registrarse </a></li>
-                    <li class="li-menu-item"><a href="/login"> Inicia Sesión</a></li>
-                </ul>
-            </div>
-        </nav>
-
+        <%- include("partials/header-register") %> 
     </header>
 	<div class="bg-img">
 		

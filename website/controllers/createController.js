@@ -2,9 +2,9 @@ const path = require('path');
 
 
 let createController = {
-    create: (req,res) => {
-    res.render('create')
+    create: (req, res) => {
+        res.render('create');
     }   
 }
 
-module.exports = createController
+module.exports = createController;

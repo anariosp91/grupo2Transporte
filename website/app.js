@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
+
 const app = express();
+const port = 8000;
+
 const indexRouter = require('./routers/indexRouter');
 const loginRouter = require('./routers/loginRouter');
 const productCartRouter = require('./routers/productCartRouter');
@@ -10,13 +13,15 @@ const createRouter = require('./routers/createRouter');
 const editRouter = require('./routers/editRouter');
 
 
-app.listen(8000, (req,resp)=> console.log('iniciando servidor en el puerto 8000'));
+
+app.listen(port, (req,resp) => console.log('iniciando servidor en el puerto ' + port));
 
 const publicPath = path.resolve(__dirname,'./public')
+
 app.use(express.static('public'))
 
-app.set('view engine','ejs');
-app.set('views', path.resolve(__dirname, 'views'));
+app.set("views", path.resolve(__dirname, "views"));
+app.set("view engine", "ejs");
 
 app.get('/', indexRouter)
 
