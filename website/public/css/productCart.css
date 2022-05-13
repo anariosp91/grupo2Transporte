@@ -1,4 +1,4 @@
-/* Diseño general */
+/*general design */
 
 * {
   box-sizing: border-box;
@@ -7,10 +7,11 @@
 .body-cart {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
+
 }
 
 
-/* Barra de navegacion Responsive */
+/* navbar responsive */
 
 .main-header {
   background-image: url("https://i.imgur.com/aLmdQDm.png");
@@ -94,9 +95,9 @@ li {
   max-height: 100%;
 }
 
-/* Cuerpo De Pagina */
+/* body */
 
-/* Diseño de Tabs */
+/* tab design*/
 
 .t-container {
   width: 100%;
@@ -144,9 +145,9 @@ li {
 }
 
 
-/* Tab Carrito */
+/* cart tab */
 
-.clasificacion {
+.classification {
   background-color: rgba(33, 33, 33, 0.1);
 }
 
@@ -154,10 +155,10 @@ li {
   width: 100%;
   display: flex;
   box-shadow: 0px 0px 10px rgb(100 100 100);
-  padding: 3%;
+  padding: 2%;
 }
 
-.articulos {
+.article {
   width: 100%;
   border-collapse: collapse;
   margin: 0;
@@ -165,31 +166,30 @@ li {
   table-layout: fixed;
 }
 
-.articulos th {
+.article th {
   text-align: left;
   padding: 5px 0px;
   font-weight: 900;
 }
 
-.articulos td {
+.article td {
   color: #000;
   font-weight: bold;
   font-size: 16px;
   padding: 10px 0px;
 }
 
-.articulos img {
+.article img {
   width: 109px;
   vertical-align: middle;
 }
 
-
-.articulos .contador-personas {
+.article .people-counter {
   padding: 0px 4px;
   background-color: rgba(160, 160, 160, 0.35);
 }
 
-.articulos .buy-button {
+.article .buy-button {
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -199,22 +199,22 @@ li {
   background-color:#081454;
 }
 
-.articulos .buy-button:hover {
+.article .buy-button:hover {
     background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
     color:#ffffff;
 }
 
-.articulos .compra-total td {
+.article .total-purchase td {
   padding-top: 50px;
   border-bottom: none;
 }
 
-.articulos .container-total-suma {
+.article .container-total-amount{
   padding: 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 
-/* Tab Favoritos */
+/* fav tab */
 
 .fav-articles {
   display: flex;
@@ -236,7 +236,7 @@ li {
   padding: 5px;
 }
 
-.fav-articles .reservar {
+.fav-articles .reserve {
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -247,7 +247,7 @@ li {
   background-color:#081454;
 }
 
-.fav-articles .reservar:hover {
+.fav-articles .reserve:hover {
     background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
     color:#ffffff;
 }
@@ -261,7 +261,7 @@ li {
 /* Footer */
 
 .footer {
-  margin-top: 400px;
+  margin-top: 800px;
 }
 
 .main-footer {
@@ -291,6 +291,77 @@ li {
   margin: 0;
   padding: 0;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+
+  .container-table {
+    padding: 0%;
+  }
+  /*cart tab*/
+  .article img {
+    width: 75px;
+    vertical-align: middle;
+  }
+
+  .fav-article img {
+    width: 75px;
+  }
+
+  .article {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .article tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px gray;
+  }
+
+  .article thead {
+    display: none;
+  }
+
+  .article td[data-titulo] {
+    display: flex;
+
+  }
+
+  .article td {
+    padding: 2% 4%;
+    margin-bottom: 2%;
+  }
+
+  .article td[data-titulo]::before {
+    content: attr(data-titulo);
+    width: 90%;
+    color: gray;
+    font-weight: bold;
+    padding: 3%;
+  }
+
+  .article .total-purchase td {
+    padding-top: 5px;
+    border-bottom: none;
+  }
+
+  /*footer*/
+
+  .footer {
+   margin-top: 800px;
+  }
+  .container-footer-logo {
+    text-align: center;
+    max-width: 100px;
+  }
+
+  .container-footer-logo img {
+    text-align: center;
+  }
+}
+
+
+
 
 
 @media (min-width: 768px) {
@@ -338,16 +409,21 @@ li {
     margin: 0 15px;
   }
 
-  /* Cuerpo */
+  /* body*/
 
-  .articulos .buy-button {
+  .article .tour-name {
+    display: block;
+  }
+
+  .article .buy-button {
     font-size: 14px;
   }
 
   /* footer */
 
   .footer {
-    margin-top: 400px;
+    margin-top: 1030px;
+    
   }
 
   .main-footer {
@@ -366,6 +442,12 @@ li {
 }
 
 @media (min-width: 1200px) {
+
+  /*body*/
+
+  .article .tour-name {
+    display: contents;
+  }
 
   /* Footer */
 
