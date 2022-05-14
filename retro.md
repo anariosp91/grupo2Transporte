@@ -1,3 +1,5 @@
+Retrospectiva SPRINT 1 
+
 _Comenzar a hacer_:
 Queremos comenzar a dividirnos el proyecto por partes y que una sola persona sea responsable de una parte y los demás sean colaboradores.
 
@@ -23,5 +25,16 @@ Nuestra experiencia durante el primer sprint en general fue muy positiva ya que 
 la identidad del sitio. Además, pudimos organizarnos bien usando herramientas colaborativas como Figma y Github. 
 
 
+Retrospectiva SPRINT 2
 
+_Comenzar a hacer_: 
+Dividimos el sprint en tareas con un responsable, los demás seremos colaboradores, y nos reuniremos 1 vez por semana para mirar los avances y inconvenientes de cada uno
+
+_Hacer más_:
+Reunirnos en equipo nos ayuda a generar siempre nuevas ideas y a resolver dudas. Como mínimo buscaremos hacer una reunión semanal.
+
+_Hacer menos_: 
+Evitar conflictos a la hora de subir el repositorio.
+
+En general hemos logrado sincronizarnos como equipo y en los sprint anteriores no tuvimos ninguna dificultad como equipo, nos gusta trabajar juntos y nos entendemos
 
