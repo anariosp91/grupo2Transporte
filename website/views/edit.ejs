@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <%- include("partials/head") %> 
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/create.css">
+    <title>Editar tour</title>
+</head>
+
+<body>
+
+    <header class="main-header-create">
+           <%- include("partials/header-register") %> 
+    </header>
+	<div class="bg-img2">
+		
+		
+		<form class="container">
+            <br><h1><i class="fa-solid fa-circle-plus"></i> Editar tour</h1><br><br><br>
+			<b>Nombre:</b>
+			<input type="text" 
+					name="username" placeholder="Piedra del Peñol" required>
+
+                    <b>Mini descripción:</b> <br>
+                    <textarea class="textarea1" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
+			<b>Descripción:</b> <br>
+			<textarea class="textarea2" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+
+            Bar a bordo a su disposición
+            
+            Ambiente de guinguette en cuanto los pasajeros llegan al Port de l'Arsenal
+            
+            Opcional:
+            
+            Copa de Champagne
+            Copa de vino
+            Tabla de embutidos y quesos franceses (para 2 personas)"></textarea>
+
+                    <b>Imagen:</b> <br><br>
+                    <img src="https://i.imgur.com/pgXoFjv.jpg?4" class="editarImagen"> <br>
+                    <input type="file" 
+                            name="password"> <br><br>
+
+                            <b>Categoría:</b> <br>
+                            <select class="box">
+                                <option>Coffee</option>
+                                <option>Tea</option>
+                                <option>Juice</option>
+                                <option selected>Cocktail</option>
+                              </select>
+<br><br>
+                                    <b>Duración:</b>  <br> 
+			<input type="number" 
+					name="password" placeholder="" required><br>
+<br>
+                    <b>Precio:</b> <br> 
+			<input type="number" 
+					name="password" placeholder="" required> <br><br>
+
+                    <div class="botones">
+                        <br>
+					<button type="submit" class="button">Cancelar</button> 
+					<button type="submit" class="button">Continuar</button> 
+                     </div>
+		</form>
+	</div>
+    <br>
+    <br>
+
+    <%- include("partials/footer") %> 
+</body>
+
+</html>
