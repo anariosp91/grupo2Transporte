@@ -229,12 +229,13 @@ div.scrollmenu a:hover {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: rgba(1, 1, 1, 0.0);
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin: auto;
+    
   }
   
   .dropdown {
@@ -243,6 +244,7 @@ div.scrollmenu a:hover {
   }
   
   .dropdown-content {
+    
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -264,6 +266,3 @@ div.scrollmenu a:hover {
     display: block;
   }
   
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
