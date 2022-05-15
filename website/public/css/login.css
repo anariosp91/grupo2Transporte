@@ -136,9 +136,18 @@ a {
     background-size: cover;
     display: flex;
     justify-content: center;
-    margin-bottom: 400px;
+    margin-bottom: 600px;
 }
 
+.bg-img3 {
+    background-image: url(
+"Medellin.jpg");
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 900px;
+}
 
 
   .textarea1 {
