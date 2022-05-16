@@ -27,12 +27,13 @@ app.get('/', indexRouter)
 
 app.get('/productDetail/:id', indexRouter);
 
+app.get('/tours', indexRouter);
+
 app.get('/login', loginRouter);
 
 app.get('/productCart', productCartRouter);
 
-app.get('/productDetail', productDetailRouter);
-
+// app.get('/productDetail', productDetailRouter);
 
 app.get('/register', registerRouter);
 

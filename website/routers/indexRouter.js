@@ -7,6 +7,8 @@ router.get('/', indexController.index);
 
 router.get('/productDetail/:id', indexController.detalleId);
 
+router.get('/tours', indexController.tours);
+
 
 
 module.exports = router;

@@ -10,6 +10,9 @@ let indexController = {
         let tourId = tours.find(tour => tour.id == req.params.id)
         res.render('productDetail', {tour: tourId});
     },  
+    tours: (req, res) => {
+        res.render('tours')
+    }
 }
 
 module.exports = indexController;

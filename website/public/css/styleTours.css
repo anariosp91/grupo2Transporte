@@ -1,0 +1,379 @@
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #ebebeb;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+    padding-bottom: 10px;
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 100;
+}
+
+header i,a{
+    color:black;
+    list-style-type: none;
+    text-decoration: none;
+}
+main{
+    margin: 20px 20px 10px;
+    width: 90%
+}
+.nav-logo{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    justify-content: center;
+    
+}
+.logo{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.compra{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    margin-right: 10px;
+}
+.boton-lupa{
+    color: white;
+    font-size: 15px;
+    border-radius:5px;
+    box-sizing:border-box;
+    width:27px;
+    height: 60%;
+    border:none;
+}
+nav{
+    display:none;
+}
+.imgBanner{
+    margin-top: 130px;
+    width: 100%;
+}
+.section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productDetail{
+    box-sizing: border-box;
+    background-color: white;
+    width: 90%;
+    margin-bottom: 10px;
+    position:relative;
+}
+.detalle{
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+.titulares{
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+    display:inline-block;
+    margin:4%;
+    width:30%;
+
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    display:inline-block;
+    width: 60%;
+}
+.descripciones{
+    font-size: 16px;
+    display: none;
+}
+li{
+    list-style-type: none;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #222222;
+    display: flex;
+    padding: 0 5px;
+    font-size: 0.6em;
+}
+footer{
+    text-align: center;
+}
+.copyright{
+    text-align: left;
+    font-size: 12px;
+}
+.elemento-footer{
+    margin-bottom: 20px;
+}
+.elemento-footer p{
+    font-size: 12px;
+    line-height: 10px;
+}
+.elemento-footer i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.burger-menu{
+    display: block;
+    margin: auto;
+    padding: 15px 0px;
+    max-width: 50px;
+    background-color: #1259c3;
+    font-size: 15px;
+    border-radius:5px;
+    box-sizing:border-box;
+    text-align: center;
+}
+.fas{
+    color: white;
+}
+.nav-bar{
+    display: none;
+}
+section article img{
+    width: 100%;
+}
+.search{
+    display: flex;
+    width:50%;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.busqueda{
+    width: 65%;
+    height: 60%;
+    border-radius: 5%;
+    align-items: center;
+    border:none;
+}
+
+section article i{
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    /* margin:auto auto; */
+}
+
+section article i{
+    transition: transform 450ms;
+}
+.productDetail:hover i{
+    transform: rotate(-90deg);
+}
+
+.createForm{
+    padding: 20px 15px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.controlFormulario{
+    margin-bottom: 15px;
+}
+.controlFormulario label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700;
+}
+/* .control:valid {
+    border: 2px solid gray;
+}
+.control:invalid {
+    border: 2px solid red;
+} */
+.perfil{
+    display:flex;
+    margin: 15px;
+    justify-content: space-around;
+}   
+.intereses{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.formLabel{
+    font-weight: 700;
+}
+.intereses label{
+    margin-bottom: 10px;
+}
+.control{
+    width: 100%;
+    padding: 8px 0;
+}
+.botonFormulario{
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width:49%;
+}
+.botonLogin{
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.botonLogin:hover{
+    background-color: #0022AA;
+}
+
+@media(min-width: 426px){
+    .logo{
+        width: 35%;
+    }
+    .search{
+        width: 100%;
+    }
+    .imgBanner{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .productDetail{
+        width: 45%;
+        margin:10px
+    }
+    .productDetail:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripciones{
+        display:block;
+        visibility:hidden;
+    }
+    .productDetail:hover .descripciones{
+        display:block;
+        visibility: visible;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4%;
+    }
+    .menu-nav li{
+        font-size: 18px;
+    }
+    .nav-logo{
+        flex-wrap: unset;
+        width:100%;
+        align-items: center;
+    }
+    .busqueda{
+        width:50%;
+    }
+    .boton-lupa{
+        height: 30%;
+
+    }
+    .compra{
+        max-width: 350px;
+        text-align: right;
+    }
+    .descripciones{
+        display:block;
+        padding-left: 10px;
+    }
+}
+
+@media(min-width:759px){
+    .logo{
+        width: 250px;
+    }
+    .search{
+        width: 100%;
+    }
+    .imgBanner{
+        margin-top: 130px;
+        width: 100%;
+    }
+    main{
+        margin-left: 50px;
+    }
+    .productDetail{
+        width: 23%;
+        margin: 5px;
+    }
+    .productDetail:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    .nav-bar,.nav-logo{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .compra{
+        margin:0;
+        max-width: none;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .nav-bar{
+        display:flex;
+        margin-top: 40px;
+    }
+    .nav-bar li{
+        margin: 0 10px;
+    }
+    .nav-bar a{
+        font-size: 0.7em;
+    }
+    .descuentos{
+        width: 50%;
+        padding: 15px;
+    }
+    .descripciones{
+        margin: 0 10px 10px 10px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px 10px;
+    }
+    .elemento-footer{
+        padding: 0 20px;
+    }
+}
+
+
+
+

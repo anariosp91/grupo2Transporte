@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include('./partials/head') %> 
+<%- include('./partials/header-register') %> 
+
+<main>
+    <h2 class="titulares">Basado en tú última Visita</h2>
+    <section class="section">
+        <%- include('./partials/tourCard') %> 
+    </section>
+
+    <h2 class="titulares">Ofertas</h2>
+    <section class="section">
+        <article class="productDetail">
+            <img src="/images/img-cafetera-moulinex.jpg">
+            <div class="detalle">
+                <i class="fa-solid fa-truck"></i>
+                <p class="precios">$6.770</p>
+                <p class="descuentos">40% off</p>
+                <h4 class="descripciones">Cafetera Moulinex</h4>
+            </div>
+        </article>
+
+        <article class="productDetail">
+            <img src="/images/img-macbook-pro-2019.jpg">
+            <div class="detalle">
+                <i class="fa-solid fa-truck"></i>
+                <p class="precios">$230.000</p>
+                <p class="descuentos">20% off</p>
+                <h4 class="descripciones">MacBook Pro 2019</h4>
+            </div>
+        </article>
+
+        <article class="productDetail">
+            <img src="/images/img-samsung-galaxy-s10.jpg">
+            <div class="detalle">
+                <i class="fa-solid fa-truck"></i>
+                <p class="precios">$70.500</p>
+                <p class="descuentos">10% off</p>
+                <h4 class="descripciones">Samsung Galaxy S10</h4>
+            </div>
+        </article>
+
+        <article class="productDetail">
+            <img src="/images/img-tv-samsung-smart.jpg">
+            <div class="detalle">
+                <i class="fa-solid fa-truck"></i>
+                <p class="precios">$23.200</p>
+                <p class="descuentos">5% off</p>
+                <h4 class="descripciones">SmartTv Samsung 43"</h4>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<%- include('./partials/footer') %> 
+<div class="copyright">
+    <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+</div>
+
+</body>
+
+</html>
