@@ -5,12 +5,8 @@ const app = express();
 const port = 8000;
 
 const indexRouter = require('./routers/indexRouter');
-const loginRouter = require('./routers/loginRouter');
-const productCartRouter = require('./routers/productCartRouter');
-const productDetailRouter = require('./routers/productDetailRouter');
-const registerRouter = require('./routers/registerRouter');
-const createRouter = require('./routers/createRouter');
-const editRouter = require('./routers/editRouter');
+const usersRouter = require('./routers/usersRouter');
+const toursRouter = require('./routers/toursRouter');
 
 
 
@@ -23,23 +19,17 @@ app.use(express.static('public'))
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.get('/', indexRouter)
+app.use('/', indexRouter)
 
-app.get('/productDetail/:id', indexRouter);
+app.use('/tours', toursRouter);
 
-app.get('/tours', indexRouter);
+app.use('/users', usersRouter);
 
-app.get('/login', loginRouter);
+// app.get('/login', loginRouter);
+// app.get('/register', registerRouter);
+// app.get('/productCart', productCartRouter);
 
-app.get('/productCart', productCartRouter);
 
-// app.get('/productDetail', productDetailRouter);
-
-app.get('/register', registerRouter);
-
-app.get('/create', createRouter);
-
-app.get('/edit', editRouter);
 
 
 
