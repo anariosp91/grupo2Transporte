@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
+.htmlCart {
+  min-height: 90%;
+  position: relative;
+}
+
 .body-cart {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
+  margin-bottom: 40px;
 
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }
 
 
@@ -188,8 +201,9 @@ li {
 }
 
 .article .people-counter {
-  padding: 0px 4px;
-  background-color: rgba(160, 160, 160, 0.35);
+  max-width: 60px;
+
+  color: #ffffff;
 }
 
 .article .buy-button {
@@ -263,10 +277,7 @@ li {
 
 /* Footer */
 
-.footer {
-  margin-top: 800px;
 
-}
 
 .main-footer {
   background-color: rgb(100, 107, 147);
@@ -298,6 +309,10 @@ li {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
+
+  .main-cart{
+    min-height: 1400px;
+  }
 
   .container-table {
     padding: 0%;
@@ -346,14 +361,15 @@ li {
   .article td {
     padding: 2% 4%;
     margin-bottom: 2%;
+    flex-direction: column;
   }
 
   .article td[data-titulo]::before {
     content: attr(data-titulo);
     width: 90%;
-    color: gray;
+    color:#081454;
     font-weight: bold;
-    padding: 3%;
+    padding: 3% 0;
   }
 
   .article .total-purchase td {
@@ -363,15 +379,17 @@ li {
 
   /*footer*/
 
-  .footer {
-   margin-top: 900px;
-  }
 
 }
 
 
 
 @media (min-width: 768px) {
+
+  .main-cart{
+    min-height: 1900px;
+  }
+
   .main-navbar {
     background-color: rgba(1, 1, 1, 0.65);
   }
@@ -426,10 +444,6 @@ li {
 
   /* footer */
 
-  .footer {
-    margin-top: 1030px;
-    
-  }
 
   .main-footer {
     display: flex;
@@ -454,15 +468,17 @@ li {
 
   /*body*/
 
+  .main-cart{
+    min-height: 10px;
+  }
+
   .article .tour-name {
     display: contents;
   }
 
   /* Footer */
 
-  .footer {
-    margin-top: 354px;
-  }
+
 
   .main-footer {
     display: flex;

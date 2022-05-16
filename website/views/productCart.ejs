@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html class="html" lang="en">
+<html class="htmlCart" lang="en">
 
 <head>
-    <%- include("partials/head") %> 
+    <%- include("partials/head") %>
     <script defer src="js/productCart.js"></script>
     <link rel="stylesheet" href="/css/styleIndex.css">
 </head>
 
 <body class="body-cart">
     <header class="main-header">
-         <%- include("partials/header-logged") %> 
+        <%- include("partials/header-logged") %>
     </header>
 
     <main class="main-cart">
@@ -35,11 +35,13 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-titulo="Artículo:"> <span><img
-                                                src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg"
+                                    <td data-titulo="Artículo:">
+                                        <span><img src="https://pbs.twimg.com/media/E2USmL4VUAI2nWo.jpg"
                                                 alt="Piedra del Peñol">
-                                        </span><div class="tour-name"> Piedra del Peñol </div> </td>
-                                    <td data-titulo="Personas:"> - <span class="people-counter">2</span> + </td>
+                                        </span>
+                                        <div class="tour-name"> Piedra del Peñol </div>
+                                    </td>
+                                    <td data-titulo="Personas:"> <input type="number" class="people-counter" placeholder="2">  </td>
                                     <td data-titulo="Fecha:"> <input type="date"> </td>
                                     <td data-titulo="Precio por persona:">$5.000</td>
                                     <td data-titulo="Precio Total:">$10.000</td>
@@ -50,8 +52,10 @@
                                 <tr>
                                     <td data-titulo="Artículo:"> <span><img
                                                 src="https://149370792.v2.pressablecdn.com/wp-content/uploads/2016/12/IMG_4905.jpg"
-                                                alt="Tour de graffitis"> </span><div class="tour-name"> Tour de graffitis </div></td>
-                                    <td data-titulo="Personas:"> - <span class="people-counter">5</span> + </td>
+                                                alt="Tour de graffitis"> </span>
+                                        <div class="tour-name"> Tour de graffitis </div>
+                                    </td>
+                                    <td data-titulo="Personas:"> <input type="number" class="people-counter" placeholder="5"> </td>
                                     <td data-titulo="Fecha:"> <input type="date"> </td>
                                     <td data-titulo="Precio por persona:">5.000</td>
                                     <td data-titulo="Precio Total:">$25.000</td>
@@ -67,7 +71,8 @@
                                         <div class="total-price">Precio Total</div>
                                     </td>
                                     <td>
-                                        <div class="total-amount"> <span class="container-total-amount">$35.000</span></div>
+                                        <div class="total-amount"> <span class="container-total-amount">$35.000</span>
+                                        </div>
                                     </td>
                                     <td class="cart-buttons"><a href="#" class="buy-button">Comprar Ahora</a></td>
                                 </tr>
@@ -99,9 +104,9 @@
         </div>
     </main>
     <div class="footer">
-        <<%- include("partials/footer") %> > 
+        <%- include("partials/footer") %>
     </div>
-   
+
 </body>
 
 </html>
