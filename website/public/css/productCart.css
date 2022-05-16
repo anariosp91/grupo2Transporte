@@ -202,7 +202,6 @@ li {
 
 .article .people-counter {
   max-width: 60px;
-
   color: #ffffff;
 }
 
@@ -247,6 +246,11 @@ li {
 .fav-articles a {
   text-decoration: none;
   color: #000;
+}
+
+.fav-articles h2 {
+  padding: 5px;
+  font-size: 20px;
 }
 
 .fav-articles .product-description {
@@ -311,7 +315,7 @@ li {
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
 
   .main-cart{
-    min-height: 1400px;
+    min-height: 1450px;
   }
 
   .container-table {
@@ -330,12 +334,12 @@ li {
   }
   /*cart tab*/
   .article img {
-    width: 75px;
+    width: 40%;
     vertical-align: bottom;
   }
 
   .fav-article img {
-    width: 75px;
+    width: 40%;
   }
 
   .article {
@@ -440,6 +444,14 @@ li {
 
   .article .buy-button {
     font-size: 14px;
+  }
+
+  .article img {
+    width: 50%;
+  }
+
+  .fav-article img {
+    width: 50%;
   }
 
   /* footer */
