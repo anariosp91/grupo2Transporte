@@ -1,64 +1,85 @@
-.maincontainer{
-    display: flex;
+.maincontainer {
+	display: flex;
 	justify-content: center;
 	padding: 5%;
-}
-.contenedor1{
-margin: 0;
-padding: 3%;
-align-self: center;
-border-radius:5%;
-box-shadow: 0px 0px 10px rgb(100, 100, 100);
-width:27%;
-
-
-
-
+	flex-direction: column;
 }
 
-.contenedor2{
-margin: 0;
-padding-top: 3%;
-margin-left: 5%;
+.contenedor1 {
+	margin: 0;
+	padding: 5%;
+	align-self: center;
+	border-radius: 5%;
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	width: 90%;
+	margin-bottom: 10%;
 }
 
-.reloj{
-    font-size: 150%;
+.contenedor2 {
+	margin: 0;
+	padding-top: 3%;
+	margin-left: 5%;
 }
 
-.horario{
-    display: flex;
+.reloj {
+	font-size: 150%;
 }
 
-.margen{
-    margin-left: 10px;
+.horario {
+	display: flex;
+}
+
+.margen {
+	margin-left: 10px;
 }
 
 .myButton {
-	background-color:#081454;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:"Fira Sans";
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-    margin: 10px 0px; 
-    min-width: 100%;
-    text-align:center;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-	color:#ffffff;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+	background-color: #081454;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 20px;
+	font-weight: bold;
+	padding: 13px 32px;
+	text-decoration: none;
+	margin: 10px 0px;
+	min-width: 100%;
+	text-align: center;
 }
 
-.Color2{
-    background-color:#081454;
-    opacity: 60%;
+.myButton:hover {
+	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	color: #ffffff;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.Color2 {
+	background-color: #081454;
+	opacity: 60%;
+}
+
+
+/*Media*/
+
+@media (min-width: 1024px) {
+	.maincontainer {
+		flex-direction: row;
+	}
+	.contenedor1 {
+		width: 35%;
+		padding: 3%;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	.contenedor1 {
+		width: 27%;
+	}
 }
