@@ -1,4 +1,4 @@
-body {
+.body-login {
     height: 100%;
     font-family: Arial, sans-serif;
     margin:0;
@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+.body-login h1 {
     text-align:center;
     color:rgb(255, 255, 255);
     font-size:50px;
@@ -51,15 +51,15 @@ h1 {
     background-color: rgba(33, 33, 33, 0.5);
 }
 
-b {
+.body-login b {
     color: rgb(255, 255, 255);
     font-size:17px;
     
 }
 
 /* Full-width input */
-input[type=text],
-input[type=password] {
+.body-login input[type=text],
+.body-login input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 15px 0px;
@@ -125,7 +125,7 @@ input[type=password] {
       margin: 0%;
   }
 
-a {
+.body-login a {
     text-decoration: none;
 }
 
