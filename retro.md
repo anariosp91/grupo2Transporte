@@ -36,5 +36,8 @@ Reunirnos en equipo nos ayuda a generar siempre nuevas ideas y a resolver dudas.
 _Hacer menos_: 
 Evitar conflictos a la hora de subir el repositorio.
 
+_Dejar de hacer_:
+Evitar repeticiones de nombres de clases y buscar poner nombres descriptivos a estas. 
+
 En general hemos logrado sincronizarnos como equipo y en los sprint anteriores no tuvimos ninguna dificultad como equipo, nos gusta trabajar juntos y nos entendemos
 
