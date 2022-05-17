@@ -1,5 +1,5 @@
-const li = document.querySelectorAll(".li");
-const section = document.querySelectorAll(".section");
+const li = document.querySelectorAll(".cart-li");
+const section = document.querySelectorAll(".cart-section");
 
 
 li.forEach((cadaLi, i) => {
