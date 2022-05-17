@@ -1,13 +1,14 @@
 <!-- SCROLL DE TOURS -->
 <div class="scrollmenu">
   <% tours.forEach(tour => { %>
-    <a href="/tours/detail/<%= tour.id %> "><img src="<%= tour.imagen1 %> " class="tour">
-      <div class="descripcion">
-        <h3><%= tour.nombre %> </h3>
-        <p><%= tour.descripcionCorta %> </p>
-      </div>
-    </a>
+  <a href="/tours/detail/<%= tour.id %> "><img src="<%= tour.imagen1 %> " class="tour">
+    <div class="descripcion">
+      <h3><%= tour.nombre %> </h3>
+      <p><%= tour.descripcionCorta %> </p>
+    </div>
+  </a>
   <% }) %>
 </div>
-<div class="masTours2"> <div class="masTours"> <a href="/tours/list" class="myButton">Más Tours</a> </div> </div>
-
+<div class="masTours2">
+  <div class="masTours"> <a href="/tours/list" class="myButton">Más Tours</a> </div>
+</div>
