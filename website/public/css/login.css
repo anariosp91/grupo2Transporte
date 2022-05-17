@@ -18,14 +18,45 @@
 
 @media(min-width:481px) {
 
-/* styling background image */
-.bg-img {
+
+
+    .row {
+        margin-bottom:10px;
+    }
+
+
+
+
+
+
+  .bg-img {
     background-image: url(
 "Medellin.jpg");
     min-height: 500px;
     background-size: cover;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* styling background image */
+.bg-img-register {
+    background-image: url(
+"Medellin.jpg");
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
 }
 
 /* Styling the form container */
@@ -46,9 +77,9 @@
     right:auto;
     top: 200px;
 
-    width: 70%;
+    width: 90%;
     
-    max-height: 750px;
+    max-height: 1350px;
     padding: 25px;
     background-color: rgba(33, 33, 33, 0.5);
 }
@@ -95,20 +126,9 @@
 }
 
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 50px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+
+
+
 
   .main-header-login {
     background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
@@ -165,6 +185,56 @@
 
 
 @media(min-width:969px) {
+
+
+
+
+    .row {
+        margin-bottom:110px;
+    }
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .bg-img-register {
+    background-image: url(
+"Medellin.jpg");
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+
+
+
+
 
 /* styling background image */
 .bg-img {
