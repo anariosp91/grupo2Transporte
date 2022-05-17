@@ -14,7 +14,7 @@ let toursController = {
         res.render('productDetail', {tour: tourId});
     },  
     tours: (req, res) => {
-        res.render('tours');
+        res.render('tours', {tours: tours});
     }
 }
 

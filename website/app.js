@@ -25,9 +25,7 @@ app.use('/tours', toursRouter);
 
 app.use('/users', usersRouter);
 
-// app.get('/login', loginRouter);
-// app.get('/register', registerRouter);
-// app.get('/productCart', productCartRouter);
+
 
 
 

@@ -1,0 +1,15 @@
+<% tours.forEach(tour => { %>
+    <article class="toursDetail">
+        <a href="/detalle/<%= tour.id %> " class="ref">
+            <img src="<%= tour.imagen1 %> ">
+            <div class="detalleT">
+            <h4 class="nombreT"><%= tour.nombre %> </h4>
+            <p class="precioT"><%= tour.precio %> </p>
+            <p class="descripcionT"><%= tour.descripcionDetallada %> </p>
+            <p class="duracionT"><%= tour.duracion %> </p>
+            </div>
+        </a>
+    </article>
+<% }) %>
+
+
