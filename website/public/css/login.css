@@ -49,11 +49,10 @@
 
     .bg-img {
         background-image: url("Medellin.jpg");
-        min-height: 500px;
+        min-height: 430px;
         background-size: cover;
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
     }
 
     /* styling background image */
@@ -144,11 +143,17 @@
 
     .bg-img2 {
         background-image: url("Medellin.jpg");
-        min-height: 500px;
+        min-height: 1450px;
         background-size: cover;
         display: flex;
         justify-content: center;
-        margin-bottom: 500px;
+    }
+    .bg-create {
+        background-image: url("Medellin.jpg");
+        min-height: 900px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
     }
 
     .bg-img6 {
@@ -175,7 +180,7 @@
         background-size: cover;
         display: flex;
         justify-content: center;
-        margin-bottom: 900px;
+        margin-bottom: 20px;
     }
 
     .textarea1 {
@@ -199,6 +204,15 @@
 
     .button {
         font-size: 20px;
+    }
+    .bg-img{
+        min-height: 550px;
+    }
+    .bg-img2{
+        min-height: 1400px;
+    }
+    .bg-img-register{
+        min-height: 630px;
     }
 }
 
@@ -225,7 +239,7 @@
 
     .bg-img-register {
         background-image: url("Medellin.jpg");
-        min-height: 500px;
+        min-height: 470px;
         background-size: cover;
         display: flex;
         justify-content: center;
@@ -342,13 +356,11 @@
         text-decoration: none;
     }
 
-    .bg-img2 {
+    .bg-create {
         background-image: url("Medellin.jpg");
-        min-height: 500px;
         background-size: cover;
         display: flex;
         justify-content: center;
-        margin-bottom: 500px;
     }
 
     .bg-img6 {
