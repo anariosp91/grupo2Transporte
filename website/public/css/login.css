@@ -1,7 +1,7 @@
 .body-login {
     height: 100%;
     font-family: Arial, sans-serif;
-    margin:0;
+    margin: 0;
 }
 
 * {
@@ -9,426 +9,384 @@
 }
 
 .body-login h1 {
-    text-align:center;
-    color:rgb(255, 255, 255);
-    font-size:50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    
-}
+    font-size: 40px;
 
+}
 
 
 .titulo {
-    text-align:center;
-    color:rgb(255, 255, 255);
-    font-size:50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 46px;
     font-weight: bold;
-    
+
 }
+
+.container input , .container2 input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container input:focus, .container2 input:focus {
+    background:linear-gradient(to bottom, #ffffff 5%, #bebebe 100%);
+
+}
+
 
 @media(min-width:200px) {
 
-
+    .body-login {
+        font-size: 14px;
+    }
 
     .row {
-        margin-bottom:10px;
+        margin-bottom: 10px;
+    }
+
+    .bg-img {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    /* styling background image */
+    .bg-img-register {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    /* Styling the form container */
+    .container {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: 200px;
+        width: 90%;
+        padding: 25px;
+        background-color: rgba(33, 33, 33, 0.5);
+    }
+
+    .container2 {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: 200px;
+        width: 90%;
+        max-height: fit-content;
+        padding: 25px;
+        background-color: rgba(33, 33, 33, 0.5);
+    }
+
+    .body-login b {
+        color: rgb(255, 255, 255);
+    }
+
+    /* Full-width input */
+    .body-login input[type=text],
+    .body-login input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 15px 0px;
+
+    }
+
+    /* Styling the submit button */
+    .button {
+        background-color: #081454;
+        border-radius: 5px;
+        color: white;
+        border-radius: 5px;
+        padding: 16px 8px;
+        border: none;
+        cursor: pointer;
+        width: 35%;
+        font-size: 16px;
+        margin-top: 1%;
+    }
+
+    .d-block {
+        height: 40%;
     }
 
 
+    .button:hover {
+        background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+        color: #ffffff;
+    }
 
+    .main-header-login {
+        background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
+        background-position: center;
+        width: 100vw;
+        height: 40vh;
+        background-repeat: no-repeat;
+    }
 
+    .botones {
+        text-align: center;
+        margin: 0%;
+    }
 
+    .body-login a {
+        text-decoration: none;
+    }
 
-  .bg-img {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+    .bg-img2 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 500px;
+    }
+
+    .bg-img6 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1500px;
+    }
+
+    .bg-img3 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 900px;
+    }
+
+    .bg-img4 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 900px;
+    }
+
+    .textarea1 {
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+
+    .textarea2 {
+        width: 100%;
+        height: 300px;
+        padding: 15px;
+    }
 }
 
 
+@media(min-width:768px) {
+    .body-login{
+        font-size: 24px;
+    }
 
-
-
-
-
-
-
-
-/* styling background image */
-.bg-img-register {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
+    .button {
+        font-size: 20px;
+    }
 }
-
-/* Styling the form container */
-.container {
-    position: absolute;
-    left: auto;
-    right:auto;
-    top: 200px;
-    width: 90%;
-   
-    padding: 25px;
-    background-color: rgba(33, 33, 33, 0.5);
-}
-
-.container2 {
-    position: absolute;
-    left: auto;
-    right:auto;
-    top: 200px;
-
-    width: 90%;
-    
-    max-height: 1350px;
-    padding: 25px;
-    background-color: rgba(33, 33, 33, 0.5);
-}
-
-.body-login b {
-    color: rgb(255, 255, 255);
-    font-size:17px;
-    
-}
-
-/* Full-width input */
-.body-login input[type=text],
-.body-login input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0px;
-    
-}
-
-
-
-/* Styling the submit button */
-.button {
-    background-color: #081454;
-    border-radius: 5px;
-    color: white;
-    border-radius: 5px;
-    padding: 16px 8px;
-    border: none;
-    cursor: pointer;
-    width: 35%;
-    font-size:25px;
-    
-}
-
-.d-block {
-    height: 40%;
-}
-
-
-.button:hover {
-    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-    color:#ffffff;
-}
-
-
-
-
-
-
-  .main-header-login {
-    background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
-    background-position: center;
-    width: 100vw;
-    height: 40vh;
-    background-repeat: no-repeat;
-  }
-
-  .masOpciones {
-      font-size:17px;
-  }
-
-  .botones {
-      text-align: center;
-      margin: 0%;
-  }
-
-.body-login a {
-    text-decoration: none;
-}
-
-.bg-img2 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 500px;
-}
-
-.bg-img6 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1500px;
-}
-
-.bg-img3 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 900px;
-}
-
-.bg-img4 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 900px;
-}
-  .textarea1 {
-    width:100%;height:70px;
-    padding: 15px;
-  }
-
-  .textarea2 {
-    width:100%;height:300px;
-    padding: 15px;
-  }
-}
-
 
 @media(min-width:969px) {
-
-
-
-
     .row {
-        margin-bottom:110px;
+        margin-bottom: 110px;
     }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 50px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 50px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .bg-img-register {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    /* styling background image */
+    .bg-img {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Styling the form container */
+    .container {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: 200px;
+        width: 85%;
+        padding: 25px;
+        background-color: rgba(33, 33, 33, 0.5);
+    }
+
+    .container2 {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: 200px;
+        width: 85%;
+        max-height: fit-content;
+        padding: 25px;
+        background-color: rgba(33, 33, 33, 0.5);
+    }
+
+    .body-login b {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+
+    }
+
+    /* Full-width input */
+    .body-login input[type=text],
+    .body-login input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 15px 0px;
+
+    }
 
 
 
+    /* Styling the submit button */
+    .button {
+        background-color: #081454;
+        border-radius: 5px;
+        color: white;
+        border-radius: 5px;
+        padding: 16px 8px;
+        border: none;
+        cursor: pointer;
+        width: 35%;
+        font-size: 25px;
+
+    }
+
+    .d-block {
+        height: 40%;
+    }
 
 
+    .button:hover {
+        background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+        color: #ffffff;
+    }
 
 
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 50px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
 
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
+    .main-header-login {
+        background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
+        background-position: center;
+        width: 100vw;
+        height: 40vh;
+        background-repeat: no-repeat;
+    }
 
+    .masOpciones {
+        font-size: 12px;
+    }
 
+    .botones {
+        text-align: center;
+        margin: 0%;
+    }
 
+    .body-login a {
+        text-decoration: none;
+    }
 
+    .bg-img2 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 500px;
+    }
 
-  .bg-img-register {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
+    .bg-img6 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1500px;
+    }
+
+    .bg-img3 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1500px;
+    }
+
+    .bg-img4 {
+        background-image: url("Medellin.jpg");
+        min-height: 500px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1500px;
+    }
+
+    .textarea1 {
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+
+    .textarea2 {
+        width: 100%;
+        height: 300px;
+        padding: 15px;
+    }
 }
-
-
-
-
-
-
-/* styling background image */
-.bg-img {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-}
-
-/* Styling the form container */
-.container {
-    position: absolute;
-    left: auto;
-    right:auto;
-    top: 200px;
-    width: 40%;
-   
-    padding: 25px;
-    background-color: rgba(33, 33, 33, 0.5);
-}
-
-.container2 {
-    position: absolute;
-    left: auto;
-    right:auto;
-    top: 200px;
-
-    width: 70%;
-    
-    max-height: 750px;
-    padding: 25px;
-    background-color: rgba(33, 33, 33, 0.5);
-}
-
-.body-login b {
-    color: rgb(255, 255, 255);
-    font-size:17px;
-    
-}
-
-/* Full-width input */
-.body-login input[type=text],
-.body-login input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0px;
-    
-}
-
-
-
-/* Styling the submit button */
-.button {
-    background-color: #081454;
-    border-radius: 5px;
-    color: white;
-    border-radius: 5px;
-    padding: 16px 8px;
-    border: none;
-    cursor: pointer;
-    width: 35%;
-    font-size:25px;
-    
-}
-
-.d-block {
-    height: 40%;
-}
-
-
-.button:hover {
-    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-    color:#ffffff;
-}
-
-
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 50px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .main-header-login {
-    background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
-    background-position: center;
-    width: 100vw;
-    height: 40vh;
-    background-repeat: no-repeat;
-  }
-
-  .masOpciones {
-      font-size:17px;
-  }
-
-  .botones {
-      text-align: center;
-      margin: 0%;
-  }
-
-.body-login a {
-    text-decoration: none;
-}
-
-.bg-img2 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 500px;
-}
-
-.bg-img6 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1500px;
-}
-
-.bg-img3 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1500px;
-}
-
-.bg-img4 {
-    background-image: url(
-"Medellin.jpg");
-    min-height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1500px;
-}
-
-  .textarea1 {
-    width:100%;height:70px;
-    padding: 15px;
-  }
-
-  .textarea2 {
-    width:100%;height:300px;
-    padding: 15px;
-  }
-}
-
-
-
-
-
