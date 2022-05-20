@@ -1,5 +1,5 @@
 const path = require('path');
-const tours = require('./tours')
+// const tours = require('./tours')
 
 
 let indexController = {

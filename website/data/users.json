@@ -1,0 +1,91 @@
+[{
+        "id": 1,
+        "nombre": "Pepillo",
+        "apellido": "Jacques",
+        "mail": "pjacques0@amazon.co.jp",
+        "contrasena": "KJvuFJ",
+        "category": "usuario",
+        "telefono": "293-608-0895"
+    },
+    {
+        "id": 2,
+        "nombre": "Mireielle",
+        "apellido": "Caves",
+        "mail": "mcaves1@bbc.co.uk",
+        "contrasena": "fCPoYXYbb6",
+        "category": "administrador",
+        "telefono": "717-887-3423"
+    },
+    {
+        "id": 3,
+        "nombre": "Marjorie",
+        "apellido": "Doneld",
+        "mail": "mdoneld2@wired.com",
+        "contrasena": "ihz1PQi",
+        "category": "usuario",
+        "telefono": "662-296-6838"
+    },
+    {
+        "id": 4,
+        "nombre": "Lezlie",
+        "apellido": "Lasselle",
+        "mail": "llasselle3@alexa.com",
+        "contrasena": "8DjS2VI9h",
+        "category": "usuario",
+        "telefono": "267-918-9379"
+    },
+    {
+        "id": 5,
+        "nombre": "Manfred",
+        "apellido": "Halt",
+        "mail": "mhalt4@columbia.edu",
+        "contrasena": "lZaEWwjA",
+        "category": "administrador",
+        "telefono": "436-861-4624"
+    },
+    {
+        "id": 6,
+        "nombre": "Maddie",
+        "apellido": "Tincey",
+        "mail": "mtincey5@craigslist.org",
+        "contrasena": "7KOU68B",
+        "category": "usuario",
+        "telefono": "476-222-1005"
+    },
+    {
+        "id": 7,
+        "nombre": "Jens",
+        "apellido": "Smithen",
+        "mail": "jsmithen6@ted.com",
+        "contrasena": "ayqXhfq7JmR",
+        "category": "usuario",
+        "telefono": "696-821-5595"
+    },
+    {
+        "id": 8,
+        "nombre": "Wildon",
+        "apellido": "Brauner",
+        "mail": "wbrauner7@delicious.com",
+        "contrasena": "xwYuZ4BEtwsG",
+        "category": "usuario",
+        "telefono": "504-366-1790"
+    },
+    {
+        "id": 9,
+        "nombre": "Joletta",
+        "apellido": "Senn",
+        "mail": "jsenn8@soundcloud.com",
+        "contrasena": "pw8Cnsms2",
+        "category": "administrador",
+        "telefono": "869-132-7744"
+    },
+    {
+        "id": 10,
+        "nombre": "Wolfy",
+        "apellido": "Gogie",
+        "mail": "wgogie9@amazon.co.jp",
+        "contrasena": "zdOIsOTNEfdM",
+        "category": "usuario",
+        "telefono": "411-766-0112"
+    }
+]
