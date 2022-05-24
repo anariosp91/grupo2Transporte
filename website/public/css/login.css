@@ -55,7 +55,7 @@
     margin: 0;
 }
 
-
+/*Media*/
 
 @media(min-width:320px) {
 
@@ -86,6 +86,7 @@
     } */
 
     /* Styling the form container */
+
     .container {
         position: absolute;
         left: auto;
@@ -94,9 +95,9 @@
         width: 90%;
         padding: 25px;
         background-color: rgba(33, 33, 33, 0.5);
-    }
+      }
 
-    .container2 {
+     .container2 {
         position: absolute;
         left: auto;
         right: auto;
@@ -105,7 +106,7 @@
         max-height: fit-content;
         padding: 25px;
         background-color: rgba(33, 33, 33, 0.5);
-    }
+    } 
 
     .body-login p {
         color: rgb(255, 255, 255);
@@ -143,7 +144,6 @@
         background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
         color: #ffffff;
     }
-
 
 
     .buttons, .button1 {
@@ -197,17 +197,6 @@
         margin-bottom: 20px;
     }
 
-    .textarea1 {
-        width: 100%;
-        height: 70px;
-        padding: 15px;
-    }
-
-    .textarea2 {
-        width: 100%;
-        height: 300px;
-        padding: 15px;
-    }
 
     /*Footer*/
 
@@ -217,6 +206,14 @@
 
     .register-footer {
         margin-top: 910px;
+    }
+
+    .edit-footer {
+        margin-top: 1260px;
+    }
+
+    .create-footer {
+        margin-top: 800px;
     }
 }
 
@@ -251,6 +248,7 @@
     .register-footer {
         margin-top: 1150px;
     }
+
 }
 
 @media(min-width:969px) {
@@ -317,7 +315,7 @@
         max-height: fit-content;
         padding: 25px;
         background-color: rgba(33, 33, 33, 0.5);
-    }
+    } 
 
     .body-login p {
         color: rgb(255, 255, 255);
@@ -454,5 +452,13 @@
 
     .register-footer {
         margin-top: 630px;
+    }
+
+    .edit-footer {
+        margin-top: 1380px;
+    }
+
+    .create-footer {
+        margin-top: 850px;
     }
 }

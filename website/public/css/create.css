@@ -1,31 +1,89 @@
 .box {
-    width: 120px;
-    height: 30px;
-    border: 1px solid #999;
-    font-size: 18px;
-    color: #1c87c9;
-    background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 4px 4px #ccc;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: #1c87c9;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+}
+
+.main-header-create {
+  background-image: url("https://images.unsplash.com/photo-1587813369290-091c9d432daf?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070");
+  background-position: center;
+  width: 100vw;
+  height: 40vh;
+  background-repeat: no-repeat;
+}
+
+
+
+/*Edit*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-input {
+  width: 100%;
+}
+
+.editarImagen {
+  width: 300px;
+}
+
+/*Media*/
+@media(min-width:320px) {
+
+  .form-container {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 200px;
+    width: 90%;
+    padding: 25px;
+    background-color: rgba(33, 33, 33, 0.5);
   }
 
-  .main-header-create {
-    background-image: url("https://images.unsplash.com/photo-1587813369290-091c9d432daf?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070");
-    background-position: center;
-    width: 100vw;
-    height: 40vh;
-    background-repeat: no-repeat;
+
+  .textarea1 {
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+  }
+
+  .textarea2 {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
   }
 
   .editarImagen {
-      width: 300px;
+    margin: 1%;
+    width: 100%;
   }
 
-  .main-header-create {
-    background-image: url("https://images.unsplash.com/photo-1587813369290-091c9d432daf?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070");
-    background-position: center;
-    width: 100vw;
-    height: 40vh;
-    background-repeat: no-repeat;
+}
+
+@media(min-width:768px) {
+
+  .form-container {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 200px;
+    width: 85%;
+    padding: 25px;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+  .editarImagen {
+    width: 300px;
   }
 
+  .edit-input {
+    width: 40%;
+  }
+}

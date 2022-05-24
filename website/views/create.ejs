@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,21 +6,20 @@
 <body>
 
     <header class="main-header-create">
-           <%- include("partials/header-register") %> 
+        <%- include("partials/header-register") %>
     </header>
-	<div class="bg-create">
-		
-		
-		<form class="container">
-            <h1 class="titulo"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
-			<br><br><b>Nombre:</b> <br>
-			<input type="text" 
-					name="username" placeholder="Piedra del Peñol" required><br><br>
+    <div class="login-div-container">
 
-                    <b>Mini descripción:</b> <br>
-                    <textarea class="textarea1" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
-			<b>Descripción:</b> <br>
-			<textarea class="textarea2" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+        <form  method="post"  enctype="multipart/form-data" class="form-container">
+            <h1 class="titulo"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
+
+            <label for="tourName" class="form-label">Nombre:</label>
+            <input type="text" name="username" placeholder="Piedra del Peñol" class="edit-input" required>
+
+            <label for="shortDescription" class="form-label">Mini descripción:</label>
+            <textarea class="textarea1" name="shortDescription" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
+            <label for="description" class="form-label">Descripción:</label>
+            <textarea class="textarea2" name="description" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
 
             Bar a bordo a su disposición
             
@@ -33,31 +31,25 @@
             Copa de vino
             Tabla de embutidos y quesos franceses (para 2 personas)"></textarea>
 
-                    <b>Imagen:</b> <br><br>
-                    <input type="file" 
-                            name="password">
+            <label for="image" class="form-label">Imagen:</label>
+            <input type="file" name="image" class="edit-input" multiple>
 
-                            
-<br><br>
-                                    <b>Duración:</b>  <br> 
-			<input type="number" 
-					name="password" placeholder="" required><br>
-<br>
-                    <b>Precio:</b> <br> 
-			<input type="number" 
-					name="password" placeholder="" required> <br><br>
+            <label for="duration" class="form-label">Duración:</label>
+            <input type="number" name="duration" placeholder="" class="edit-input" required>
 
-                    <div class="botones">
-                        <br>
-					<button type="submit" class="button">Cancelar</button> 
-					<button type="submit" class="button">Continuar</button> 
-                     </div>
-		</form>
-	</div>
-    <br>
-    <br>
+            <label for="price" class="form-label">Precio:</label>
+            <input type="number" name="price" placeholder="" class="edit-input" required>
 
-    <%- include("partials/footer") %> 
+            <div class="buttons">
+                <button type="submit" class="button">Cancelar</button>
+                <button type="submit" class="button">Continuar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="create-footer">
+        <%- include("partials/footer") %>
+    </div>
 </body>
 
 </html>
