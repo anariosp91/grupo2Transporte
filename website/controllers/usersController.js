@@ -1,4 +1,8 @@
 const path = require('path');
+const fs = require('fs');
+
+const usersFile = path.join(__dirname, '../data/users.json');
+const users = JSON.parse(fs.readFileSync(usersFile, 'utf-8'));
 
 
 let usersController = {

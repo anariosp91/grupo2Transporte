@@ -10,16 +10,16 @@
     </header>
     <div class="login-div-container">
 
-        <form  method="post"  enctype="multipart/form-data" class="form-container">
+        <form  method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
             <h1 class="titulo"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
 
-            <label for="tourName" class="form-label">Nombre:</label>
-            <input type="text" name="username" placeholder="Piedra del Peñol" class="edit-input" required>
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Piedra del Peñol" class="edit-input" required>
 
-            <label for="shortDescription" class="form-label">Mini descripción:</label>
-            <textarea class="textarea1" name="shortDescription" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
-            <label for="description" class="form-label">Descripción:</label>
-            <textarea class="textarea2" name="description" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+            <label for="descripcionCorta" class="form-label">Mini descripción:</label>
+            <textarea class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
+            <label for="descripcionDetallada" class="form-label">Descripción:</label>
+            <textarea class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
 
             Bar a bordo a su disposición
             
@@ -31,18 +31,24 @@
             Copa de vino
             Tabla de embutidos y quesos franceses (para 2 personas)"></textarea>
 
-            <label for="image" class="form-label">Imagen:</label>
-            <input type="file" name="image" class="edit-input" multiple>
+            <label for="imagen1" class="form-label">Imagen1:</label>
+            <input type="file" name="imagen1" class="edit-input" multiple>
 
-            <label for="duration" class="form-label">Duración:</label>
-            <input type="number" name="duration" placeholder="" class="edit-input" required>
+            <label for="imagen2" class="form-label">Imagen2:</label>
+            <input type="file" name="imagen2" class="edit-input" multiple>
 
-            <label for="price" class="form-label">Precio:</label>
-            <input type="number" name="price" placeholder="" class="edit-input" required>
+            <label for="imagen3" class="form-label">Imagen3:</label>
+            <input type="file" name="imagen3" class="edit-input" multiple>
+
+            <br><label for="duracion" class="form-label">Duración:</label>
+            <input type="number" name="duracion" placeholder="" class="edit-input" required>
+
+            <label for="precio" class="form-label">Precio:</label>
+            <input type="number" name="precio" placeholder="" class="edit-input" required>
 
             <div class="buttons">
                 <button type="submit" class="button">Cancelar</button>
-                <button type="submit" class="button">Continuar</button>
+                <button type="submit" class="button">Guardar</button>
             </div>
         </form>
     </div>
