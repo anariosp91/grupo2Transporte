@@ -1,5 +1,8 @@
 const path = require('path');
-// const tours = require('./tours')
+const fs = require('fs');
+
+const toursFile = path.join(__dirname, '../data/tours.json');
+const tours = JSON.parse(fs.readFileSync(toursFile, 'utf-8'));
 
 
 let indexController = {
