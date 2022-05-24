@@ -1,38 +1,35 @@
-
 <!DOCTYPE html>
 <html>
-
-<%- include("partials/head") %> 
-
+<%- include("partials/head") %>
 
 <body class="body-login">
-
-    <header class="main-header-login">
-           <%- include("partials/header-register") %> 
-    </header>
-	<div class="bg-img">
-		
-		
+	<header class="main-header-login">
+		<%- include("partials/header-register") %>
+	</header>
+	<div class="login-div-container">
 		<form class="container">
-            <h1>Inicia sesión</h1>
-			<b>Correo:</b>
-			<input type="text" 
-					name="username" placeholder="jperez@gmail.com" required>
+			<h1>Inicia sesión</h1>
+			<label for="email" class="form-label">Correo:</label>
+			<input type="text" name="email" placeholder="jperez@gmail.com" class="form-input" required />
 
-			<b>Contraseña:</b>
-			<input type="password" 
-					name="password" placeholder="●●●●●●●●" required>
+			<label for="password" class="form-label">Contraseña:</label>
+			<input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required  />
 
-                    <div class="botones">
-					<button type="submit" class="button">Continuar</button> <br><br>
-					<input type="checkbox" id="recordar" name="recordar" >
-					<b class="masOpciones">Recordar mi contraseña</b> <br>
-					<a href=""><b class="masOpciones">Regístrate</b></a><br>
-					<a href=""><b class="masOpciones">Olvidé mi contraseña</b></a>		
-                     </div>
+			<div class="button1">
+				<button type="submit" class="button">Continuar</button>
+			</div>
+
+			<div class="buttons">
+				<label for="remember" class="form-label-checkbox">Recordar mi contraseña</label>
+				<input type="checkbox" name="remember" id="recordar" name="recordar"/>
+
+				<a href=""><p class="moreOptions">Regístrate</p></a>
+				<a href=""><p class="moreOptions">Olvidé mi contraseña</p></a>
+			</div>
 		</form>
 	</div>
-    <%- include("partials/footer") %> 
+	<div class="login-footer"></div>
+	<%- include("partials/footer") %>
 </body>
 
 </html>

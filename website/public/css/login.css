@@ -4,8 +4,16 @@
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
+.main-header-login {
+    background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+
+.login-div-container {
+    display: flex;
+    justify-content: center;
 }
 
 .body-login h1 {
@@ -16,7 +24,6 @@
 
 }
 
-
 .titulo {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -25,19 +32,32 @@
 
 }
 
-.container input , .container2 input {
+/* Forms style */
+
+.form-input{
     border: none;
     border-radius: 5px;
     outline: none;
 }
 
-.container input:focus, .container2 input:focus {
+.form-input:focus {
     background:linear-gradient(to bottom, #ffffff 5%, #bebebe 100%);
 
 }
 
+.form-label, .form-label-checkbox {
+    color: #ffffff;
+}
 
-@media(min-width:200px) {
+/*buttons*/
+
+.moreOptions {
+    margin: 0;
+}
+
+
+
+@media(min-width:320px) {
 
     .body-login {
         font-size: 14px;
@@ -47,7 +67,7 @@
         margin-bottom: 10px;
     }
 
-    .bg-img {
+    /* .bg-img {
         background-image: url("Medellin.jpg");
         min-height: 430px;
         background-size: cover;
@@ -56,14 +76,14 @@
     }
 
     /* styling background image */
-    .bg-img-register {
+   /* .bg-img-register {
         background-image: url("Medellin.jpg");
         min-height: 500px;
         background-size: cover;
         display: flex;
         justify-content: center;
         margin-bottom: 200px;
-    }
+    } */
 
     /* Styling the form container */
     .container {
@@ -87,13 +107,12 @@
         background-color: rgba(33, 33, 33, 0.5);
     }
 
-    .body-login b {
+    .body-login p {
         color: rgb(255, 255, 255);
     }
 
     /* Full-width input */
-    .body-login input[type=text],
-    .body-login input[type=password] {
+    .body-login .form-input {
         width: 100%;
         padding: 15px;
         margin: 15px 0px;
@@ -112,6 +131,7 @@
         width: 35%;
         font-size: 16px;
         margin-top: 1%;
+        margin-bottom: 2%;
     }
 
     .d-block {
@@ -124,15 +144,9 @@
         color: #ffffff;
     }
 
-    .main-header-login {
-        background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
-        background-position: center;
-        width: 100vw;
-        height: 40vh;
-        background-repeat: no-repeat;
-    }
 
-    .botones {
+
+    .buttons, .button1 {
         text-align: center;
         margin: 0%;
     }
@@ -194,6 +208,16 @@
         height: 300px;
         padding: 15px;
     }
+
+    /*Footer*/
+
+    .login-footer {
+        margin-top: 600px;
+    }
+
+    .register-footer {
+        margin-top: 910px;
+    }
 }
 
 
@@ -217,6 +241,15 @@
     }
     .bg-img-register{
         min-height: 630px;
+    }
+    /*Footer*/
+
+    .login-footer {
+        margin-top: 750px;
+    }
+
+    .register-footer {
+        margin-top: 1150px;
     }
 }
 
@@ -286,15 +319,14 @@
         background-color: rgba(33, 33, 33, 0.5);
     }
 
-    .body-login b {
+    .body-login p {
         color: rgb(255, 255, 255);
         font-size: 20px;
 
     }
 
     /* Full-width input */
-    .body-login input[type=text],
-    .body-login input[type=password] {
+    .body-login .form-input{
         width: 100%;
         padding: 15px;
         margin: 15px 0px;
@@ -314,6 +346,8 @@
         cursor: pointer;
         width: 35%;
         font-size: 25px;
+        margin-top: 5%;
+    
 
     }
 
@@ -352,11 +386,12 @@
         background-repeat: no-repeat;
     }
 
-    .masOpciones {
+    .moreOptions {
         font-size: 12px;
+        margin: 0px;
     }
 
-    .botones {
+    .buttons, .button1 {
         text-align: center;
         margin: 0%;
     }
@@ -409,5 +444,15 @@
         width: 100%;
         height: 300px;
         padding: 15px;
+    }
+
+    /*Footer*/
+
+    .login-footer {
+        margin-top: 600px;
+    }
+
+    .register-footer {
+        margin-top: 630px;
     }
 }

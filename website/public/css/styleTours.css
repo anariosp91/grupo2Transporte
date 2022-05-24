@@ -26,7 +26,7 @@
 .detalleT{
     padding: 15px;
 }
-.detalleT h4,p{
+.detalleT h4, .detalleT p{
     text-decoration: none;
     color: black;
     margin-bottom: 20px;

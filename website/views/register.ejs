@@ -8,44 +8,51 @@
   <header class="main-header-login">
     <%- include("partials/header-register") %>
   </header>
-  <div class="bg-img-register">
+  <div class="login-div-container">
 
 
     <form class="container2">
-      <br>
-      <h1>Registrate</h1><br>
+      <h1>Registrate</h1>
       <div class="row">
         <div class="column">
-      <b>Nombre</b>
-      <input type="text" name="username" placeholder="Juan" required>
-           <b>Apellido</b>
-      <input type="text" name="password" placeholder="Perez" required>
-      <b>Teléfono</b>
-          <input type="text" name="username" placeholder="+549238328" required>
-          
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" name="name" placeholder="Juan" class="form-input" required>
+
+          <label for="lastName" class="form-label">Apellido</label>
+          <input type="text" name="lastName" placeholder="Perez" class="form-input" required>
+
+          <label for="cell" class="form-label">Teléfono</label>
+          <input type="text" name="cell" placeholder="+549238328" class="form-input" required>
+
         </div>
         <div class="column">
-       
-          <b>Correo</b>
-          <input type="text" name="password" placeholder="jperez@gmail.com" required>
-          <b>Contraseña</b>
-          <input type="password" name="username" placeholder="●●●●●●●●" required>
-          <b>Confirmación de contraseña</b>
-          <input type="password" name="password" placeholder="●●●●●●●●" required>
+
+          <label for="email" class="form-label">Correo</label>
+          <input type="text" name="email" placeholder="jperez@gmail.com" class="form-input" required>
+
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required>
+
+          <label for="password" class="form-label">Confirmación de contraseña</label>
+          <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required>
         </div>
       </div>
 
-      
-      <div class="botones">
-        <button type="submit" class="button">Continuar</button> <br><br>
-        <a href=""><b class="masOpciones">Inicia sesión</b></a><br>
+
+      <div class="buttons">
+        <button type="submit" class="button">Continuar</button>
+        <a href="">
+          <p class="moreOptions">Inicia sesión</p>
+        </a>
       </div>
     </form>
   </div>
 
-  <br><br><br><br><br><br>
 
-  <%- include("partials/footer") %>
+  <div class="register-footer">
+    <%- include("partials/footer") %>
+  </div>
+
 </body>
 
 </html>
