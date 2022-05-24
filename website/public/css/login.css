@@ -4,11 +4,18 @@
     margin: 0;
 }
 
+.body-login a {
+    text-decoration: none;
+}
+
+
 .main-header-login {
     background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    height: 20vh;
+    width: 100vw;
+    height: 40vh;
 }
 
 .login-div-container {
@@ -21,7 +28,6 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 30px;
-
 }
 
 .titulo {
@@ -29,23 +35,22 @@
     color: rgb(255, 255, 255);
     font-size: 46px;
     font-weight: bold;
-
 }
 
 /* Forms style */
 
-.form-input{
+.form-input {
     border: none;
     border-radius: 5px;
     outline: none;
 }
 
 .form-input:focus {
-    background:linear-gradient(to bottom, #ffffff 5%, #bebebe 100%);
-
+    background: linear-gradient(to bottom, #ffffff 5%, #bebebe 100%);
 }
 
-.form-label, .form-label-checkbox {
+.form-label,
+.form-label-checkbox {
     color: #ffffff;
 }
 
@@ -57,8 +62,7 @@
 
 /*Media*/
 
-@media(min-width:320px) {
-
+@media (min-width: 320px) {
     .body-login {
         font-size: 14px;
     }
@@ -67,46 +71,24 @@
         margin-bottom: 10px;
     }
 
-    /* .bg-img {
-        background-image: url("Medellin.jpg");
-        min-height: 430px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* styling background image */
-   /* .bg-img-register {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 200px;
-    } */
-
     /* Styling the form container */
 
     .container {
         position: absolute;
-        left: auto;
-        right: auto;
         top: 200px;
         width: 90%;
         padding: 25px;
         background-color: rgba(33, 33, 33, 0.5);
-      }
+    }
 
-     .container2 {
+    .container2 {
         position: absolute;
-        left: auto;
-        right: auto;
         top: 200px;
         width: 90%;
         max-height: fit-content;
         padding: 25px;
         background-color: rgba(33, 33, 33, 0.5);
-    } 
+    }
 
     .body-login p {
         color: rgb(255, 255, 255);
@@ -117,7 +99,6 @@
         width: 100%;
         padding: 15px;
         margin: 15px 0px;
-
     }
 
     /* Styling the submit button */
@@ -135,77 +116,25 @@
         margin-bottom: 2%;
     }
 
-    .d-block {
-        height: 40%;
-    }
-
-
     .button:hover {
         background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
         color: #ffffff;
     }
 
-
-    .buttons, .button1 {
+    .buttons,
+    .button1 {
         text-align: center;
         margin: 0%;
     }
 
-    .body-login a {
-        text-decoration: none;
-    }
-
-    .bg-img2 {
-        background-image: url("Medellin.jpg");
-        min-height: 1450px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-    .bg-create {
-        background-image: url("Medellin.jpg");
-        min-height: 900px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .bg-img6 {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1500px;
-    }
-
-    .bg-img3 {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 900px;
-    }
-
-    .bg-img4 {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-
     /*Footer*/
 
     .login-footer {
-        margin-top: 600px;
+        margin-top: 400px;
     }
 
     .register-footer {
-        margin-top: 910px;
+        margin-top: 750px;
     }
 
     .edit-footer {
@@ -217,9 +146,8 @@
     }
 }
 
-
-@media(min-width:768px) {
-    .body-login{
+@media (min-width: 768px) {
+    .body-login {
         font-size: 24px;
     }
 
@@ -230,29 +158,19 @@
     .button {
         font-size: 20px;
     }
-    .bg-img{
-        min-height: 550px;
-    }
-    .bg-img2{
-        min-height: 1470px;
-    }
-    .bg-img-register{
-        min-height: 630px;
-    }
+
     /*Footer*/
 
     .login-footer {
-        margin-top: 750px;
+        margin-top: 550px;
     }
 
     .register-footer {
-        margin-top: 1150px;
+        margin-top: 950px;
     }
-
 }
 
-@media(min-width:969px) {
-
+@media (min-width: 969px) {
     .body-login h1 {
         font-size: 50px;
     }
@@ -277,29 +195,9 @@
         clear: both;
     }
 
-    .bg-img-register {
-        background-image: url("Medellin.jpg");
-        min-height: 470px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0px;
-    }
-
-    /* styling background image */
-    .bg-img {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
     /* Styling the form container */
     .container {
         position: absolute;
-        left: auto;
-        right: auto;
         top: 200px;
         width: 85%;
         padding: 25px;
@@ -308,55 +206,30 @@
 
     .container2 {
         position: absolute;
-        left: auto;
-        right: auto;
         top: 200px;
         width: 85%;
         max-height: fit-content;
         padding: 25px;
         background-color: rgba(33, 33, 33, 0.5);
-    } 
+    }
 
     .body-login p {
         color: rgb(255, 255, 255);
         font-size: 20px;
-
     }
 
     /* Full-width input */
-    .body-login .form-input{
+    .body-login .form-input {
         width: 100%;
         padding: 15px;
         margin: 15px 0px;
-
     }
 
 
 
-    /* Styling the submit button */
-    .button {
-        background-color: #081454;
-        border-radius: 5px;
-        color: white;
-        border-radius: 5px;
-        padding: 16px 8px;
-        border: none;
-        cursor: pointer;
-        width: 35%;
-        font-size: 25px;
-        margin-top: 5%;
-    
-
-    }
 
     .d-block {
         height: 40%;
-    }
-
-
-    .button:hover {
-        background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-        color: #ffffff;
     }
 
 
@@ -376,12 +249,25 @@
         clear: both;
     }
 
-    .main-header-login {
-        background-image: url("https://medellinliving.com/wp-content/uploads/2018/07/Medellin-Colombia.jpg");
-        background-position: center;
-        width: 100vw;
-        height: 40vh;
-        background-repeat: no-repeat;
+    /*buttons*/
+        /* Styling the submit button */
+
+    .button {
+        background-color: #081454;
+        border-radius: 5px;
+        color: white;
+        border-radius: 5px;
+        padding: 16px 8px;
+        border: none;
+        cursor: pointer;
+        width: 35%;
+        font-size: 25px;
+        margin-top: 5%;
+    }
+
+    .button:hover {
+        background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+        color: #ffffff;
     }
 
     .moreOptions {
@@ -389,49 +275,13 @@
         margin: 0px;
     }
 
-    .buttons, .button1 {
+    .buttons,
+    .button1 {
         text-align: center;
         margin: 0%;
     }
 
-    .body-login a {
-        text-decoration: none;
-    }
-
-    .bg-create {
-        background-image: url("Medellin.jpg");
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .bg-img6 {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1500px;
-    }
-
-    .bg-img3 {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1500px;
-    }
-
-    .bg-img4 {
-        background-image: url("Medellin.jpg");
-        min-height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1500px;
-    }
-
+    /* textarea */
     .textarea1 {
         width: 100%;
         height: 70px;
@@ -451,7 +301,7 @@
     }
 
     .register-footer {
-        margin-top: 630px;
+        margin-top: 650px;
     }
 
     .edit-footer {
