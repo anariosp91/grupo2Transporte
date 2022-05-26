@@ -14,34 +14,30 @@
             <h1 class="titulo"><i class="fa-solid fa-pen-to-square"></i> Editar tour</h1>
 
             <label for="nombre" class="form-label" >Nombre:</label>
-            <input type="text" name="nombre" placeholder="Piedra del Peñol" class="edit-input" required>
+            <input type="text" name="nombre" value="<%= tour.nombre %> " class="edit-input" required>
 
             <label for="descripcionCorta" class="form-label">Mini descripción:</label>
-            <textarea class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
+            <textarea class="textarea1" name="descripcionCorta"><%= tour.descripcionCorta %></textarea>
             <label for="descripcionDetallada" class="form-label">Descripción:</label>
-            <textarea class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+            <textarea class="textarea2" name="descripcionDetallada" ><%= tour.descripcionDetallada %></textarea>
 
-            Bar a bordo a su disposición
-            
-            Ambiente de guinguette en cuanto los pasajeros llegan al Port de l'Arsenal
-            
-            Opcional:
-            
-            Copa de Champagne
-            Copa de vino
-            Tabla de embutidos y quesos franceses (para 2 personas)"></textarea>
+            <label for="imagenes" class="form-label">Imagenes:</label>
 
-            <label for="imagen" class="form-label">Imagen:</label>
-            <img src="https://i.imgur.com/s77OTjH.jpg?1" class="editarImagen">
-            <img src="https://i.imgur.com/HoxVEUO.jpg?1" class="editarImagen">
-            <img src="https://i.imgur.com/r9NqvLu.jpg?1" class="editarImagen">
-            <input type="file" name="imagen" class="edit-input" multiple>
+            <img src="/img/products/<%= tour.imagen1 %> " class="editarImagen">
+            <input type="file" name="image1" value= "<%= tour.imagen1 %> " class="edit-input" multiple>
+            
+            <img src="/img/products/<%= tour.imagen2 %> " class="editarImagen">
+            <input type="file" name="image2" value= "<%= tour.imagen2 %> " class="edit-input" multiple>
+            
+            <img src="/img/products/<%= tour.imagen3 %> " class="editarImagen">
+            <input type="file" name="image3" value= "<%= tour.imagen3 %> " class="edit-input" multiple>
+
 
             <label for="duracion" class="form-label">Duración:</label>
-            <input type="number" name="duracion" placeholder="" class="edit-input" required>
+            <input type="text" name="duracion" value="<%= tour.duracion %> " class="edit-input" required>
 
             <label for="precio" class="form-label">Precio:</label>
-            <input type="number" name="precio" placeholder="" class="edit-input" required>
+            <input type="text" name="precio" value="<%= tour.precio %> " class="edit-input" required>
 
             <div class="buttons" >
                 <button type="submit" class="button">Cancelar</button>

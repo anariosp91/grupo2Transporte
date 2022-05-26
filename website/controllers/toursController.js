@@ -45,8 +45,14 @@ let toursController = {
         res.redirect('/tours/list');
     },
     edit: (req, res) => {
-        res.render('edit');
+        let tourId = tours.find(tour => tour.id == req.params.id)
+        res.render('edit',{tour: tourId});
     },
+    // update: (req,res)=>{
+
+
+
+    // }
     detail: (req,res) => {
         let tourId = tours.find(tour => tour.id == req.params.id)
         res.render('productDetail', {tour: tourId});

@@ -5,20 +5,20 @@ const path = require('path')
 
 const toursController = require('../controllers/toursController')
 
-const storage = multer.diskStorage(
-    {
-        destination: (req,file,cb) => {
+const storage = multer.diskStorage({
+    destination: (req,file,cb) => {
             cb(null, 'public/img/products')
-        }
     },
-    {
-        filename: function (req, file, cb) {
-            const newFileName = 'tour-'+ Date.now() + path.extname(file.originalname);
+    
+    filename:  (req, file, cb) => {
+            let newFileName = 'tour' + file.originalname;
             cb(null, newFileName);
-        }
-    }
-)
-const upload = multer({ storage: storage })
+    }  
+})
+
+
+
+const upload = multer({ storage: storage}   )
 
 
 router.get('/detail/:id/', toursController.detail);
@@ -27,7 +27,8 @@ router.get('/detail/:id/', toursController.detail);
 router.get('/create', toursController.create);
 router.post('/create', upload.any(), toursController.save)
 
-router.get('/edit', toursController.edit);
+router.get('/edit/:id', toursController.edit);
+//router.put('/edit/:id', toursController.update)
 
 router.get('/list', toursController.tours);
 
