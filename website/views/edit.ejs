@@ -10,7 +10,7 @@
     </header>
     <div class="login-div-container">
 
-        <form method="post" enctype="multipart/form-data" class="form-container">
+        <form action="/tours/edit/<%= tour.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container" >
             <h1 class="titulo"><i class="fa-solid fa-pen-to-square"></i> Editar tour</h1>
 
             <label for="nombre" class="form-label" >Nombre:</label>
@@ -41,7 +41,8 @@
 
             <div class="buttons" >
                 <button type="submit" class="button">Cancelar</button>
-                <button type="submit" class="button">Continuar</button>
+                <button type="reset" class="button">Deshacer</button>
+                <button type="submit" class="button">Guardar</button>
             </div>
         </form>
     </div>

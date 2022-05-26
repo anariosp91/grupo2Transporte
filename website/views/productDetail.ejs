@@ -55,7 +55,9 @@
               <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
               <div> <a href="#" class="myButton Color2">Agregar al carrito</a> </div>
               <div> <a href="/tours/edit/<%= tour.id %> " class="myButton">Editar</a> </div>
-              <div> <a href="#" class="myButton">Eliminar</a> </div>
+            <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="post">
+              <button type="submit" class="myButton">Eliminar </button>
+            </form>
             </section>
             <section class="contenedor2">
               <div class="horario">
