@@ -41,5 +41,7 @@ Evitar repeticiones de nombres de clases y buscar poner nombres descriptivos a e
 
 En general hemos logrado sincronizarnos como equipo y en los sprint anteriores no tuvimos ninguna dificultad como equipo, nos gusta trabajar juntos y nos entendemos
 
+
 RETROSPECTIVA SPRINT 3
 
+En este sprint no tuvimos mayores inconvenientes, aunque el tema fue un poco mas denso, entre todos pudimos solucionar las dudas existentes, y llevar a cabo la solucion final 

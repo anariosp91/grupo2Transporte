@@ -23,4 +23,19 @@ Ana:
 - se encargara de organizar la parte de listado de tours, detalle y creacion. 
 
 
-final
+Reunion Jueves 26 de mayo/2022
+
+Sofi: 
+- cambio las etiquetas y clases de los formularios
+- ningun impedimento 
+- se encargara de crear los estilos de los botones 
+
+Nico:
+- Creacion de las rutas put y delete (todos)
+- ninguno
+- organizar el responsive de create y edit 
+
+Ana:
+- creacion de la ruta de create
+- el tamaño de las imagenes que se suben a traves del administrador
+- darle un tamaño estandar a las imagenes subidas a traves del administrador
