@@ -54,9 +54,9 @@
               <div> Personas - <span class="contador-personas">5</span> + </div>
               <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
               <div> <a href="#" class="myButton Color2">Agregar al carrito</a> </div>
-              <div> <a href="/tours/edit/<%= tour.id %> " class="myButton">Editar</a> </div>
-            <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="post">
-              <button type="submit" class="myButton">Eliminar </button>
+              <div class="containerEdit"> <a href="/tours/edit/<%= tour.id %> " class="myButton editButton">Editar</a> </div>
+            <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="post" class="formDelete">
+              <button type="submit" class="myButton deleteButton">Eliminar </button>
             </form>
             </section>
             <section class="contenedor2">

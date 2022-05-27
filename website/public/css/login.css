@@ -101,24 +101,39 @@
         margin: 15px 0px;
     }
 
+    .buttonsEdit {
+        display: flex;
+        justify-content: center;
+      }
+      
+
     /* Styling the submit button */
     .button {
         background-color: #081454;
         border-radius: 5px;
         color: white;
-        border-radius: 5px;
         padding: 16px 8px;
         border: none;
         cursor: pointer;
-        width: 35%;
         font-size: 16px;
-        margin-top: 1%;
-        margin-bottom: 2%;
+        margin: 5% 2% 2% 2%;
     }
 
     .button:hover {
         background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
         color: #ffffff;
+    }
+
+    .cancelButton {
+        background-color: #545f9e;
+    }
+
+    .resetButton {
+        background-color: #081525;
+    }
+
+    .resetButton:hover {
+        background: linear-gradient(to bottom, rgb(6, 9, 49)  5%,rgb(13, 33, 212) 100%);
     }
 
     .buttons,
@@ -157,6 +172,7 @@
 
     .button {
         font-size: 20px;
+        width: 50%;
     }
 
     /*Footer*/
@@ -253,14 +269,7 @@
         /* Styling the submit button */
 
     .button {
-        background-color: #081454;
-        border-radius: 5px;
-        color: white;
-        border-radius: 5px;
-        padding: 16px 8px;
-        border: none;
-        cursor: pointer;
-        width: 35%;
+        width: 30%;
         font-size: 25px;
         margin-top: 5%;
     }
@@ -280,6 +289,8 @@
         text-align: center;
         margin: 0%;
     }
+
+
 
     /* textarea */
     .textarea1 {

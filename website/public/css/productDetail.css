@@ -49,6 +49,7 @@
 	text-align: center;
 }
 
+
 .myButton:hover {
 	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
 	color: #ffffff;
@@ -59,9 +60,32 @@
 	top: 1px;
 }
 
+.containerEdit {
+	display: inline-block;
+}
+
+.formDelete {
+	display: inline-block;
+}
+
+.deleteButton {
+	background-color: #030804;
+}
+
+.deleteButton:hover {
+	background: linear-gradient(to bottom, rgb(218, 71, 71)  5%,rgb(32, 10, 10) 100%);
+}
+
+.editButton {
+	background-color: #3936ffad;
+}
+
+.editButton:hover {
+	background: linear-gradient(to bottom, rgb(71, 105, 218)  5%,rgb(46, 49, 192) 100%);
+}
+
 .Color2 {
-	background-color: #081454;
-	opacity: 60%;
+	background-color: #545f9e;
 }
 
 
