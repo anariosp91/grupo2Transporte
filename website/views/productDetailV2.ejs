@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<%- include("partials/head") %>
+
+<body>
+    <header class="banner">
+        <%- include("partials/header-logged") %> 
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active itemCarousel" data-bs-interval="200000">
+          <img src="/img/products/<%= tour.imagen1 %> " class="imgCarousel" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><%= tour.nombre %> </h5>
+          </div>
+        </div>
+        <div class="carousel-item itemCarousel">
+          <img src="/img/products/<%= tour.imagen2 %> " class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><%= tour.nombre %> </h5>
+          </div>
+        </div>
+        <div class="carousel-item itemCarousel">
+          <img src="/img/products/<%= tour.imagen3 %> " class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><%= tour.nombre %> </h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </section>
+          <div class="maincontainer">
+            <section class="contenedor1">
+              <h2><%= tour.nombre %> </h2>
+              <h2> <%= tour.precio %>  </h2>
+              <div> Fecha <input type="date"> </div>
+              <div> Personas - <span class="contador-personas">5</span> + </div>
+              <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
+              <div> <a href="#" class="myButton Color2">Agregar al carrito</a> </div>
+              <div> <a href="/tours/edit/<%= tour.id %> " class="myButton">Editar</a> </div>
+            <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="post">
+              <button type="submit" class="myButton">Eliminar </button>
+            </form>
+            </section>
+            <section class="contenedor2">
+              <div class="horario">
+                <i class="fa-solid fa-clock-rotate-left reloj"> </i>
+                <p class="margen">Duración del tour, <%= tour.duracion %>  aproximadamente</p>
+              </div>
+              <p>Salida del crucero: horarios en función de la temporada
+                Embarque: en Port de l'Arsenal, 75012 Paris</p>
+              <p> Bar a bordo a su disposición</p>
+              <p>Ambiente de guinguette en cuanto los pasajeros llegan al Port de l'Arsenal</p>
+              <p>Opcional:</p>
+              <ul>
+                <li>Copa de Champagne</li>
+                <li>Copa de vino</li>
+                <li>Tabla de embutidos y quesos franceses (para 2 personas)</li>
+              </ul>
+            </section>
+          </div>
+          <%- include("partials/wpp-button") %> 
+        </main>
+
+        <%- include("partials/footer") %> 
+</body>
+
+</html>

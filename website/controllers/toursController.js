@@ -15,21 +15,21 @@ let toursController = {
         if(req.files[0]!= undefined){
 			imagen1 = req.files[0].filename
 		}else{
-			imagen1 = '../public/img/logo.svg'
+			imagen1 = 'logo.svg'
 		}
 
         let imagen2
         if(req.files[1]!= undefined){
 			imagen2 = req.files[1].filename
 		}else{
-			imagen2 = '../img/logo.svg'
+			imagen2 = 'logo.svg'
 		}
 
         let imagen3
         if(req.files[2]!= undefined){
 			imagen3 = req.files[2].filename
 		}else{
-			imagen3 = '../public/img/logo.svg'
+			imagen3 = 'logo.svg'
 		}
 
         let newTour = {
@@ -93,7 +93,7 @@ let toursController = {
     },
     detail: (req,res) => {
         let tourId = tours.find(tour => tour.id == req.params.id)
-        res.render('productDetail', {tour: tourId});
+        res.render('productDetailV2', {tour: tourId});
     },  
     tours: (req, res) => {
         res.render('tours', {tours: tours});
