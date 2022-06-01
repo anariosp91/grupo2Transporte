@@ -83,3 +83,10 @@
     width: 40%;
   }
 }
+
+.error {
+  color:red;
+  background-color: white;
+  
+  margin-top: 10px;
+}

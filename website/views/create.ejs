@@ -10,17 +10,23 @@
     </header>
     <div class="login-div-container">
 
+        
+
         <form  method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
             <h1 class="titulo"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
 
-            <label for="nombre" class="form-label">Nombre:</label>
+            <label for="nombre" class="form-label">Nombre:<% if ((locals.errors) && (locals.errors.nombre)) {%><span class="error"><%=  errors.nombre.msg %></span> <% } %></label>
             <input type="text" name="nombre" placeholder="Piedra del Peñol" class="edit-input" required>
-
-            <label for="descripcionCorta" class="form-label">Mini descripción:</label>
+            
+            
+            <label for="descripcionCorta" class="form-label">Mini descripción: <% if ((locals.errors) && (locals.errors.descripcionCorta)) {%><span class="error"><%=  errors.descripcionCorta.msg %></span> <% } %></label>
             <textarea class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
-            <label for="descripcionDetallada" class="form-label">Descripción:</label>
-            <textarea class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+           
 
+            <label for="descripcionDetallada" class="form-label">Descripción:<% if ((locals.errors) && (locals.errors.descripcionDetallada)) {%><span class="error"><%=  errors.descripcionDetallada.msg %></span> <% } %>
+</label>
+            <textarea class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+            
             Bar a bordo a su disposición
             
             Ambiente de guinguette en cuanto los pasajeros llegan al Port de l'Arsenal
@@ -30,6 +36,8 @@
             Copa de Champagne
             Copa de vino
             Tabla de embutidos y quesos franceses (para 2 personas)"></textarea>
+
+
             <br>
             <p>Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
             <label for="imagen1" class="form-label">Imagen1:</label>
@@ -41,12 +49,12 @@
             <label for="imagen3" class="form-label">Imagen3:</label>
             <input type="file" name="imagen3" class="edit-input" multiple>
 
-            <br><label for="duracion" class="form-label">Duración:</label>
+            <br><label for="duracion" class="form-label">Duración:<% if ((locals.errors) && (locals.errors.duracion)) {%><span class="error"><%=  errors.duracion.msg %></span> <% } %></label>
             <input type="number" name="duracion" placeholder="" class="edit-input" required>
-
-            <label for="precio" class="form-label">Precio:</label>
+            
+            <label for="precio" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.precio)) {%><span class="error"><%=  errors.precio.msg %></span> <% } %></label>
             <input type="number" name="precio" placeholder="" class="edit-input" required>
-
+            
             <div class="buttonsEdit">
                 <button type="submit" class="button cancelButton">Cancelar</button>
                 <button type="submit" class="button">Guardar</button>
