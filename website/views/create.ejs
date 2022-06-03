@@ -16,15 +16,17 @@
             <h1 class="titulo"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
 
             <label for="nombre" class="form-label">Nombre:<% if ((locals.errors) && (locals.errors.nombre)) {%><span class="error"><%=  errors.nombre.msg %></span> <% } %></label>
-            <input type="text" name="nombre" placeholder="Piedra del Peñol" class="edit-input" required>
+            <input type="text" name="nombre" placeholder="Piedra del Peñol" class="edit-input" value="<%= locals.oldData ? oldData.nombre : null %>">
             
             
             <label for="descripcionCorta" class="form-label">Mini descripción: <% if ((locals.errors) && (locals.errors.descripcionCorta)) {%><span class="error"><%=  errors.descripcionCorta.msg %></span> <% } %></label>
-            <textarea class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los atractivos turisticos mas importantes de la region..."></textarea>
+            <textarea class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
+                <%= locals.oldData ? oldData.descripcionCorta : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
+                <% } %></textarea>
            
 
             <label for="descripcionDetallada" class="form-label">Descripción:<% if ((locals.errors) && (locals.errors.descripcionDetallada)) {%><span class="error"><%=  errors.descripcionDetallada.msg %></span> <% } %>
-</label>
+            </label>
             <textarea class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
             
             Bar a bordo a su disposición
@@ -35,25 +37,25 @@
             
             Copa de Champagne
             Copa de vino
-            Tabla de embutidos y quesos franceses (para 2 personas)"></textarea>
-
-
+            Tabla de embutidos y quesos franceses (para 2 personas)"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
+                <%= locals.oldData ? oldData.descripcionCorta : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
+                <% } %></textarea>
             <br>
             <p>Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
             <label for="imagen1" class="form-label">Imagen1:</label>
-            <input type="file" name="imagen1" class="edit-input" multiple>
+            <input type="file" name="imagen1" value="<%= locals.oldData ? oldData.imagen1 : null %>" class="edit-input" multiple>
 
             <label for="imagen2" class="form-label">Imagen2:</label>
-            <input type="file" name="imagen2" class="edit-input" multiple>
+            <input type="file" name="imagen2" value="<%= locals.oldData ? oldData.imagen2 : null %>" class="edit-input" multiple>
 
             <label for="imagen3" class="form-label">Imagen3:</label>
-            <input type="file" name="imagen3" class="edit-input" multiple>
+            <input type="file" name="imagen3" value="<%= locals.oldData ? oldData.imagen3 : null %>" class="edit-input" multiple>
 
             <br><label for="duracion" class="form-label">Duración:<% if ((locals.errors) && (locals.errors.duracion)) {%><span class="error"><%=  errors.duracion.msg %></span> <% } %></label>
-            <input type="number" name="duracion" placeholder="" class="edit-input" required>
+            <input type="number" name="duracion" value="<%= locals.oldData ? oldData.duracion : null %>" placeholder="" class="edit-input" >
             
             <label for="precio" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.precio)) {%><span class="error"><%=  errors.precio.msg %></span> <% } %></label>
-            <input type="number" name="precio" placeholder="" class="edit-input" required>
+            <input type="number" name="precio" value="<%= locals.oldData ? oldData.precio : null %>" placeholder="" class="edit-input" >
             
             <div class="buttonsEdit">
                 <button type="submit" class="button cancelButton">Cancelar</button>

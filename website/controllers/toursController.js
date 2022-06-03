@@ -47,14 +47,13 @@ let toursController = {
 
     processCreate: (req, res) => {
        const resultValidation = validationResult(req);
+       
      if (resultValidation.errors.length >0) {
          return res.render('create', {
-               errors: resultValidation.mapped()
-          })
-
-        
- 
-       } else {
+               errors: resultValidation.mapped(),
+               oldData: req.body
+        })
+    } else {
         let imagen1
         if(req.files[0]!= undefined){
 			imagen1 = req.files[0].filename
