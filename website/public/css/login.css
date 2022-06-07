@@ -149,16 +149,16 @@
     }
 
     .register-footer {
-        margin-top: 750px;
+        margin-top: 800px;
     }
 
     .edit-footer {
-        margin-top: 1150px;
+        margin-top: 1300px;
        
     }
 
     .create-footer {
-        margin-top: 800px;
+        margin-top: 950px;
     }
 }
 
@@ -183,7 +183,7 @@
     }
 
     .register-footer {
-        margin-top: 950px;
+        margin-top: 1050px;
     }
 }
 
@@ -313,14 +313,14 @@
     }
 
     .register-footer {
-        margin-top: 650px;
+        margin-top: 700px;
     }
 
     .edit-footer {
-        margin-top: 1250px;
+        margin-top: 1350px;
     }
 
     .create-footer {
-        margin-top: 850px;
+        margin-top: 930px;
     }
 }
