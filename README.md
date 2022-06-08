@@ -47,4 +47,4 @@ Referencias de sitios:
     Esta página la elegimos porque unifica el fondo con las imágenes de carrusel, y la barra de secciones se presenta estática aunque scrolleemos. 
     
 Enlace del tablero de trabajo en Trello:    
-    - https://trello.com/b/AGtZ3vrZ
+    - https://trello.com/b/QOqpD6YG
