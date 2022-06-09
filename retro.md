@@ -44,4 +44,18 @@ En general hemos logrado sincronizarnos como equipo y en los sprint anteriores n
 
 RETROSPECTIVA SPRINT 3
 
-En este sprint no tuvimos mayores inconvenientes, aunque el tema fue un poco mas denso, entre todos pudimos solucionar las dudas existentes, y llevar a cabo la solucion final 
+En este sprint no tuvimos mayores inconvenientes, aunque el tema fue un poco mas denso, entre todos pudimos solucionar las dudas existentes, y llevar a cabo la solucion final. 
+
+RETROSPECTIVA SPRINT 4
+
+_Comenzar a hacer_: 
+Comenzar a limpiar el codigo inecesario o repetido.
+
+_Hacer más_:
+Utilizar mas nombres descriptivos.
+
+_Hacer menos_: 
+Dejar de combinar lenguajes a la hora de denominar variables.
+
+_Continuar haciendo_:
+Seguiremos teniendo mas reuniones, para organizarnos y seguir avanzando.
