@@ -48,4 +48,3 @@ Referencias de sitios:
     
 Enlace del tablero de trabajo en Trello:  
 Link original: https://trello.com/b/AGtZ3vrZ
-    - https://trello.com/b/QOqpD6YG
