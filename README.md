@@ -46,5 +46,6 @@ Referencias de sitios:
     https://www.newtravel.com.ar/
     Esta página la elegimos porque unifica el fondo con las imágenes de carrusel, y la barra de secciones se presenta estática aunque scrolleemos. 
     
-Enlace del tablero de trabajo en Trello:    
+Enlace del tablero de trabajo en Trello:  
+Link original: https://trello.com/b/AGtZ3vrZ
     - https://trello.com/b/QOqpD6YG
