@@ -43,16 +43,16 @@ Ana:
 _Reunion Jueves 9 de Junio/2022_
 
 Sofi:
--Cambio los estilos de los botones, Corrigio errores en el responsive del footer.
--Ninguno.
--Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
+- Cambio los estilos de los botones, Corrigio errores en el responsive del footer.
+- Ninguno.
+- Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
 
 Nico:
--Realizo el responsive del Create y Edit.
--Ninguna.
--Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
+- Realizo el responsive del Create y Edit.
+- Ninguna.
+- Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
 
 Ana:
--Creo la ruta /tours/create, Soluciono el inconveniente con las imagenes en listado de usuarios y carruceles.
--Ninguno.
--Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
+- Creo la ruta /tours/create, Soluciono el inconveniente con las imagenes en listado de usuarios y carruceles.
+- Ninguno.
+- Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
