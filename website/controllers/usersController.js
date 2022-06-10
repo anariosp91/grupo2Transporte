@@ -52,6 +52,7 @@ let usersController = {
 		}
 
 		ModelUsers.create(userToCreate);
+		
 
 		return res.redirect('/user/login');
     },

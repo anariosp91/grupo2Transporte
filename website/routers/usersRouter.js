@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const upload = require('../middlewares/multer');
+const upload = require('../middlewares/multerUsers');
 const validationUsers = require('../middlewares/validationUsers');
 const usersController = require('../controllers/usersController');
+
+
 
 
 router.get('/register', usersController.register);

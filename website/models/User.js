@@ -36,6 +36,7 @@ const Users = {
 	},
 
 	create: function (userData) {
+		
 		let allUsers = this.findAll();
 		let newUser = {
 			id: this.generateId(),

@@ -1,6 +1,12 @@
 const {check} = require('express-validator');
 const path = require('path');
 
+
+
+
+
+
+
 const validationUsers = [
 
     check('name').notEmpty().withMessage('Debes completar este campo'),
@@ -14,6 +20,7 @@ const validationUsers = [
     check('cell').notEmpty().withMessage('Debes completar este campo'),
 
     check('password').custom(() => {
+      
         if (req.body.password === req.body.password-confirm) {
           return true;
         } else {
