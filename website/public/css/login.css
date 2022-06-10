@@ -149,7 +149,7 @@
     }
 
     .register-footer {
-        margin-top: 750px;
+        margin-top: 850px;
     }
 
     .edit-footer {
@@ -183,7 +183,7 @@
     }
 
     .register-footer {
-        margin-top: 950px;
+        margin-top: 1100px;
     }
 }
 
@@ -204,6 +204,8 @@
         height: 300px;
         /* Should be removed. Only for demonstration */
     }
+
+    
 
     /* Clear floats after the columns */
     .row:after {
@@ -257,6 +259,10 @@
         padding: 50px;
         height: 300px;
         /* Should be removed. Only for demonstration */
+    }
+
+    .column-image {
+        width:100%;
     }
 
     /* Clear floats after the columns */
@@ -313,7 +319,7 @@
     }
 
     .register-footer {
-        margin-top: 650px;
+        margin-top: 1000px;
     }
 
     .edit-footer {

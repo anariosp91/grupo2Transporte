@@ -11,7 +11,7 @@
   <div class="login-div-container">
 
 
-    <form class="container2">
+    <form method="POST" action="/users/register" enctype="multipart/form-data" class="container2">
       <h1>Registrate</h1>
       <div class="row">
         <div class="column">
@@ -33,11 +33,18 @@
           <label for="password" class="form-label">Contraseña:</label>
           <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required>
 
-          <label for="password" class="form-label">Confirmación de contraseña:</label>
-          <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required>
+          <label for="password-confirm" class="form-label">Confirmación de contraseña:</label>
+          <input type="password" name="password-confirm" placeholder="●●●●●●●●" class="form-input" required>
+        </div>
+
+      </div>
+      
+      <div class="row">
+        <div class="column column-image">
+          <label for="image" class="form-label">Image:</label>
+          <input type="file" name="image" class="form-input" required>
         </div>
       </div>
-
 
       <div class="buttons">
         <button type="submit" class="button">Continuar</button>
