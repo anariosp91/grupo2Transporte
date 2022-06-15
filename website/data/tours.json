@@ -30,11 +30,11 @@
     "imagen3": "tour-parapente3.jpeg"
 }, {
     "id": 4,
-    "nombre": "Jardín",
-    "descripcionCorta": "Un hermoso lugar para descansar y compartir con la naturaleza",
+    "nombre": "Jardín ",
+    "descripcionCorta": "Un hermoso lugar para descansar en familia y compartir con la naturaleza",
     "descripcionDetallada": "Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",
-    "precio": "$600.000",
-    "duracion": "4 horas",
+    "duracion": "4 horas ",
+    "precio": "$600.000 ",
     "imagen1": "tour-jardin1.jpeg",
     "imagen2": "tour-jardin2.jpeg",
     "imagen3": "tour-jardin3.jpeg"
@@ -48,14 +48,4 @@
     "imagen1": "tour-piedra1.jpeg",
     "imagen2": "tour-piedra2.jpeg",
     "imagen3": "tour-piedra3.jpeg"
-}, {
-    "id": 6,
-    "nombre": "Grafitti Tour",
-    "descripcionCorta": "Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto",
-    "descripcionDetallada": "Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto\r\nSalida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto",
-    "duracion": "4",
-    "precio": "200000",
-    "imagen1": "tour-1654212254606.jpeg",
-    "imagen2": "logo.svg",
-    "imagen3": "logo.svg"
 }]

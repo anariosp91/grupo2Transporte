@@ -67,10 +67,6 @@
         font-size: 14px;
     }
 
-    .row {
-        margin-bottom: 10px;
-    }
-
     /* Styling the form container */
 
     .container {
@@ -149,7 +145,7 @@
     }
 
     .register-footer {
-        margin-top: 850px;
+        margin-top: 1000px;
     }
 
     .edit-footer {
@@ -183,7 +179,7 @@
     }
 
     .register-footer {
-        margin-top: 1100px;
+        margin-top: 1300px;
     }
 }
 
@@ -192,16 +188,11 @@
         font-size: 50px;
     }
 
-    .row {
-        margin-bottom: 110px;
-    }
-
     /* Create two equal columns that floats next to each other */
     .column {
         float: left;
         width: 50%;
         padding: 50px;
-        height: 300px;
         /* Should be removed. Only for demonstration */
     }
 
@@ -257,12 +248,13 @@
         float: left;
         width: 50%;
         padding: 50px;
-        height: 300px;
         /* Should be removed. Only for demonstration */
     }
 
     .column-image {
         width:100%;
+        padding: 0px 50px;
+        max-height: fit-content;
     }
 
     /* Clear floats after the columns */

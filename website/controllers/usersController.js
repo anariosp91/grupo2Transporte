@@ -2,13 +2,13 @@
 // const fs = require('fs');
 const bcryptjs = require('bcryptjs');
 const {validationResult} = require('express-validator');
-const ModelUsers = require('../models/User')
+const ModelUsers = require('../models/User');
 
 // const usersFile = path.join(__dirname, '../data/users.json');
 // const users = JSON.parse(fs.readFileSync(usersFile, 'utf-8'));
 
 
-let usersController = {
+const usersController = {
     login: (req, res) => {
         res.render('login');
     },
@@ -48,13 +48,14 @@ let usersController = {
 		let userToCreate = {
 			...req.body,
 			password: bcryptjs.hashSync(req.body.password, 10),
+			password_confirm: bcryptjs.hashSync(req.body.password_confirm, 10),
 			image: image
 		}
 
 		ModelUsers.create(userToCreate);
 		
 
-		return res.redirect('/user/login');
+		return res.redirect('/users/login');
     },
     cart: (req, res) => {
     res.render('productCart');

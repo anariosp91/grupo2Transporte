@@ -16,33 +16,68 @@
       <div class="row">
         <div class="column">
           <label for="name" class="form-label">Nombre:</label>
-          <input type="text" name="name" placeholder="Juan" class="form-input" required>
+          <input type="text" name="name" value="<%= locals.oldData ? oldData.name : null %>" placeholder="Juan" class="form-input" >
+          <% if (locals.errors && errors.name) { %>
+            <div class="text-danger">
+              <%= errors.name.msg %> 
+            </div>
+          <% } %>
 
-          <label for="lastName" class="form-label">Apellido:</label>
-          <input type="text" name="lastName" placeholder="Perez" class="form-input" required>
+          <label for="lastName" class="form-label">Apellido:</label>          
+          <input type="text" name="lastName" value="<%= locals.oldData ? oldData.lastName : null %>" placeholder="Perez" class="form-input" >
+          <% if (locals.errors && errors.lastName) { %>
+            <div class="text-danger">
+              <%= errors.lastName.msg %> 
+            </div>
+          <% } %>
 
           <label for="cell" class="form-label">Teléfono:</label>
-          <input type="text" name="cell" placeholder="+549238328" class="form-input" required>
+          <input type="text" name="cell" value="<%= locals.oldData ? oldData.cell : null %>" placeholder="+549238328" class="form-input" >
+          <% if (locals.errors && errors.cell) { %>
+            <div class="text-danger">
+              <%= errors.cell.msg %> 
+            </div>
+          <% } %>
 
         </div>
         <div class="column">
 
           <label for="email" class="form-label">Correo:</label>
-          <input type="text" name="email" placeholder="jperez@gmail.com" class="form-input" required>
+          <input type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>" placeholder="jperez@gmail.com" class="form-input" >
+          <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+              <%= errors.email.msg %> 
+            </div>
+          <% } %>
 
           <label for="password" class="form-label">Contraseña:</label>
-          <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required>
+          <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" >
+          <% if (locals.errors && errors.password) { %>
+            <div class="text-danger">
+              <%= errors.password.msg %> 
+            </div>
+          <% } %>
 
-          <label for="password-confirm" class="form-label">Confirmación de contraseña:</label>
-          <input type="password" name="password-confirm" placeholder="●●●●●●●●" class="form-input" required>
+          <label for="password_confirm" class="form-label">Confirmación de contraseña:</label>
+          <input type="password" name="password_confirm" placeholder="●●●●●●●●" class="form-input" >
+          <% if (locals.errors && errors.password_confirm) { %>
+            <div class="text-danger">
+              <%= errors.password_confirm.msg %> 
+            </div>
+          <% } %>
         </div>
 
       </div>
       
       <div class="row">
         <div class="column column-image">
-          <label for="image" class="form-label">Image:</label>
-          <input type="file" name="image" class="form-input" required>
+          <label for="image" class="form-label">Imagen de perfil:</label>
+          <input type="file" name="image" class="form-input" >
+          <% if (locals.errors && errors.image) { %>
+            <div class="text-danger">
+              <%= errors.image.msg %> 
+            </div>
+          <% } %>
         </div>
       </div>
 
@@ -56,7 +91,7 @@
   </div>
 
 
-  <div class="register-footer">
+  <div class="register-footer"">
     <%- include("partials/footer") %>
   </div>
 
