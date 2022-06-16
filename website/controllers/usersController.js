@@ -9,9 +9,7 @@ const ModelUsers = require('../models/User');
 
 
 const usersController = {
-    login: (req, res) => {
-        res.render('login');
-    },
+
     register: (req, res) => {
         res.render('register')
     },
@@ -57,9 +55,49 @@ const usersController = {
 
 		return res.redirect('/users/login');
     },
+	login: (req, res) => {
+        res.render('login');
+    },
+	loginProcess: (req, res) => {
+		let userToLogin = ModelUsers.findField('email', req.body.email);
+		
+		if(userToLogin) {
+			let correctPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+			if (correctPassword) {
+				delete userToLogin.password;
+				req.session.userLogged = userToLogin;
+
+				if(req.body.remember) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				}
+
+				return res.redirect('/');
+			} 
+			return res.render('login', {
+				errors: {
+					email: {
+						msg: 'Los datos ingresados son incorrectos'
+					}
+				}
+			});
+		}
+
+		return res.render('login', {
+			errors: {
+				email: {
+					msg: 'No se encontro el correo ingresado'
+				}
+			}
+		});
+	},
     cart: (req, res) => {
     res.render('productCart');
-    }
+    },
+	logout: (req, res) => {
+		res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	}
 }
 
 module.exports = usersController;

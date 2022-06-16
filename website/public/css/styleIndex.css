@@ -265,4 +265,13 @@ div.scrollmenu a:hover {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .dropdown .userLogged {
+    right: -55px;
+  }
+
+  .userImage {
+    width: 30px;
+    border-radius: 100%;
+  }
   

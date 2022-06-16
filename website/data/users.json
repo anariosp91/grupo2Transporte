@@ -104,9 +104,9 @@
   "name": "Sofia",
   "lastName": "Gutierrez",
   "cell": "1164324525",
-  "email": "beautigutierrez@hotmail.com",
-  "password": "$2a$10$5W7dEWlkkm1fzfi1pqOtbevqORxSo5PLWvNOBjt5s.XRbuosc4aWm",
-  "password-confirm": "1234",
+  "email": "sofiagutierrez1845@gmail.com",
+  "password": "$2a$10$1qPxkt5.8AYVQ/QNrzH9Ju0t0WSUpiYcAi/I0vmDg5.mxSUEH8oti",
+  "password_confirm": "$2a$10$PcZVxsdY7Q4SByabr2Q1tuOVjgUNM68gKVbgOhoIii4LplseGQzPe",
   "image": "avatar.png"
  }
 ]

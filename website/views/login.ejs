@@ -4,16 +4,21 @@
 
 <body class="body-login">
 	<header class="main-header-login">
-		<%- include("partials/header-register") %>
+		<%- include("partials/header") %>
 	</header>
 	<div class="login-div-container">
-		<form class="container">
+		<form method="POST" action="/users/login" class="container">
 			<h1>Inicia sesión</h1>
 			<label for="email" class="form-label">Correo:</label>
-			<input type="text" name="email" placeholder="jperez@gmail.com" class="form-input" required />
+			<input type="text" name="email" placeholder="jperez@gmail.com" class="form-input">
+			<% if (locals.errors && errors.email) { %>
+				<div class="text-danger">
+					<%= errors.email.msg %>
+				</div>
+			<% } %>
 
 			<label for="password" class="form-label">Contraseña:</label>
-			<input type="password" name="password" placeholder="●●●●●●●●" class="form-input" required  />
+			<input type="password" name="password" placeholder="●●●●●●●●" class="form-input">
 
 			<div class="button1">
 				<button type="submit" class="button">Continuar</button>
@@ -21,9 +26,9 @@
 
 			<div class="buttons">
 				<label for="remember" class="form-label-checkbox">Recordar mi contraseña</label>
-				<input type="checkbox" name="remember" id="recordar" name="recordar"/>
+				<input type="checkbox" name="remember" id="recordar">
 
-				<a href=""><p class="moreOptions">Regístrate</p></a>
+				<a href="/users/register"><p class="moreOptions">Regístrate</p></a>
 				<a href=""><p class="moreOptions">Olvidé mi contraseña</p></a>
 			</div>
 		</form>

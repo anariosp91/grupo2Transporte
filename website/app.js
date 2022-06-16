@@ -6,6 +6,8 @@ const methodOverride = require('method-override');
 const app = express();
 const port = 8000;
 
+const userLogged = require("./middlewares/userlogged");
+
 //Routers require
 const indexRouter = require('./routers/indexRouter');
 const usersRouter = require('./routers/usersRouter');
@@ -24,6 +26,7 @@ app.use(session({ secret: "Shhh, It's a secret",
 	saveUninitialized: false,
 }));
 app.use(cookies());
+app.use(userLogged);
 
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");

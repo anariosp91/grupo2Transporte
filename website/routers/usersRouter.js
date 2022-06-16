@@ -7,16 +7,22 @@ const usersController = require('../controllers/usersController');
 //Middlewares
 const upload = require('../middlewares/multerUsers');
 const validationUsers = require('../middlewares/validationUsers');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 //Register form
-router.get('/register', usersController.register);
+router.get('/register',guestMiddleware, usersController.register);
 router.post('/register', upload.single('image'), validationUsers, usersController.processRegister)
 
 //Login form
-router.get('/login', usersController.login);
+router.get('/login', guestMiddleware, usersController.login);
+router.post('/login', usersController.loginProcess);
 
 //Product cart
-router.get('/productCart', usersController.cart);
+router.get('/productCart',authMiddleware, usersController.cart);
+
+// Logout
+router.get('/logout', usersController.logout);
 
 
 
