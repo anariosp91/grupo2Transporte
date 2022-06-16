@@ -48,16 +48,20 @@
     </section>
           <div class="maincontainer">
             <section class="contenedor1">
-              <h2><%= tour.nombre %> </h2>
+              <div class="tituloTour"> 
+                <h2><%= tour.nombre %> </h2>
+                <a href="/tours/edit/<%= tour.id %> "><i style= "color: black;" class="fa-solid fa-pen-to-square"></i></a>
+              </div>
               <h2> <%= tour.precio %>  </h2>
               <div> Fecha <input type="date"> </div>
               <div> Personas - <span class="contador-personas">5</span> + </div>
               <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
-              <div> <a href="#" class="myButton Color2">Agregar al carrito</a> </div>
-              <div> <a href="/tours/edit/<%= tour.id %> " class="myButton">Editar</a> </div>
-            <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="post">
-              <button type="submit" class="myButton">Eliminar </button>
-            </form>
+              <div class="botonEliminar"> <a href="#" class="myButton Color2">Agregar al carrito</a> 
+                <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="post">
+                  <a type="submit"> <i class="fa-solid fa-trash-can"></i> </a>
+                </form>
+              </div>
+              
             </section>
             <section class="contenedor2">
               <div class="horario">
