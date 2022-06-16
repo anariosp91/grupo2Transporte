@@ -37,8 +37,8 @@ const usersController = {
 		}
 
         let image
-        if(req.files != undefined){
-			image = req.files.filename
+        if(req.file.filename != undefined){
+			image = req.file.filename
 		}else{
 			image = 'avatar.png'
 		}

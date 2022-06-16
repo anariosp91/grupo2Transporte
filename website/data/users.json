@@ -1,112 +1,22 @@
 [
  {
   "id": 1,
-  "name": "Pepillo",
-  "lastName": "Jacques",
-  "email": "pjacques0@amazon.co.jp",
-  "password": "KJvuFJ",
-  "category": "usuario",
-  "cell": "293-608-0895",
-  "image": "logo.svg"
- },
- {
-  "id": 2,
-  "name": "Mireielle",
-  "lastName": "Caves",
-  "email": "mcaves1@bbc.co.uk",
-  "password": "fCPoYXYbb6",
-  "category": "administrador",
-  "cell": "717-887-3423",
-  "image": "logo.svg"
- },
- {
-  "id": 3,
-  "name": "Marjorie",
-  "lastName": "Doneld",
-  "email": "mdoneld2@wired.com",
-  "password": "ihz1PQi",
-  "category": "usuario",
-  "cell": "662-296-6838",
-  "image": "logo.svg"
- },
- {
-  "id": 4,
-  "name": "Lezlie",
-  "lastName": "Lasselle",
-  "email": "llasselle3@alexa.com",
-  "password": "8DjS2VI9h",
-  "category": "usuario",
-  "cell": "267-918-9379",
-  "image": "logo.svg"
- },
- {
-  "id": 5,
-  "name": "Manfred",
-  "lastName": "Halt",
-  "email": "mhalt4@columbia.edu",
-  "password": "lZaEWwjA",
-  "category": "administrador",
-  "cell": "436-861-4624",
-  "image": "logo.svg"
- },
- {
-  "id": 6,
-  "name": "Maddie",
-  "lastName": "Tincey",
-  "email": "mtincey5@craigslist.org",
-  "password": "7KOU68B",
-  "category": "usuario",
-  "cell": "476-222-1005",
-  "image": "logo.svg"
- },
- {
-  "id": 7,
-  "name": "Jens",
-  "lastName": "Smithen",
-  "email": "jsmithen6@ted.com",
-  "password": "ayqXhfq7JmR",
-  "category": "usuario",
-  "cell": "696-821-5595",
-  "image": "logo.svg"
- },
- {
-  "id": 8,
-  "name": "Wildon",
-  "lastName": "Brauner",
-  "email": "wbrauner7@delicious.com",
-  "password": "xwYuZ4BEtwsG",
-  "category": "usuario",
-  "cell": "504-366-1790",
-  "image": "logo.svg"
- },
- {
-  "id": 9,
-  "name": "Joletta",
-  "lastName": "Senn",
-  "email": "jsenn8@soundcloud.com",
-  "password": "pw8Cnsms2",
-  "category": "administrador",
-  "cell": "869-132-7744",
-  "image": "logo.svg"
- },
- {
-  "id": 10,
-  "name": "Wolfy",
-  "lastName": "Gogie",
-  "email": "wgogie9@amazon.co.jp",
-  "password": "zdOIsOTNEfdM",
-  "category": "usuario",
-  "cell": "411-766-0112",
-  "image": "logo.svg"
- },
- {
-  "id": 11,
   "name": "Sofia",
   "lastName": "Gutierrez",
   "cell": "1164324525",
   "email": "sofiagutierrez1845@gmail.com",
   "password": "$2a$10$1qPxkt5.8AYVQ/QNrzH9Ju0t0WSUpiYcAi/I0vmDg5.mxSUEH8oti",
   "password_confirm": "$2a$10$PcZVxsdY7Q4SByabr2Q1tuOVjgUNM68gKVbgOhoIii4LplseGQzPe",
-  "image": "avatar.png"
+  "image": "user-1655343080662.png"
+ },
+ {
+  "id": 2,
+  "name": "ANA MARIA",
+  "lastName": "RIOS PABON",
+  "cell": "3147252991",
+  "email": "ana-rios91@hotmail.com",
+  "password": "$2a$10$HKzyvk/RpFh9DSgUElday.97i4gKtM1nO595nPOyOLmUfwJdkszX2",
+  "password_confirm": "$2a$10$z5n5t03yqJEuMSP5ITZkYO.vkLxcvXQBIvP2dRz3gB0L5EVHwFrnG",
+  "image": "user-1655387083846.jpg"
  }
 ]

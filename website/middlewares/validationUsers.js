@@ -24,16 +24,6 @@ const validationUsers = [
         }
         return true;
     }),
-
-    /*check('password').custom(() => {
-      
-        if (req.body.password === req.body.password-confirm) {
-          return true;
-        } else {
-          return false;
-        }
-      })
-      .withMessage('las contraseñas no coinciden'),*/
     
     check('image').custom((value, { req }) => {
 		let file = req.file;
