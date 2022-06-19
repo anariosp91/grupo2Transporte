@@ -29,6 +29,8 @@
                         <a class="dropdown-item" href="/users/logout">Logout</a>
                     </div>
                 </div>
+            </li>  
+            <li class="li-menu-item" style="color: white;"><a><%=locals.userLogged.name%></a></li>  
             <li class="li-menu-item"><a href="/users/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
             <% } else { %>
             <li class="li-menu-item"><a href="/users/register"> Registrarse </a></li>

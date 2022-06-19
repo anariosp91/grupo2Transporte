@@ -66,7 +66,6 @@ const usersController = {
 			if (correctPassword) {
 				delete userToLogin.password;
 				req.session.userLogged = userToLogin;
-				console.log(req.cookie, req.cookies)
 				if(req.body.remember) {
 					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
 
