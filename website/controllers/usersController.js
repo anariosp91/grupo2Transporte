@@ -93,6 +93,9 @@ const usersController = {
     cart: (req, res) => {
     res.render('productCart');
     },
+	favorites: (req, res) => {
+		res.render('favorites');
+		},
 	logout: (req, res) => {
 		res.clearCookie('userEmail');
 		req.session.destroy();

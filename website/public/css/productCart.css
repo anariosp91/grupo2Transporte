@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color:black;
+  text-decoration: none;
+}
+
 .htmlCart {
   min-height: 90%;
   position: relative;

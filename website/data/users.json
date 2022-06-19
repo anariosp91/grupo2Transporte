@@ -18,5 +18,15 @@
   "password": "$2a$10$fK6Wg2CfKihUiMNsrungheKs3FRhVhzJDUwoC324rQEzdU0TcOqb6",
   "password_confirm": "$2a$10$sxwTWmRlq6yD1GIVsIqyReP/zJ7k0i2SbHRb1Huzu44tUVEC714K2",
   "image": "user-1655500161339.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Nicolas",
+  "lastName": "Cerone",
+  "cell": "57576555665",
+  "email": "nico@gmail.com",
+  "password": "$2a$10$N/7aJI2Ajtta7r1gj4kixeAV0JvI0ckeYLtTkdJVNu9WDcruBTyv2",
+  "password_confirm": "$2a$10$XY6YmbgIWGE02aZO.3lY4ua0R0qNP7p95BwiubP.ISGhPUpfDcS6i",
+  "image": "user-1655650003056.jpg"
  }
 ]

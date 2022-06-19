@@ -21,6 +21,10 @@ router.post('/login', usersController.loginProcess);
 //Product cart
 router.get('/productCart',authMiddleware, usersController.cart);
 
+//Fovorites
+router.get('/favorites',authMiddleware, usersController.favorites);
+
+
 // Logout
 router.get('/logout', usersController.logout);
 
