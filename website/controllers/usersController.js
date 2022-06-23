@@ -1,11 +1,11 @@
-// const path = require('path');
-// const fs = require('fs');
+const path = require('path');
+const fs = require('fs');
 const bcryptjs = require('bcryptjs');
 const {validationResult} = require('express-validator');
 const ModelUsers = require('../models/User');
 
-// const usersFile = path.join(__dirname, '../data/users.json');
-// const users = JSON.parse(fs.readFileSync(usersFile, 'utf-8'));
+const usersFile = path.join(__dirname, '../data/users.json');
+const users = JSON.parse(fs.readFileSync(usersFile, 'utf-8'));
 
 
 const usersController = {
@@ -93,6 +93,9 @@ const usersController = {
     cart: (req, res) => {
     res.render('productCart');
     },
+	users: (req, res) => {
+		res.render("users", {users})
+	},
 	favorites: (req, res) => {
 		res.render('favorites');
 		},

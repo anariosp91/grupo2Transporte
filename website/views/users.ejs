@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="userView">
+    <%- include("partials/head") %> 
+<body class="userBody">
+    <header class="main-header">
+        <%- include("partials/header") %> 
+    </header>
+        <main class="main-tours">
+            <h2 class="titularTour userTitle">Todos los Usuarios</h2>
+            <section class="sectionCard">
+                <% users.forEach(user => { %>
+                    <article class="toursDetail usersArticle">
+                            <div class="containerUser">
+                                <img src="/img/users/<%= user.image %> " class="usersImage">
+                            </div>
+                            <div class="containerUser">
+                                <p class="userT">Nombre: <%= user.name %> </p>
+                                <p class="userT"> Apellido: <%= user.lastName %> </p>
+                                <p class="userT">Email: <%= user.email %> </p>
+                            </div>
+                    </article>
+                    <% }) %>
+            </section>
+        </main>
+<div class="userFooter">
+    <%- include("partials/footer") %> 
+</div>
+
+</body>
+</html>

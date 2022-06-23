@@ -1,0 +1,44 @@
+.usersArticle{
+    display: flex;
+}
+
+.containerUser{
+    flex: 50%;
+    padding: 10px;
+}
+
+.usersImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.userT {
+    font-size: 18px;
+}
+
+.bodyUser {
+    height: 100%;
+    margin: 0;
+}
+
+.userView {
+    padding-bottom: 50px;
+    min-height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+.userFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+
+@media (min-width: 362px) {
+
+}
