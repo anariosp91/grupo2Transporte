@@ -56,3 +56,20 @@ Ana:
 - Creo la ruta /tours/create, Soluciono el inconveniente con las imagenes en listado de usuarios y carruceles.
 - Ninguno.
 - Trabajaremos en conjunto para hacer las funcionalidades para el Registro e Ingreso de usuarios.
+
+_Reunion Jueves 23 de Junio/2022_
+
+Sofi:
+- Todos terminamos el sprint 5
+- Ninguna.
+- Unir ramas en git
+
+Nico: 
+- Todos terminamos el sprint 5
+- Ninguna.
+- Arreglar el problema con los footers.
+
+Ana: 
+- Todos terminamos el sprint 5.
+- Ninguna.
+- Arreglar el estilo de los botones en productDetail.
