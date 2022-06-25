@@ -25,7 +25,7 @@ router.get('/productCart',authMiddleware, usersController.cart);
 router.get('/favorites',authMiddleware, usersController.favorites);
 
 //Users
-router.get("/list", usersController.users)
+router.get("/list", authMiddleware, usersController.users)
 
 
 // Logout
