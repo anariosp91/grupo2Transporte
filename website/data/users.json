@@ -7,7 +7,8 @@
   "email": "sofiagutierrez1845@gmail.com",
   "password": "$2a$10$1qPxkt5.8AYVQ/QNrzH9Ju0t0WSUpiYcAi/I0vmDg5.mxSUEH8oti",
   "password_confirm": "$2a$10$PcZVxsdY7Q4SByabr2Q1tuOVjgUNM68gKVbgOhoIii4LplseGQzPe",
-  "image": "user-1655343080662.png"
+  "image": "user-1655343080662.png",
+  "admin": true
  },
  {
   "id": 2,
@@ -17,7 +18,8 @@
   "email": "ana-rios91@hotmail.com",
   "password": "$2a$10$fK6Wg2CfKihUiMNsrungheKs3FRhVhzJDUwoC324rQEzdU0TcOqb6",
   "password_confirm": "$2a$10$sxwTWmRlq6yD1GIVsIqyReP/zJ7k0i2SbHRb1Huzu44tUVEC714K2",
-  "image": "user-1655500161339.jpg"
+  "image": "user-1655500161339.jpg",
+  "admin": true
  },
  {
   "id": 3,
@@ -27,6 +29,17 @@
   "email": "nico@gmail.com",
   "password": "$2a$10$N/7aJI2Ajtta7r1gj4kixeAV0JvI0ckeYLtTkdJVNu9WDcruBTyv2",
   "password_confirm": "$2a$10$XY6YmbgIWGE02aZO.3lY4ua0R0qNP7p95BwiubP.ISGhPUpfDcS6i",
-  "image": "user-1655650003056.jpg"
+  "image": "user-1655650003056.jpg",
+  "admin": true
+ },
+ {
+  "id": 4,
+  "name": "ana",
+  "lastName": "RIOS PABON",
+  "cell": "3147252991",
+  "email": "grupodepoder10@gmail.com",
+  "password": "$2a$10$7atZNb/0JRts2BhtdWh4bOzJOcaCkSMNiJQzAzIWD4fiafBelP32a",
+  "password_confirm": "$2a$10$i2wRyCKtFhm6ObmWd6ghAOvPjdPeosE.L/R.RB3AuNKBQjQtp5fWq",
+  "image": "user-1656445462611.png"
  }
 ]

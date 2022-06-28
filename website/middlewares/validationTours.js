@@ -13,22 +13,6 @@ const validationTours = [
     
 ] 
    
-   
-    
-    
 
-   
-
-
-// function isImage(imagen) {
-//     let imagen = check('imagen1');
-//     let extension = (path.extname(imagen)).toLowerCase();
-//     let extensionesPermitidas = ['.jpg', 'png', 'gif', 'webp'];
-//     if(extensionesPermitidas.includes(extension)){
-
-//     }
-    
-    
-// }
 
 module.exports = validationTours

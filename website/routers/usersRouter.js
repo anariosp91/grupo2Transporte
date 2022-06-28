@@ -9,6 +9,7 @@ const upload = require('../middlewares/multerUsers');
 const validationUsers = require('../middlewares/validationUsers');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
+const adminAuthMiddleware = require('../middlewares/adminAuthMiddleware');
 
 //Register form
 router.get('/register',guestMiddleware, usersController.register);
@@ -25,7 +26,7 @@ router.get('/productCart',authMiddleware, usersController.cart);
 router.get('/favorites',authMiddleware, usersController.favorites);
 
 //Users
-router.get("/list", authMiddleware, usersController.users)
+router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
 
 
 // Logout
