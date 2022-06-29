@@ -14,10 +14,10 @@ const adminAuthMiddleware = require('../middlewares/adminAuthMiddleware');
 router.get('/detail/:id/', toursController.detail);
 
 //creacion del producto
-router.get('/create', authMiddleware, adminAuthMiddleware, toursController.create);
+router.get('/create', adminAuthMiddleware, toursController.create);
 router.post('/create', upload.any(), validationTours, adminAuthMiddleware, toursController.processCreate)
 
-router.get('/edit/:id/', authMiddleware, adminAuthMiddleware, toursController.edit);
+router.get('/edit/:id/', adminAuthMiddleware, toursController.edit);
 router.put('/edit/:id/', upload.any(), adminAuthMiddleware, toursController.update)
 
 router.get('/list', toursController.tours);
