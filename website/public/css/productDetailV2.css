@@ -35,6 +35,7 @@
 .margen {
 	margin-left: 10px;
 }
+
 .fa-pen-to-square{
 	color: black;
 }
@@ -72,6 +73,9 @@
 	display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.botonEliminar button {
+	border: none;
 }
 .tituloTour {
 	display: flex;

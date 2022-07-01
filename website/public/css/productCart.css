@@ -1,13 +1,4 @@
-/*general design */
 
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color:black;
-  text-decoration: none;
-}
 
 .htmlCart {
   min-height: 90%;
@@ -28,95 +19,12 @@ a {
   height: 40px;
 }
 
-
-/* navbar responsive */
-
-.main-header {
-  background-image: url("https://i.imgur.com/Z7JNekS.jpg?1");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 20vh;
-}
-
-.main-navbar {
-  background-color: rgba(1, 1, 1, 0.6);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1px;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-.main-navbar a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 17px;
-}
-
-.dropdown-content {
-  background-color: rgba(1, 1, 1, 0.6);
-}
-
-.main-navbar ul {
-    margin: 1.5% 0;
-}
-
-.main-navbar ul,
-li {
-  list-style: none;
-}
-
-.main-navbar a:hover, i:hover {
-  color: #7892c2;
-}
+/* body */
 
 .body-cart i {
   color: rgb(160, 160, 160);
 }
 
-.container-nav-logo {
-  width: 50px;
-  padding-left: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.nav-logo {
-  width: 50px;
-}
-
-.menu {
-  width: 100%;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-
-
-.main-navbar label {
-  display: inline-flex;
-  align-items: center;
-}
-
-#toggler {
-  display: none;
-}
-
-#toggler:checked~.menu {
-  max-height: 100%;
-}
-
-/* body */
 /* tab design*/
 
 .t-container {
@@ -170,7 +78,7 @@ li {
 }
 
 
-/* cart tab */
+/* Cart Tab */
 
 .classification {
   background-color: rgba(33, 33, 33, 0.1);
@@ -204,6 +112,10 @@ li {
   padding: 10px 0px;
 }
 
+.product-added {
+  border-bottom: 1px solid gray;
+}
+
 .article img {
   width: 109px;
   vertical-align: middle;
@@ -211,7 +123,7 @@ li {
 
 .article .people-counter {
   max-width: 60px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .article .buy-button {
@@ -239,7 +151,7 @@ li {
   background-color: rgba(196, 196, 196, 0.5);
 }
 
-/* fav tab */
+/* Fav Tab */
 
 .fav-articles {
   display: flex;
@@ -288,38 +200,6 @@ li {
   vertical-align: top;
 }
 
-/* Footer */
-
-
-
-.main-footer {
-  background-color: rgb(100, 107, 147);
-  padding: 10px;
-  
-}
-
-.container-footer-logo {
-  max-width: 100px;
-}
-
-.logo-footer {
-  width: 100%;
-}
-
-.main-footer a {
-  text-decoration: none;
-  color: #ffffff;
-  display: inline-block;
-  padding: 5px 0;
-  font-size: 14px;
-}
-
-.main-footer li {
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
 
@@ -341,7 +221,9 @@ li {
     display: flex;
     justify-content: center;
   }
-  /*cart tab*/
+
+  /* Cart Tab*/
+
   .article img {
     width: 40%;
     vertical-align: bottom;
@@ -390,12 +272,7 @@ li {
     border-bottom: none;
   }
 
-  /*footer*/
-
-
 }
-
-
 
 @media (min-width: 768px) {
 
@@ -403,50 +280,7 @@ li {
     min-height: 2200px;
   }
 
-
-  .main-navbar {
-    background-color: rgba(1, 1, 1, 0.65);
-  }
-
-  .container-nav-logo {
-    width: 70px;
-  }
-
-  .nav-logo {
-    width: 100%;
-  }
-
-  .menu {
-    width: fit-content;
-    max-height: fit-content;
-    overflow: visible;
-  }
-
-  .list {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  #toggler,
-  .main-navbar label {
-    display: none;
-  }
-
-  .li-menu-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .main-navbar ul {
-    display: flex;
-  }
-
-  .main-navbar li {
-    margin: 5px 10px;
-  }
-
-  /* body*/
+  /* Body */
 
   .article .tour-name {
     display: block;
@@ -464,26 +298,6 @@ li {
     width: 50%;
   }
 
-  /* footer */
-
-
-  .main-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .main-footer a:hover {
-    color: #081454;
-  }
-
-  .main-footer li {
-    text-align: left;
-  }
-
-  .container-footer-logo {
-    max-width: 15%;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -492,30 +306,11 @@ li {
   }
 }
 
-
 @media (min-width: 1200px) {
 
-  /*body*/
-
-  .main-cart{
-    min-height: 10px;
-  }
-
+  /* Body */
   .article .tour-name {
     display: contents;
-  }
-
-  /* Footer */
-
-
-
-  .main-footer {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .main-footer a {
-    font-size: 17px;
   }
 }
 
