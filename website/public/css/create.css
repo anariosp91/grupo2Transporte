@@ -17,14 +17,10 @@
   background-repeat: no-repeat;
 }
 
-/* contador de caracteres*/
 
-.borderojo {
-  outline: none;
-  border: 1px solid #f00;
-}
-.bordegris { 
-  border: 1px solid #d4d4d4; 
+/*Styles counter*/
+.txtCounter {
+  color: #fff;
 }
 
 

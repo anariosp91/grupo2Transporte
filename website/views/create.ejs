@@ -23,7 +23,7 @@
             <textarea maxlength="100" id="mensaje" class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
                 <%= locals.oldData ? oldData.descripcionCorta : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
                 <% } %></textarea>
-            <div id="contador">0/100</div>
+            <div id="contador" class="txtCounter">0/100</div>
            
 
             <label for="descripcionDetallada" class="form-label">Descripción:<% if ((locals.errors) && (locals.errors.descripcionDetallada)) {%><span class="error"><%=  errors.descripcionDetallada.msg %></span> <% } %>
@@ -41,7 +41,7 @@
             Tabla de embutidos y quesos franceses (para 2 personas)"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
                 <%= locals.oldData ? oldData.descripcionCorta : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
                 <% } %></textarea>
-            <div id="contador1">0/200</div>
+            <div id="contador1" class="txtCounter">0/200</div>
             <br>
             <p>Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
             <label for="imagen1" class="form-label">Imagen1:</label>
