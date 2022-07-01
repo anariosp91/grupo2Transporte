@@ -20,14 +20,15 @@
             
             
             <label for="descripcionCorta" class="form-label">Mini descripción: <% if ((locals.errors) && (locals.errors.descripcionCorta)) {%><span class="error"><%=  errors.descripcionCorta.msg %></span> <% } %></label>
-            <textarea class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
+            <textarea maxlength="100" id="mensaje" class="textarea1" name="descripcionCorta" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
                 <%= locals.oldData ? oldData.descripcionCorta : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
                 <% } %></textarea>
+            <div id="contador">0/100</div>
            
 
             <label for="descripcionDetallada" class="form-label">Descripción:<% if ((locals.errors) && (locals.errors.descripcionDetallada)) {%><span class="error"><%=  errors.descripcionDetallada.msg %></span> <% } %>
             </label>
-            <textarea class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+            <textarea maxlength="200" id="mensaje1" class="textarea2" name="descripcionDetallada" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
             
             Bar a bordo a su disposición
             
@@ -40,6 +41,7 @@
             Tabla de embutidos y quesos franceses (para 2 personas)"><% if ((locals.errors) && (locals.errors.descripcionDetallada)) { %>
                 <%= locals.oldData ? oldData.descripcionCorta : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
                 <% } %></textarea>
+            <div id="contador1">0/200</div>
             <br>
             <p>Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
             <label for="imagen1" class="form-label">Imagen1:</label>
