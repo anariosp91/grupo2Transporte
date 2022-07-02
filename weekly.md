@@ -73,3 +73,20 @@ Ana:
 - Todos terminamos el sprint 5.
 - Ninguna.
 - Arreglar el estilo de los botones en productDetail.
+
+_Reunion viernes 1 de Julio 1/2022
+
+Sofi:
+_ Mejorando los estilos del proyecto y diseñando el diagrama de la base de datos
+_ seguimos sin poder solucionar el responsive del footer
+_ Hacer el insert en la base de datos
+
+_ Nico:
+_ Estuvo trabajando en mejorar el footer y diseñando el diagrama de la base de datos
+_ seguimos sin poder solucionar el responsive del footer
+_ Hacer el buscador de tours
+
+Ana:
+_ Estuvo generando el middleware de autenticacion de administrador, genero el contador de caracteres de los textarea y trabajo en el diseño del diagrama de la base de datos
+_ seguimos sin poder solucionar el responsive del footer
+_ generar el modelo de la base de datos

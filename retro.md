@@ -46,6 +46,7 @@ RETROSPECTIVA SPRINT 3
 
 En este sprint no tuvimos mayores inconvenientes, aunque el tema fue un poco mas denso, entre todos pudimos solucionar las dudas existentes, y llevar a cabo la solucion final. 
 
+
 RETROSPECTIVA SPRINT 4
 
 _Comenzar a hacer_: 
@@ -59,3 +60,20 @@ Dejar de combinar lenguajes a la hora de denominar variables.
 
 _Continuar haciendo_:
 Seguiremos teniendo mas reuniones, para organizarnos y seguir avanzando.
+
+
+RETROSPECTIVA SPRINT5
+
+_Comenzar a hacer_: 
+empezar a usar nombres mas descriptivos y en ingles, para que el codigo se vea mas organizado y entendible
+
+_Hacer más_:
+Utilizar mas nombres descriptivos, y generar comentarios que ayuden a ordenar y que el codigo sea mas entendible
+
+_Hacer menos_: 
+Evitar conflictos en el manejo de Git
+
+_Continuar haciendo_:
+Seguiremos teniendo mas reuniones, para organizarnos y seguir avanzando. Seguiremos limpiando el codigo innecesario
+
+
