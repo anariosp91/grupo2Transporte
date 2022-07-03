@@ -1,3 +1,11 @@
+.htmlLogin {
+    min-height: 110%;
+    position: relative;
+  }
+  .htmlRegister {
+    min-height: 140%;
+    position: relative;
+  }
 .body-login {
     height: 100%;
     font-family: Arial, sans-serif;
@@ -138,24 +146,6 @@
         margin: 0%;
     }
 
-    /*Footer*/
-
-    .login-footer {
-        margin-top: 400px;
-    }
-
-    .register-footer {
-        margin-top: 1000px;
-    }
-
-    .edit-footer {
-        margin-top: 1300px;
-       
-    }
-
-    .create-footer {
-        margin-top: 950px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -172,15 +162,7 @@
         width: 50%;
     }
 
-    /*Footer*/
 
-    .login-footer {
-        margin-top: 550px;
-    }
-
-    .register-footer {
-        margin-top: 1300px;
-    }
 }
 
 @media (min-width: 969px) {
@@ -304,21 +286,4 @@
         padding: 15px;
     }
 
-    /*Footer*/
-
-    .login-footer {
-        margin-top: 600px;
-    }
-
-    .register-footer {
-        margin-top: 1000px;
-    }
-
-    .edit-footer {
-        margin-top: 1350px;
-    }
-
-    .create-footer {
-        margin-top: 930px;
-    }
 }

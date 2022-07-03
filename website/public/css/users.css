@@ -22,13 +22,10 @@
     margin: 0;
 }
 
-.userView {
-    padding-bottom: 50px;
-    min-height: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
+.htmlUsers {
+    min-height: 120%;
     position: relative;
-}
+  }
 
 .userFooter {
     position: absolute;

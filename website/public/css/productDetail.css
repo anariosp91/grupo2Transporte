@@ -1,3 +1,8 @@
+.htmlDetail {
+	min-height: 120%;
+	position: relative;
+  }
+
 .maincontainer {
 	display: flex;
 	justify-content: center;

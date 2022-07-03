@@ -1,3 +1,11 @@
+.htmlCreate {
+  min-height: 170%;
+  position: relative;
+}
+.htmlEdit {
+  min-height: 220%;
+  position: relative;
+}
 .box {
   width: 120px;
   height: 30px;

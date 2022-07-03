@@ -1,3 +1,8 @@
+
+.htmlIndex {
+    min-height: 230%;
+    position: relative;
+  }
 .body-index {
     font-family: 'Fira Sans', sans-serif;
     box-sizing: border-box;
