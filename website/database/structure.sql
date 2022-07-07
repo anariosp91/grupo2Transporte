@@ -16,18 +16,6 @@ CREATE SCHEMA IF NOT EXISTS `travel_db` DEFAULT CHARACTER SET utf8 ;
 USE `travel_db` ;
 
 -- -----------------------------------------------------
--- Table `travel_db`.`sales`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `travel_db`.`sales` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `user_id` INT NOT NULL,
-  `total` INT NOT NULL,
-  `date` DATE NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `travel_db`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`users` (
@@ -40,6 +28,23 @@ CREATE TABLE IF NOT EXISTS `travel_db`.`users` (
   `image` VARCHAR(100) NULL,
   `admin` TINYINT NULL,
   PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `travel_db`.`sales`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `travel_db`.`sales` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `total` INT NOT NULL,
+  `date` DATE NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `user_id`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `travel_db`.`users` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 
@@ -69,7 +74,19 @@ CREATE TABLE IF NOT EXISTS `travel_db`.`sales_tour` (
   `quantity` INT NOT NULL,
   `sales_id` INT NOT NULL,
   `date_tour` DATE NOT NULL,
-  PRIMARY KEY (`id`))
+  PRIMARY KEY (`id`),
+  INDEX `sales_id_idx` (`sales_id` ASC) VISIBLE,
+  INDEX `tour_id_idx` (`tour_id` ASC) VISIBLE,
+  CONSTRAINT `tour_id`
+    FOREIGN KEY (`tour_id`)
+    REFERENCES `travel_db`.`tours` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `sales_id`
+    FOREIGN KEY (`sales_id`)
+    REFERENCES `travel_db`.`sales` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 
@@ -84,7 +101,7 @@ START TRANSACTION;
 USE `travel_db`;
 INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (1, 'Represa de guatapé', 'Conoce uno de los lugares mas lindos y llenos de historia de la region', 'Salida desde y hacia el hotel', 100000, 4, 'tour-guatape1.jpeg', 'tour-guatape2.jpeg', 'tour-guatape3.jpeg');
 INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (2, 'Piedra del peñol', 'Este es uno de los atractivos turisticos mas importantes del país, divisa toda la region', 'salida desde y hacia el hotel', 100000, 4, 'tour-piedra1.jpeg', 'tour-piedra2.jpeg', 'tour-piedra3.jpeg');
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (3, 'Vuela en parapente', 'Sal de la rutina y Vive una experiencia inolvidable lanzandote desde el cielo', 'Salida desde y hacia el hotel', 100000, 6, 'tour-1653606899750.png', 'tour-parapente2.png', 'tour-parapente3.jpeg');
+INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (3, 'Vuela en parapente', 'Sal de la rutina, vive una experiencia inolvidable lanzandote desde el cielo y disfrutando las vistas', 'Salida desde y hacia el hotel', 100000, 6, 'tour-1653606899750.png', 'tour-parapente2.png', 'tour-parapente3.jpeg');
 INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (4, 'Jardin', 'Un hermoso lugar para descansar en familia y compartir con la naturaleza', 'Salida desde y hacia el hotel', 100000, 10, 'tour-jardin1.jpeg', 'tour-jardin2jpeg', 'tour-jardin3.jpeg');
 INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (5, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT);
 INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (6, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT);
