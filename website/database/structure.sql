@@ -54,14 +54,14 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `travel_db`.`tours` (
   `id` INT NOT NULL,
   `title` VARCHAR(45) NOT NULL,
-  `short-description` VARCHAR(100) NOT NULL,
+  `short_description` VARCHAR(110) NOT NULL,
   `long_description` VARCHAR(200) NOT NULL,
-  `price` BIGINT() NOT NULL,
-  `duration` BIGINT() NOT NULL,
+  `price` BIGINT NOT NULL,
+  `duration` BIGINT NOT NULL,
   `image1` VARCHAR(100) NOT NULL,
   `image2` VARCHAR(100) NOT NULL,
   `image3` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`id`))
+   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -110,7 +110,7 @@ VALUES
 
 
 
-INSERT INTO travel_db.tours(id,title,shortDescription,longDescription,price,duration,image1,image2,image3)
+INSERT INTO travel_db.tours(id,title,short_description,long_description,price,duration,image1,image2,image3)
 VALUES
 (1,"Represa de Guatapé","Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",500000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
 (2,"Piedra del Peñol ","Este es uno de los atractivos turisticos más importantes del país, divisa toda la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",40000,6,"tour-piedra1.jpeg","tour-piedra2.jpeg","tour-piedra3.jpeg"),
