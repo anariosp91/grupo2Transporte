@@ -8,6 +8,7 @@ module.exports = (sequelize, dataTypes) => {
         },
         user_id: {
             type: dataTypes.BIGINT(10),
+            foreignKey: true,
             allowNull: false
         },
         total: {
@@ -32,6 +33,10 @@ module.exports = (sequelize, dataTypes) => {
         Sale.belongsTo(models.User, {
             as: 'user',
             foreignKey: 'user_id'
+        }),
+        Sale.hasMany(models.Sale_Tour, {
+            as: 'tours',
+            foreignKey: 'sales_id'
         })
     }
  

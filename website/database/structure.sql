@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `travel_db`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `last_name` VARCHAR(45) NULL,
-  `phone` INT NOT NULL,
+  `phone` BIGINT(20) NOT NULL,
   `email` VARCHAR(45) NULL,
   `password` VARCHAR(100) NOT NULL,
   `image` VARCHAR(100) NULL,
@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `travel_db`.`tours` (
   `id` INT NOT NULL,
   `title` VARCHAR(45) NOT NULL,
   `short-description` VARCHAR(100) NOT NULL,
-  `long_description` LONGTEXT NOT NULL,
-  `price` INT NOT NULL,
-  `duration` INT NOT NULL,
+  `long_description` VARCHAR(200) NOT NULL,
+  `price` BIGINT() NOT NULL,
+  `duration` BIGINT() NOT NULL,
   `image1` VARCHAR(100) NOT NULL,
   `image2` VARCHAR(100) NOT NULL,
   `image3` VARCHAR(100) NOT NULL,
@@ -99,12 +99,26 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `travel_db`;
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (1, 'Represa de guatapé', 'Conoce uno de los lugares mas lindos y llenos de historia de la region', 'Salida desde y hacia el hotel', 100000, 4, 'tour-guatape1.jpeg', 'tour-guatape2.jpeg', 'tour-guatape3.jpeg');
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (2, 'Piedra del peñol', 'Este es uno de los atractivos turisticos mas importantes del país, divisa toda la region', 'salida desde y hacia el hotel', 100000, 4, 'tour-piedra1.jpeg', 'tour-piedra2.jpeg', 'tour-piedra3.jpeg');
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (3, 'Vuela en parapente', 'Sal de la rutina, vive una experiencia inolvidable lanzandote desde el cielo y disfrutando las vistas', 'Salida desde y hacia el hotel', 100000, 6, 'tour-1653606899750.png', 'tour-parapente2.png', 'tour-parapente3.jpeg');
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (4, 'Jardin', 'Un hermoso lugar para descansar en familia y compartir con la naturaleza', 'Salida desde y hacia el hotel', 100000, 10, 'tour-jardin1.jpeg', 'tour-jardin2jpeg', 'tour-jardin3.jpeg');
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (5, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT);
-INSERT INTO `travel_db`.`tours` (`id`, `title`, `short-description`, `long_description`, `price`, `duration`, `image1`, `image2`, `image3`) VALUES (6, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT);
+
+
+INSERT INTO travel_db.users(id, name, last_name, phone, email, password, image, admin) 
+VALUES 
+(1, "Sofia", "Gutierrez", 1164324525, "sofiaguierrez1845@gmail.com", "$2a$10$1qPxkt5.8AYVQ/QNrzH9Ju0t0WSUpiYcAi/I0vmDg5.mxSUEH8oti", "user-1655343080662.png",true), 
+(2, "ANA MARIA", "RIOS PABON", 3147252991, "ana-rios91@hotmail.com","$2a$10$fK6Wg2CfKihUiMNsrungheKs3FRhVhzJDUwoC324rQEzdU0TcOqb6", "user-1655500161339.jpg", true), 
+(3, "Nicolas", "Cerone", 57576555665, "nico@gmail.com", "$2a$10$N/7aJI2Ajtta7r1gj4kixeAV0JvI0ckeYLtTkdJVNu9WDcruBTyv2", "user-1655650003056.jpg", true), 
+(4, "ana", "RIOS PABON", 3147252991, "grupodepoder10@gmail.com", "$2a$10$7atZNb/0JRts2BhtdWh4bOzJOcaCkSMNiJQzAzIWD4fiafBelP32a", "user-1656445462611.png", false);
+
+
+
+INSERT INTO travel_db.tours(id,title,shortDescription,longDescription,price,duration,image1,image2,image3)
+VALUES
+(1,"Represa de Guatapé","Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",500000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
+(2,"Piedra del Peñol ","Este es uno de los atractivos turisticos más importantes del país, divisa toda la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",40000,6,"tour-piedra1.jpeg","tour-piedra2.jpeg","tour-piedra3.jpeg"),
+(3,"Vuela en Parapente  ","Sal de la rutina, vive una expreriencia inolvidable lanzandote desde el cielo y disfrutando las vistas","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",300000,7,"tour-1653606899750.png","tour-parapente2.png","tour-parapente3.jpeg"),
+(4,"Jardín ","Un hermoso lugar para descansar en familia y compartir con la naturaleza","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",600000,4,"tour-jardin1.jpeg","tour-jardin2.jpeg","tour-jardin3.jpeg"),
+(5,"Represa de Guatapé","Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",50000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
+(6,"Piedra del Peñol  ","Este es uno de los atractivos turisticos más importantes del país, divisa toda la región ","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",30000,6,"tour-piedra1.jpeg","tour-piedra2.jpeg","tour-piedra3.jpeg");
+
 
 COMMIT;
 
