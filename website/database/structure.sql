@@ -75,8 +75,8 @@ CREATE TABLE IF NOT EXISTS `travel_db`.`sales_tour` (
   `sales_id` INT NOT NULL,
   `date_tour` DATE NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `sales_id_idx` (`sales_id` ASC) VISIBLE,
-  INDEX `tour_id_idx` (`tour_id` ASC) VISIBLE,
+  -- INDEX `sales_id_idx` (`sales_id` ASC) VISIBLE,
+  -- INDEX `tour_id_idx` (`tour_id` ASC) VISIBLE,
   CONSTRAINT `tour_id`
     FOREIGN KEY (`tour_id`)
     REFERENCES `travel_db`.`tours` (`id`)
