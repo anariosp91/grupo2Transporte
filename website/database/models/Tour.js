@@ -2,46 +2,47 @@ module.exports = (sequelize, dataTypes) => {
     let alias = 'Tour';
     let cols = {
         id: {
-            type: dataTypes.BIGINT(10),
+            type: dataTypes.BIGINT(10).UNSIGNED,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            
         },
         title: {
-            type: dataTypes.VARCHAR(200),
-            allowNull: false
+            type: dataTypes.STRING(200),
+           
         },
-        shortDescription: {
-            type: dataTypes.VARCHAR(110),
-            allowNull: false
+        short_description: {
+            type: dataTypes.STRING(110),
+           
         },
-        longDescription: {
-            type: dataTypes.VARCHAR(200),
-            allowNull: false
+        long_description: {
+            type: dataTypes.STRING(200),
+            
         },
         price: {
             type: dataTypes.BIGINT(),
-            allowNull: false
+            
         },
         duration: {
             type: dataTypes.BIGINT(),
-            allowNull: false
+            
         },
         image1: {
-            type: dataTypes.VARCHAR(100),
-            allowNull: false
+            type: dataTypes.STRING(100),
+            
         },
         image2: {
-            type: dataTypes.VARCHAR(100),
-            allowNull: false
+            type: dataTypes.STRING(100),
+            
         },
         image3: {
-            type: dataTypes.VARCHAR(100),
-            allowNull: false
+            type: dataTypes.STRING(100),
+            
         }
         
     };
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -49,7 +50,7 @@ module.exports = (sequelize, dataTypes) => {
     const Tour = sequelize.define(alias, cols, config); 
 
     Tour.associate = (models) => {
-        Tour.belongsTo(models.Sale_Tour, {
+        Tour.belongsTo(models.SaleTour, {
             as: 'sold',
             foreignKey: 'tour_id'
         })

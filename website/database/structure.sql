@@ -19,7 +19,7 @@ USE `travel_db` ;
 -- Table `travel_db`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`users` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `last_name` VARCHAR(45) NULL,
   `phone` BIGINT(20) NOT NULL,
@@ -35,7 +35,7 @@ ENGINE = InnoDB;
 -- Table `travel_db`.`sales`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`sales` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT,
   `user_id` INT NOT NULL,
   `total` INT NOT NULL,
   `date` DATE NOT NULL,
@@ -52,15 +52,15 @@ ENGINE = InnoDB;
 -- Table `travel_db`.`tours`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`tours` (
-  `id` INT NOT NULL,
-  `title` VARCHAR(45) NOT NULL,
-  `short_description` VARCHAR(110) NOT NULL,
-  `long_description` VARCHAR(200) NOT NULL,
-  `price` BIGINT NOT NULL,
-  `duration` BIGINT NOT NULL,
-  `image1` VARCHAR(100) NOT NULL,
-  `image2` VARCHAR(100) NOT NULL,
-  `image3` VARCHAR(100) NOT NULL,
+  `id` INT AUTO_INCREMENT,
+  `title` VARCHAR(45) ,
+  `short_description` VARCHAR(110) ,
+  `long_description` VARCHAR(200) ,
+  `price` BIGINT ,
+  `duration` BIGINT ,
+  `image1` VARCHAR(100) ,
+  `image2` VARCHAR(100) ,
+  `image3` VARCHAR(100) ,
    PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -69,7 +69,7 @@ ENGINE = InnoDB;
 -- Table `travel_db`.`sales_tour`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`sales_tour` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT,
   `tour_id` INT NOT NULL,
   `quantity` INT NOT NULL,
   `sales_id` INT NOT NULL,
