@@ -33,17 +33,17 @@ module.exports = (sequelize, dataTypes) => {
         updatedAt: 'updated_at',
         deletedAt: false
     }
-    const Sale_Tour = sequelize.define(alias, cols, config); 
+    const SaleTour = sequelize.define(alias, cols, config); 
 
-    Sale_Tour.associate = (models) => {
-        Sale_Tour.belongsTo(models.Tour, {
+    SaleTour.associate = (models) => {
+        SaleTour.belongsTo(models.Tour, {
             as: 'tour',
             foreignKey: 'tour_id'
         }),
-        Sale_Tour.belongsTo(models.Sale, {
+        SaleTour.belongsTo(models.Sale, {
             as: 'sales',
             foreignKey: 'sales_id'
         })
     }
-    return Sale_Tour
+    return SaleTour
 };

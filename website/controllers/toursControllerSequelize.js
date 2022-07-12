@@ -21,6 +21,18 @@ let toursController = {
             ...req.body,
         })
         .then(tour => res.redirect('/tours/list'))
+    },
+    detail: (req, res) => {
+        let tourId = req.params.id
+        db.Tour.findByPk(tourId)
+        .then(tour => res.render('productDetailV2', {tour}))
+        .catch(err => console.log(err))
+    },
+    edit: (req, res) => {
+        let tourId = req.params.id
+        db.Tour.findByPk(tourId)
+        .then(tour => res.render('edit', {tour}))
+        .catch(err => console.log(err))
     }
 
 

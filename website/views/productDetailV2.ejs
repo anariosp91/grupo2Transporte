@@ -18,21 +18,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active itemCarousel" data-bs-interval="200000">
-          <img src="/img/products/<%= tour.imagen1 %> " class="imgCarousel" alt="...">
+          <img src="/img/products/<%= tour.image1 %> " class="imgCarousel" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5><%= tour.nombre %> </h5>
+            <h5><%= tour.title %> </h5>
           </div>
         </div>
         <div class="carousel-item itemCarousel">
-          <img src="/img/products/<%= tour.imagen2 %> " class="d-block w-100" alt="...">
+          <img src="/img/products/<%= tour.image2 %> " class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5><%= tour.nombre %> </h5>
+            <h5><%= tour.title %> </h5>
           </div>
         </div>
         <div class="carousel-item itemCarousel">
-          <img src="/img/products/<%= tour.imagen3 %> " class="d-block w-100" alt="...">
+          <img src="/img/products/<%= tour.image3 %> " class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5><%= tour.nombre %> </h5>
+            <h5><%= tour.title %> </h5>
           </div>
         </div>
       </div>
@@ -49,12 +49,12 @@
           <div class="maincontainer">
             <section class="contenedor1">
               <div class="tituloTour"> 
-                <h2><%= tour.nombre %> </h2>
+                <h2><%= tour.title %> </h2>
                 <% if (locals.isLogged && locals.userLogged.admin) { %>
                 <a href="/tours/edit/<%= tour.id %> "><i class="fa-solid fa-pen-to-square"></i></a>
                 <% } %>
               </div>
-              <h2> <%= tour.precio %>  </h2>
+              <h2> <%= tour.price %>  </h2>
               <div> Fecha <input type="date"> </div>
               <div> Personas - <span class="contador-personas">5</span> + </div>
               <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
@@ -70,7 +70,7 @@
             <section class="contenedor2">
               <div class="horario">
                 <i class="fa-solid fa-clock-rotate-left reloj"> </i>
-                <p class="margen">Duración del tour, <%= tour.duracion %>  aproximadamente</p>
+                <p class="margen">Duración del tour, <%= tour.duration %>  aproximadamente</p>
               </div>
               <p>Salida del crucero: horarios en función de la temporada
                 Embarque: en Port de l'Arsenal, 75012 Paris</p>
