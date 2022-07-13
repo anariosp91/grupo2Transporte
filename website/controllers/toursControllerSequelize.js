@@ -24,8 +24,11 @@ let toursController = {
     },
     detail: (req, res) => {
         let tourId = req.params.id
-        db.Tour.findByPk(tourId)
+        db.Tour.findByPk(tourId, {
+            include: ['sold']
+        })
         .then(tour => res.render('productDetailV2', {tour}))
+        // .then(tour => console.log(tour.sold))
         .catch(err => console.log(err))
     },
     edit: (req, res) => {
@@ -34,7 +37,7 @@ let toursController = {
         .then(tour => res.render('edit', {tour}))
         .catch(err => console.log(err))
     }
-
+    
 
 
 }

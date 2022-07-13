@@ -50,7 +50,7 @@ module.exports = (sequelize, dataTypes) => {
     const Tour = sequelize.define(alias, cols, config); 
 
     Tour.associate = (models) => {
-        Tour.belongsTo(models.SaleTour, {
+        Tour.hasMany(models.SaleTour, {
             as: 'sold',
             foreignKey: 'tour_id'
         })
