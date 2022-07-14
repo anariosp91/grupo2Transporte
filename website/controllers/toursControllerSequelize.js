@@ -36,6 +36,31 @@ let toursController = {
         db.Tour.findByPk(tourId)
         .then(tour => res.render('edit', {tour}))
         .catch(err => console.log(err))
+    },
+    update: (req, res) => {
+        let tourId = req.params.id
+        
+        let images = req.files
+        let tourEdit = {
+            ...req.body,
+        }
+        images.forEach(image => {
+            if(image.fieldname == 'image1'){
+                tourEdit.image1 = image.filename
+            }
+            if(image.fieldname == 'image2'){
+                tourEdit.image2 = image.filename
+            }
+            if(image.fieldname == 'image3'){
+                tourEdit.image3 = image.filename
+            }
+        });
+        db.Tour.update(tourEdit,
+        {
+            where: {id : tourId}
+        })
+        .then(tour => res.redirect('/tours/detail/'+ tourId))
+        
     }
     
 

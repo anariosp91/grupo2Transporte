@@ -19,7 +19,7 @@ router.post('/create', upload.any(), validationTours, adminAuthMiddleware, tours
 
 //edicion de tours
 router.get('/edit/:id/', adminAuthMiddleware, toursController.edit);
-// router.put('/edit/:id/', upload.any(), adminAuthMiddleware, toursController.update)
+router.put('/edit/:id/', upload.any(), adminAuthMiddleware, toursController.update)
 
 // router.get('/list', toursController.tours);
 
