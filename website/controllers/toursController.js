@@ -118,6 +118,7 @@ let toursController = {
 		res.redirect("/tours/list")
 
     }
+
 }
 
 module.exports = toursController;

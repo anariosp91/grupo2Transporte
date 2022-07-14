@@ -8,6 +8,9 @@ const tours = JSON.parse(fs.readFileSync(toursFile, 'utf-8'));
 let indexController = {
     index: (req, res) => {
         res.render('index', {tours: tours});
+    } ,
+    search: (req, res) => {
+        res.render('search');
     } 
 }
 
