@@ -16,7 +16,7 @@ router.get('/register',guestMiddleware, usersController.register);
 router.post('/register',upload.single('image'), validationUsers, usersController.processRegister)
 
 // //Login form
-// router.get('/login', guestMiddleware, usersController.login);
+router.get('/login', guestMiddleware, usersController.login);
 // router.post('/login', usersController.loginProcess);
 
 // //Product cart

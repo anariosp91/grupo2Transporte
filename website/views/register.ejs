@@ -31,7 +31,7 @@
             </div>
           <% } %>
 
-          <label for="phone" class="form-label">Teléfono:</label>
+          <label for="phone" class="form-label">Teléfono: No ingrese espacios vacios</label>
           <input type="text" name="phone" value="<%= locals.oldData ? oldData.phone : null %>" placeholder="+549238328" class="form-input" >
           <% if (locals.errors && errors.phone) { %>
             <div class="text-danger">
@@ -91,9 +91,9 @@
   </div>
 
 
-  <div class="footer">
+  <!-- <div class="footer">
     <%- include("partials/footer") %>
-  </div>
+  </div> -->
 
 </body>
 

@@ -26,7 +26,7 @@ const validationUsers = [
     }),
     
     check('image').custom((value, { req }) => {
-		let file = req.file;
+		let file = req.files;
 		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
 
         if(file){

@@ -1,6 +1,7 @@
 const {validationResult} = require('express-validator');
 const db = require ('../database/models/index');
-const {Op} = require('sequelize')
+const {Op} = require('sequelize');
+const bcryptjs = require('bcryptjs')
 
 let usersController = {
 
@@ -19,16 +20,50 @@ let usersController = {
          return res.render('register', {
                errors: resultValidation.mapped(),
                oldData: req.body
-        })
+        })}
+    
+    let userToRegister = db.User.findOne({
+        where: {email : req.body.email}
+    }).then(user => {
+        if(user != null){
+    
+            res.render('register', {
+                errors: {
+                    email: {
+                        msg: 'Este email ya está registrado'
+                    }
+                },
+                oldData: req.body
+            }
+            )
+        }else if(user == null){
+            
+    
+                let image
+                if(req.files != undefined){
+                    image = req.files.filename
+            
+                }else{
+                    image = 'avatar.png'
+                }
+            
+            
+                db.User.create({
+                    ...req.body,
+                    password : bcryptjs.hashSync(req.body.password, 10),
+                    image : image
+                })
+                .then(user => res.redirect('/'))
+                .catch(err => console.log(err))
+    
         }
-
-        db.User.create({
-            ...req.body,
-        })
-        //.then(user => res.redirect('/'))
-        .then(user => console.log(user))
-        .catch(err => console.log(err))
+    })
     },
+    login: (req, res) => {
+        let userToLogin = db.User.findOne({
+            where: {email : req.body.email}
+        })
+    }
     // detail: (req, res) => {
     //     let tourId = req.params.id
     //     db.Tour.findByPk(tourId, {
