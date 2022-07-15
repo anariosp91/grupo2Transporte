@@ -38,7 +38,7 @@
     font-size: 30px;
 }
 
-.titulo {
+.title {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 46px;
@@ -82,7 +82,7 @@
         top: 200px;
         width: 90%;
         padding: 25px;
-        background-color: rgba(33, 33, 33, 0.5);
+        background-color: rgba(33, 33, 33, 0.7);
     }
 
     .container2 {
@@ -91,7 +91,7 @@
         width: 90%;
         max-height: fit-content;
         padding: 25px;
-        background-color: rgba(33, 33, 33, 0.5);
+        background-color: rgba(33, 33, 33, 0.7);
     }
 
     .body-login p {
@@ -130,6 +130,7 @@
 
     .cancelButton {
         background-color: #545f9e;
+        text-align: center;
     }
 
     .resetButton {
@@ -270,20 +271,4 @@
         text-align: center;
         margin: 0%;
     }
-
-
-
-    /* textarea */
-    .textarea1 {
-        width: 100%;
-        height: 70px;
-        padding: 15px;
-    }
-
-    .textarea2 {
-        width: 100%;
-        height: 300px;
-        padding: 15px;
-    }
-
 }

@@ -3,7 +3,7 @@
 
 <%- include("partials/head") %>
 
-<body>
+<body class="body-create">
 
     <header class="main-header-create">
         <%- include("partials/header") %>
@@ -13,22 +13,20 @@
         
 
         <form  method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
-            <h1 class="titulo"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
+            <h1 class="title"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
 
             <label for="title" class="form-label">Nombre:<% if ((locals.errors) && (locals.errors.title)) {%><span class="error"><%=  errors.title.msg %></span> <% } %></label>
-            <input type="text" name="title" placeholder="Piedra del Peñol" class="edit-input" value="<%= locals.oldData ? oldData.title : null %>">
+            <input type="text" name="title" placeholder="Piedra del Peñol" class="input-tour" value="<%= locals.oldData ? oldData.title : null %>">
             
             
-            <label for="short_description" class="form-label">Mini descripción: <% if ((locals.errors) && (locals.errors.short_description)) {%><span class="error"><%=  errors.short_description.msg %></span> <% } %></label>
-            <textarea maxlength="100" id="mensaje" class="textarea1" name="short_description" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><% if ((locals.errors) && (locals.errors.long_description)) { %>
-                <%= locals.oldData ? oldData.short_description : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
-                <% } %></textarea>
+            <label for="short_description" class="form-label">Descripción corta: <% if ((locals.errors) && (locals.errors.short_description)) {%><span class="error"><%=  errors.short_description.msg %></span> <% } %></label>
+            <textarea maxlength="100" id="mensaje" class="textarea1 form-textarea" name="short_description" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><%= locals.oldData ? oldData.short_description : null %></textarea>
             <div id="contador" class="txtCounter">0/100</div>
            
 
-            <label for="long_description" class="form-label">Descripción:<% if ((locals.errors) && (locals.errors.long_description)) {%><span class="error"><%=  errors.long_description.msg %></span> <% } %>
+            <label for="long_description" class="form-label">Descripción detallada:<% if ((locals.errors) && (locals.errors.long_description)) {%><span class="error"><%=  errors.long_description.msg %></span> <% } %>
             </label>
-            <textarea maxlength="200" id="mensaje1" class="textarea2" name="long_description" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
+            <textarea maxlength="200" id="mensaje1" class="textarea2 form-textarea" name="long_description" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
             
             Bar a bordo a su disposición
             
@@ -38,29 +36,32 @@
             
             Copa de Champagne
             Copa de vino
-            Tabla de embutidos y quesos franceses (para 2 personas)"><% if ((locals.errors) && (locals.errors.long_description)) { %>
-                <%= locals.oldData ? oldData.short_description : 'Conoce uno de los atractivos turisticos mas importantes de la region...' %>
-                <% } %></textarea>
+            Tabla de embutidos y quesos franceses (para 2 personas)"><%= locals.oldData ? oldData.long_description : null %></textarea>
             <div id="contador1" class="txtCounter">0/200</div>
             <br>
-            <p>Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
-            <label for="image1" class="form-label">Imagen1:</label>
-            <input type="file" name="image1" value="<%= locals.oldData ? oldData.image1 : null %>" class="edit-input" multiple>
-
-            <label for="image2" class="form-label">Imagen2:</label>
-            <input type="file" name="image2" value="<%= locals.oldData ? oldData.image2 : null %>" class="edit-input" multiple>
-
-            <label for="image3" class="form-label">Imagen3:</label>
-            <input type="file" name="image3" value="<%= locals.oldData ? oldData.image3 : null %>" class="edit-input" multiple>
-
-            <br><label for="duration" class="form-label">Duración:<% if ((locals.errors) && (locals.errors.duration)) {%><span class="error"><%=  errors.duration.msg %></span> <% } %></label>
-            <input type="number" name="duration" value="<%= locals.oldData ? oldData.duration : null %>" placeholder="" class="edit-input" >
+            <div class="container-tour-img">
+                <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
+                <label for="image1" class="form-label">Imagen 1:</label>
+                <input type="file" name="image1" value="<%= locals.oldData ? oldData.image1 : null %>" class="tour-img" multiple>
+    
+                <label for="image2" class="form-label">Imagen 2:</label>
+                <input type="file" name="image2" value="<%= locals.oldData ? oldData.image2 : null %>" class="tour-img" multiple>
+    
+                <label for="image3" class="form-label">Imagen 3:</label>
+                <input type="file" name="image3" value="<%= locals.oldData ? oldData.image3 : null %>" class="tour-img" multiple>
+            </div>
             
-            <label for="price" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.price)) {%><span class="error"><%=  errors.price.msg %></span> <% } %></label>
-            <input type="number" name="price" value="<%= locals.oldData ? oldData.price : null %>" placeholder="" class="edit-input" >
+
+                <label for="duration" class="form-label">Duración:<% if ((locals.errors) && (locals.errors.duration)) {%><span class="error"><%=  errors.duration.msg %></span> <% } %></label>
+                <input type="text" name="duration" value="<%= locals.oldData ? oldData.duration : null %>" placeholder="" class="input-tour tour-price">
+                
+                <label for="price" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.price)) {%><span class="error"><%=  errors.price.msg %></span> <% } %></label>
+                <input type="text" name="price" value="<%= locals.oldData ? oldData.price : null %>" placeholder="" class="input-tour tour-price">
+
+           
             
             <div class="buttonsEdit">
-                <button type="submit" class="button cancelButton">Cancelar</button>
+                <button type="reset" class="button cancelButton">Cancelar</button>
                 <button type="submit" class="button">Guardar</button>
             </div>
         </form>

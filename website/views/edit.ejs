@@ -3,7 +3,7 @@
 
 <%- include("partials/head") %>
 
-<body>
+<body class="body-create">
 
     <header class="main-header-create">
         <%- include("partials/header") %>
@@ -11,39 +11,39 @@
     <div class="login-div-container">
 
         <form action="/tours/edit/<%= tour.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container" >
-            <h1 class="titulo"><i class="fa-solid fa-pen-to-square"></i> Editar tour</h1>
+            <h1 class="title"><i class="fa-solid fa-pen-to-square"></i> Editar tour</h1>
 
             <label for="title" class="form-label" >Nombre:</label>
-            <input type="text" name="title" value="<%= tour.title %> " class="edit-input" required>
+            <input type="text" name="title" value="<%= tour.title %> " class="input-tour" required>
 
             <label for="short_description" class="form-label">Mini descripción:</label>
-            <textarea id="mensaje" maxlength="100" class="textarea1" name="short_description"><%= tour.short_description %></textarea>
+            <textarea id="mensaje" maxlength="100" class="textarea1 form-textarea" name="short_description"><%= tour.short_description %></textarea>
             <div id="contador" class="txtCounter">0/100</div>
             
             <label for="long_description" class="form-label">Descripción:</label>
-            <textarea id="mensaje1" maxlength="200" class="textarea2" name="long_description" ><%= tour.long_description %></textarea>
+            <textarea id="mensaje1" maxlength="200" class="textarea2 form-textarea" name="long_description" ><%= tour.long_description %></textarea>
             <div id="contador1" class="txtCounter">0/200</div>
 
             <label for="imagenes" class="form-label">Imagenes:</label>
-            <p>Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
+            <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
             <img src="/img/products/<%= tour.image1 %> " class="editarImagen">
-            <input type="file" name="image1" value= "<%= tour.image1 %> " class="edit-input" multiple>
+            <input type="file" name="image1" value= "<%= tour.image1 %> " class="tour-img-edit"  multiple>
             
             <img src="/img/products/<%= tour.image2 %> " class="editarImagen">
-            <input type="file" name="image2" value= "<%= tour.image2 %> " class="edit-input" multiple>
+            <input type="file" name="image2" value= "<%= tour.image2 %> " class="tour-img-edit"  multiple>
             
             <img src="/img/products/<%= tour.image3 %> " class="editarImagen">
-            <input type="file" name="image3" value= "<%= tour.image3 %> " class="edit-input" multiple>
+            <input type="file" name="image3" value= "<%= tour.image3 %> " class="tour-img-edit"  multiple>
 
 
             <label for="duration" class="form-label">Duración:</label>
-            <input type="text" name="duration" value="<%= tour.duration %> " class="edit-input" required>
+            <input type="text" name="duration" value="<%= tour.duration %> " class="input-tour" required>
 
             <label for="price" class="form-label">Precio:</label>
-            <input type="text" name="price" value="<%= tour.price %> " class="edit-input" required>
+            <input type="text" name="price" value="<%= tour.price %> " class="input-tour" required>
 
             <div class="buttonsEdit edit">
-                <button type="submit" class="button cancelButton">Cancelar</button>
+                <a href="/tours/list" class="button cancelButton" >Cancelar</a>
                 <button type="reset" class="button resetButton">Deshacer</button>
                 <button type="submit" class="button">Guardar</button>
             </div>
