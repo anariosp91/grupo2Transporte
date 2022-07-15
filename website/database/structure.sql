@@ -119,14 +119,16 @@ VALUES
 (5,"Represa de Guatapé","Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",50000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
 (6,"Piedra del Peñol  ","Este es uno de los atractivos turisticos más importantes del país, divisa toda la región ","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",30000,6,"tour-piedra1.jpeg","tour-piedra2.jpeg","tour-piedra3.jpeg");
 
-INSERT INTO travel_db.sales_tour(id,tour_id,quantity,sales_id,date_tour)
-VALUES(1,2,4,1,"2022-05-11"),(2,4,2,1,"2022-05-11"),(3,2,3,2,"2022-05-11"),(4,2,1,3,"2022-06-04"),(5,6,3,4,"2022-06-10")
-
 INSERT INTO travel_db.sales(id, user_id, total, date)
 VALUES(1, 2, 1360000, "2022-05-17"),
-(2, 6, 120000, "2022-05-10"),
+(2, 1, 120000, "2022-05-10"),
 (3, 4, 40000,"2022-06-04"),
-(4, 3, 90000, "2022-06-12")
+(4, 3, 90000, "2022-06-12");
+
+INSERT INTO travel_db.sales_tour(id,tour_id,quantity,sales_id,date_tour)
+VALUES(1,2,4,1,"2022-05-11"),(2,4,2,1,"2022-05-11"),(3,2,3,2,"2022-05-11"),(4,2,1,3,"2022-06-04"),(5,6,3,4,"2022-06-10");
+
+
 
 COMMIT;
 
