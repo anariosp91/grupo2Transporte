@@ -3,11 +3,11 @@
   <% tours.forEach(tour => { %>
   <a href="/tours/detail/<%= tour.id %> ">
     <div class="contenedorImagen">
-      <img src="/img/products/<%= tour.imagen1 %> " class="tour">
+      <img src="/img/products/<%= tour.image1 %> " class="tour">
     </div>
     <div class="descripcion">
-      <h3><%= tour.nombre %> </h3>
-      <p><%= tour.descripcionCorta %> </p>
+      <h3><%= tour.title %> </h3>
+      <p><%= tour.short_description %> </p>
     </div>
   </a>
   <% }) %>

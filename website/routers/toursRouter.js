@@ -21,9 +21,9 @@ router.post('/create', upload.any(), validationTours, adminAuthMiddleware, tours
 router.get('/edit/:id/', adminAuthMiddleware, toursController.edit);
 router.put('/edit/:id/', upload.any(), adminAuthMiddleware, toursController.update)
 
-// router.get('/list', toursController.tours);
+router.get('/list', toursController.tours);
 
-// router.delete('/delete/:id', adminAuthMiddleware, toursController.delete);
+router.delete('/delete/:id', adminAuthMiddleware, toursController.delete);
 
 
 

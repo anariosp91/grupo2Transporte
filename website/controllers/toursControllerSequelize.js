@@ -60,7 +60,20 @@ let toursController = {
             where: {id : tourId}
         })
         .then(tour => res.redirect('/tours/detail/'+ tourId))
-        
+    },
+    tours: (req, res) => {
+        db.Tour.findAll()
+        .then(tours => res.render('tours',{tours}))
+    },
+    delete: (req, res) => {
+        let tourId = req.params.id
+        db.Tour.destroy(
+        {
+            where: {id: tourId}
+        }
+        )
+        .then(tour => res.redirect('/tours/list'))
+        .catch(err => console.log(err))
     }
     
 
