@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 //Controller
-const usersController = require('../controllers/usersController');
+const usersController = require('../controllers/usersControllerSequelize');
 
 //Middlewares
 const upload = require('../middlewares/multerUsers');
@@ -15,21 +15,21 @@ const adminAuthMiddleware = require('../middlewares/adminAuthMiddleware');
 router.get('/register',guestMiddleware, usersController.register);
 router.post('/register',upload.single('image'), validationUsers, usersController.processRegister)
 
-//Login form
-router.get('/login', guestMiddleware, usersController.login);
-router.post('/login', usersController.loginProcess);
+// //Login form
+// router.get('/login', guestMiddleware, usersController.login);
+// router.post('/login', usersController.loginProcess);
 
-//Product cart
-router.get('/productCart',authMiddleware, usersController.cart);
+// //Product cart
+// router.get('/productCart',authMiddleware, usersController.cart);
 
-//Favorites
-router.get('/favorites',authMiddleware, usersController.favorites);
+// //Favorites
+// router.get('/favorites',authMiddleware, usersController.favorites);
 
-//Users
-router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
+// //Users
+// router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
 
 
-// Logout
+// // Logout
 router.get('/logout', usersController.logout);
 
 

@@ -5,13 +5,13 @@ const validationUsers = [
 
     check('name').notEmpty().withMessage('Debes colocar tu nombre'),
     
-    check('lastName').notEmpty().withMessage('Debes colocar tu apellido'),
+    check('last_name').notEmpty().withMessage('Debes colocar tu apellido'),
     
     check('email')
     .notEmpty().withMessage('Debes colocar tu email').bail()
     .isEmail().withMessage('Debes ingresar un email valido'),
     
-    check('cell').notEmpty().withMessage('Debes completar con tu teléfono'),
+    check('phone').notEmpty().withMessage('Debes completar con tu teléfono'),
 
     check("password")
     .notEmpty().withMessage("Contraseña no deberia estar vacio"),
