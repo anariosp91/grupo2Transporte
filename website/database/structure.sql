@@ -19,7 +19,7 @@ USE `travel_db` ;
 -- Table `travel_db`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`users` (
-  `id` INT AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT NOT NULL UNIQUE,
   `name` VARCHAR(45) NOT NULL,
   `last_name` VARCHAR(45) NULL,
   `phone` BIGINT(20) NOT NULL,
@@ -35,7 +35,7 @@ ENGINE = InnoDB;
 -- Table `travel_db`.`sales`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`sales` (
-  `id` INT AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT NOT NULL UNIQUE,
   `user_id` INT NOT NULL,
   `total` INT NOT NULL,
   `date` DATE NOT NULL,
@@ -52,7 +52,7 @@ ENGINE = InnoDB;
 -- Table `travel_db`.`tours`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`tours` (
-  `id` INT AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT NOT NULL UNIQUE,
   `title` VARCHAR(45) ,
   `short_description` VARCHAR(110) ,
   `long_description` VARCHAR(200) ,
@@ -69,7 +69,7 @@ ENGINE = InnoDB;
 -- Table `travel_db`.`sales_tour`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `travel_db`.`sales_tour` (
-  `id` INT AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT NOT NULL UNIQUE,
   `tour_id` INT NOT NULL,
   `quantity` INT NOT NULL,
   `sales_id` INT NOT NULL,
@@ -112,11 +112,11 @@ VALUES
 
 INSERT INTO travel_db.tours(id,title,short_description,long_description,price,duration,image1,image2,image3)
 VALUES
-(1,"Represa de Guatapé","Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",500000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
+(1,"Represa de Guatapé","Embalse amplio y pintoresco rodeado de colinas, senderos y una imponente cresta","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",500000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
 (2,"Piedra del Peñol ","Este es uno de los atractivos turisticos más importantes del país, divisa toda la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",40000,6,"tour-piedra1.jpeg","tour-piedra2.jpeg","tour-piedra3.jpeg"),
 (3,"Vuela en Parapente  ","Sal de la rutina, vive una expreriencia inolvidable lanzandote desde el cielo y disfrutando las vistas","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",300000,7,"tour-1653606899750.png","tour-parapente2.png","tour-parapente3.jpeg"),
 (4,"Jardín ","Un hermoso lugar para descansar en familia y compartir con la naturaleza","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",600000,4,"tour-jardin1.jpeg","tour-jardin2.jpeg","tour-jardin3.jpeg"),
-(5,"Represa de Guatapé","Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",50000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
+(5,"Represa de Guatapé","El Embalse Peñol-Guatapé. Conoce uno de los lugares mas lindos y llenos de historia de la región","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",50000,4,"tour-guatape1.jpeg","tour-guatape2.jpeg","tour-guatape3.jpeg"),
 (6,"Piedra del Peñol  ","Este es uno de los atractivos turisticos más importantes del país, divisa toda la región ","Salida desde y hasta el hotel. En los horarios pactados con el contratante, en el trayecto conoceran el viejo peñol, y podran disfrutar de paseo en lancha (precio no incluido)",30000,6,"tour-piedra1.jpeg","tour-piedra2.jpeg","tour-piedra3.jpeg");
 
 INSERT INTO travel_db.sales(id, user_id, total, date)

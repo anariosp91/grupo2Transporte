@@ -8,7 +8,7 @@ const router = express.Router();
 const toursController = require('../controllers/toursControllerSequelize');
 
 // Middlewares
-const upload = require('../middlewares/multer');
+const upload = require('../middlewares/multerTours');
 const validationTours = require('../middlewares/validationTours');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');

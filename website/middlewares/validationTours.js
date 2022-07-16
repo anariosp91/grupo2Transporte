@@ -1,16 +1,16 @@
-const {check} = require('express-validator');
 const path = require('path');
+const {body} = require('express-validator');
 
 const validationTours = [
 
-    check('title').notEmpty().withMessage('Debes completar este campo'),
-    check('short_description').isLength({ min: 80, max: 100 }).withMessage('La descripción debe contener entre 80 y 100 caracteres'),
-    check('long_description').isLength({ min: 150, max: 200 }).withMessage('La descripción debe contener entre 150 y 200 caracteres'),
-    check('duration')
+   body('title').notEmpty().withMessage('Debes completar este campo'),
+   body('short_description').isLength({ min: 80, max: 100 }).withMessage('La descripción debe contener entre 80 y 100 caracteres'),
+   body('long_description').isLength({ min: 150, max: 200 }).withMessage('La descripción debe contener entre 150 y 200 caracteres'),
+   body('duration')
     .isNumeric().withMessage('Debes completar este campo'),
-    check('price').isNumeric().withMessage('Debes completar este campo'),
-    check('image1').custom((value, { req }) => {
-		let file = req.files;
+   body('price').isNumeric().withMessage('Debes completar este campo'),
+   body('image1').custom((value, { req }) => {
+		let file = req.files[0];
 		let acceptedExtensions = ['.jpg', '.png', '.gif'];
 
 		if (!file) {
@@ -24,8 +24,8 @@ const validationTours = [
 
 		return true;
 	}),
-    check('image2').custom((value, { req }) => {
-		let file = req.files;
+   body('image2').custom((value, { req }) => {
+		let file = req.files[1];
 		let acceptedExtensions = ['.jpg', '.png', '.gif'];
 
 		if (!file) {
@@ -39,8 +39,8 @@ const validationTours = [
 
 		return true;
 	}),
-    check('image3').custom((value, { req }) => {
-		let file = req.files;
+   body('image3').custom((value, { req }) => {
+		let file = req.files[2];
 		let acceptedExtensions = ['.jpg', '.png', '.gif'];
 
 		if (!file) {

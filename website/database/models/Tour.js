@@ -2,10 +2,9 @@ module.exports = (sequelize, dataTypes) => {
     let alias = 'Tour';
     let cols = {
         id: {
-            type: dataTypes.BIGINT(10).UNSIGNED,
-            primaryKey: true,
+            type: dataTypes.INTEGER(10),
             autoIncrement: true,
-            
+            primaryKey: true,
         },
         title: {
             type: dataTypes.STRING(200),

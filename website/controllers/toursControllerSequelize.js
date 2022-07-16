@@ -20,11 +20,14 @@ let toursController = {
                 oldData: req.body
             })
         }
-
+        console.log(req.body, req.files)
         db.Tour.create({
-                ...req.body,
-            })
-            .then(tour => res.redirect('/tours/list'))
+            ...req.body,
+            image1 : req.files[0].filename,
+            image2 : req.files[1].filename,
+            image3 : req.files[2].filename
+        })
+        .then(tour => res.redirect('/tours/list'))
     },
     detail: (req, res) => {
         let tourId = req.params.id
