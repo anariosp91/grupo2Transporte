@@ -5,14 +5,13 @@
 
 <body class="body-login">
 
-  <header class="main-header-login">
+  <header class="header-login">
     <%- include("partials/header") %>
   </header>
-  <div class="login-div-container">
+  <main class="main-login">
 
-
-    <form method="POST" action="/users/register" enctype="multipart/form-data" class="container2">
-      <h1>Registrate</h1>
+    <form method="POST" action="/users/register" enctype="multipart/form-data" class="form-login">
+      <h1 class="title-login">Registrate</h1>
       <div class="row">
         <div class="column">
           <label for="name" class="form-label">Nombre:</label>
@@ -88,8 +87,7 @@
         </a>
       </div>
     </form>
-  </div>
-
+  </main>
 
   <div class="footer">
     <%- include("partials/footer") %>

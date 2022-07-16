@@ -3,14 +3,12 @@
 
 <%- include("partials/head") %>
 
-<body class="body-create">
+<body class="body-edition">
 
-    <header class="main-header-create">
+    <header>
         <%- include("partials/header") %>
     </header>
-    <main class="login-div-container">
-
-        
+    <main class="main-edition">
 
         <form  method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
             <h1 class="title"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
@@ -37,7 +35,7 @@
             Copa de vino
             Tabla de embutidos y quesos franceses (para 2 personas)"><%= locals.oldData ? oldData.long_description : null %></textarea>
             <div id="contador1" class="txtCounter">0/200</div>
-            <br>
+
             <div class="container-tour-img">
                 <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
                 <label for="image1" class="form-label">Imagen 1:  <% if ((locals.errors) && (locals.errors.image1)) {%><span class="error"><%=  errors.image1.msg %></span> <% } %></label>

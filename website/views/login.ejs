@@ -3,12 +3,15 @@
 <%- include("partials/head") %>
 
 <body class="body-login">
-	<header class="main-header-login">
+
+	<header class="header-login">
 		<%- include("partials/header") %>
 	</header>
-	<div class="login-div-container">
-		<form method="POST" action="/users/login" class="container">
-			<h1>Inicia sesión</h1>
+
+	<main class="main-login">
+
+		<form method="POST" action="/users/login" class="form-login">
+			<h1 class="title-login">Inicia sesión</h1>
 			<label for="email" class="form-label">Correo:</label>
 			<input type="text" name="email" placeholder="jperez@gmail.com" class="form-input">
 			<% if (locals.errors && errors.email) { %>
@@ -32,10 +35,12 @@
 				<a href=""><p class="moreOptions">Olvidé mi contraseña</p></a>
 			</div>
 		</form>
-	</div>
+	</main>
+
 	<div class="footer">
         <%- include("partials/footer") %>
     </div>
+
 </body>
 
 </html>

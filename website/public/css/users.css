@@ -17,23 +17,7 @@
     font-size: 18px;
 }
 
-.bodyUser {
-    height: 100%;
-    margin: 0;
-}
 
-.htmlUsers {
-    min-height: 120%;
-    position: relative;
-  }
-
-.userFooter {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-}
 
 
 @media (min-width: 362px) {

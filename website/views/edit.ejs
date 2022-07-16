@@ -3,14 +3,14 @@
 
 <%- include("partials/head") %>
 
-<body class="body-create">
+<body class="body-edition">
 
-    <header class="main-header-create">
+    <header>
         <%- include("partials/header") %>
     </header>
-    <div class="login-div-container">
+    <main class="main-edition">
 
-        <form action="/tours/edit/<%= tour.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container" >
+        <form action="/tours/edit/<%= tour.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container">
             <h1 class="title"><i class="fa-solid fa-pen-to-square"></i> Editar tour</h1>
 
             <label for="title" class="form-label" >Nombre:</label>
@@ -48,7 +48,7 @@
                 <button type="submit" class="button">Guardar</button>
             </div>
         </form>
-    </div>
+    </main>
 
     <div class="footer">
         <%- include("partials/footer") %>
