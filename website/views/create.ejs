@@ -8,7 +8,7 @@
     <header class="main-header-create">
         <%- include("partials/header") %>
     </header>
-    <div class="login-div-container">
+    <main class="login-div-container">
 
         
 
@@ -24,8 +24,7 @@
             <div id="contador" class="txtCounter">0/100</div>
            
 
-            <label for="long_description" class="form-label">Descripción detallada:<% if ((locals.errors) && (locals.errors.long_description)) {%><span class="error"><%=  errors.long_description.msg %></span> <% } %>
-            </label>
+            <label for="long_description" class="form-label">Descripción detallada:<% if ((locals.errors) && (locals.errors.long_description)) {%><span class="error"><%=  errors.long_description.msg %></span> <% } %></label>
             <textarea maxlength="200" id="mensaje1" class="textarea2 form-textarea" name="long_description" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
             
             Bar a bordo a su disposición
@@ -41,14 +40,14 @@
             <br>
             <div class="container-tour-img">
                 <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
-                <label for="image1" class="form-label">Imagen 1:</label>
-                <input type="file" name="image1" value="<%= locals.oldData ? oldData.image1 : null %>" class="tour-img" multiple>
+                <label for="image1" class="form-label">Imagen 1:  <% if ((locals.errors) && (locals.errors.image1)) {%><span class="error"><%=  errors.image1.msg %></span> <% } %></label>
+                <input type="file" name="image1" class="tour-img">
     
-                <label for="image2" class="form-label">Imagen 2:</label>
-                <input type="file" name="image2" value="<%= locals.oldData ? oldData.image2 : null %>" class="tour-img" multiple>
+                <label for="image2" class="form-label">Imagen 2: <% if ((locals.errors) && (locals.errors.image2)) {%><span class="error"><%=  errors.image2.msg %></span> <% } %></label>
+                <input type="file" name="image2" class="tour-img">
     
-                <label for="image3" class="form-label">Imagen 3:</label>
-                <input type="file" name="image3" value="<%= locals.oldData ? oldData.image3 : null %>" class="tour-img" multiple>
+                <label for="image3" class="form-label">Imagen 3: <% if ((locals.errors) && (locals.errors.image3)) {%><span class="error"><%=  errors.image3.msg %></span> <% } %></label>
+                <input type="file" name="image3" class="tour-img">
             </div>
             
 
@@ -65,7 +64,7 @@
                 <button type="submit" class="button">Guardar</button>
             </div>
         </form>
-    </div>
+    </main>
 
     <div class="footer">
         <%- include("partials/footer") %>
