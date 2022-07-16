@@ -51,15 +51,27 @@
     border: none;
     border-radius: 5px;
     outline: none;
+    border-bottom: 1px solid white;
+}
+
+.form-input:hover {
+    background: linear-gradient(to bottom, #ffffff 5%, #bebebe 100%);
+    border-bottom: 1px solid black;
 }
 
 .form-input:focus {
     background: linear-gradient(to bottom, #ffffff 5%, #bebebe 100%);
+    border-bottom: 1px solid black;
 }
 
 .form-label,
 .form-label-checkbox {
     color: #ffffff;
+}
+
+
+.input-file {
+    border: none;
 }
 
 /*buttons*/
