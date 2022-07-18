@@ -22,19 +22,19 @@
             </div>
           <% } %>
 
-          <label for="lastName" class="form-label">Apellido:</label>          
-          <input type="text" name="lastName" value="<%= locals.oldData ? oldData.lastName : null %>" placeholder="Perez" class="form-input" >
-          <% if (locals.errors && errors.lastName) { %>
+          <label for="last_name" class="form-label">Apellido:</label>          
+          <input type="text" name="last_name" value="<%= locals.oldData ? oldData.last_name : null %>" placeholder="Perez" class="form-input" >
+          <% if (locals.errors && errors.last_name) { %>
             <div class="text-danger">
-              <%= errors.lastName.msg %> 
+              <%= errors.last_name.msg %> 
             </div>
           <% } %>
 
-          <label for="cell" class="form-label">Teléfono:</label>
-          <input type="text" name="cell" value="<%= locals.oldData ? oldData.cell : null %>" placeholder="+549238328" class="form-input" >
-          <% if (locals.errors && errors.cell) { %>
+          <label for="phone" class="form-label">Teléfono: No ingrese espacios vacios</label>
+          <input type="text" name="phone" value="<%= locals.oldData ? oldData.phone : null %>" placeholder="+549238328" class="form-input" >
+          <% if (locals.errors && errors.phone) { %>
             <div class="text-danger">
-              <%= errors.cell.msg %> 
+              <%= errors.phone.msg %> 
             </div>
           <% } %>
 
@@ -89,9 +89,9 @@
     </form>
   </main>
 
-  <div class="footer">
+  <!-- <div class="footer">
     <%- include("partials/footer") %>
-  </div>
+  </div> -->
 
 </body>
 
