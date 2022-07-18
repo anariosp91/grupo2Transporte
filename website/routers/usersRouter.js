@@ -17,16 +17,16 @@ router.post('/register',upload.single('image'), validationUsers, usersController
 
 // //Login form
 router.get('/login', guestMiddleware, usersController.login);
-// router.post('/login', usersController.loginProcess);
+router.post('/login', usersController.loginProcess);
 
 // //Product cart
-// router.get('/productCart',authMiddleware, usersController.cart);
+router.get('/productCart',authMiddleware, usersController.cart);
 
 // //Favorites
-// router.get('/favorites',authMiddleware, usersController.favorites);
+router.get('/favorites',authMiddleware, usersController.favorites);
 
 // //Users
-// router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
+router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
 
 
 // // Logout
