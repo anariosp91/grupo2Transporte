@@ -103,7 +103,7 @@ USE `travel_db`;
 
 INSERT INTO travel_db.users(id, name, last_name, phone, email, password, image, admin) 
 VALUES 
-(1, "Sofia", "Gutierrez", 1164324525, "sofiaguierrez1845@gmail.com", "$2a$10$1qPxkt5.8AYVQ/QNrzH9Ju0t0WSUpiYcAi/I0vmDg5.mxSUEH8oti", "user-1655343080662.png",true), 
+(1, "Sofia", "Gutierrez", 1164324525, "sofiagutierrez1845@gmail.com", "$2a$10$1qPxkt5.8AYVQ/QNrzH9Ju0t0WSUpiYcAi/I0vmDg5.mxSUEH8oti", "user-1655343080662.png",true), 
 (2, "ANA MARIA", "RIOS PABON", 3147252991, "ana-rios91@hotmail.com","$2a$10$fK6Wg2CfKihUiMNsrungheKs3FRhVhzJDUwoC324rQEzdU0TcOqb6", "user-1655500161339.jpg", true), 
 (3, "Nicolas", "Cerone", 57576555665, "nico@gmail.com", "$2a$10$N/7aJI2Ajtta7r1gj4kixeAV0JvI0ckeYLtTkdJVNu9WDcruBTyv2", "user-1655650003056.jpg", true), 
 (4, "ana", "RIOS PABON", 3147252991, "grupodepoder10@gmail.com", "$2a$10$7atZNb/0JRts2BhtdWh4bOzJOcaCkSMNiJQzAzIWD4fiafBelP32a", "user-1656445462611.png", false);

@@ -29,6 +29,9 @@ let indexController = {
                 res.render("search", {tours})
             }
         })
+    },
+    error: (req, res) => {
+        res.render("error")
     }
 }
 
