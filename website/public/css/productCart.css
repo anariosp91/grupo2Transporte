@@ -1,8 +1,6 @@
 .body-cart {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
-  margin-bottom: 40px;
-
 }
 /* body */
 
@@ -186,10 +184,8 @@
   vertical-align: top;
 }
 
-.footerCart {
-  position: absolute;
-  width: 100%;
-}
+/* Footer */
+
 
 
 @media only screen and (min-width: 0px) and (max-width: 1023px) {

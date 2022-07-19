@@ -28,6 +28,12 @@ router.get('/favorites',authMiddleware, usersController.favorites);
 // //Users
 router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
 
+// User profile 
+router.get("/profile", authMiddleware, usersController.profile);
+
+// User edit
+router.get("/edit/", authMiddleware, usersController.edit);
+//router.post("/edit/:id", authMiddleware, usersController.profile);
 
 // // Logout
 router.get('/logout', usersController.logout);

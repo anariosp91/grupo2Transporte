@@ -99,7 +99,13 @@ let usersController = {
 	},
 	favorites: (req, res) => {
 		res.render('favorites');
-	}
+	},
+    profile: (req, res) => {
+        res.render('profile', {user: req.session.userLogged});
+    },
+    edit: (req, res) => {
+        res.render('edit-profile', {user: req.session.userLogged});
+    }
     
 }
 module.exports = usersController

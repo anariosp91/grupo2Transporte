@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %> 
+<body class="body-profile">
+    <header>
+        <%- include("partials/header") %> 
+    </header>
+
+    <main class="main-profile">
+        <div class="container-profile">
+            <div class="img-profile-div">
+                <img src="/img/users/<%= user.image %>" class="img-profile">
+            </div>
+            <div  class="detail-profile-div">  
+                <h2> <%= user.name %>  <%= user.lastName %> </h2>
+                <p><%= user.email %> </p>
+                <p><%= user.phone %>  <i class="fa-solid fa-phone"></i></p>
+                <a href="/users/edit" class="edit-profile-btn"><p>Editar perfil</p><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+        </div>
+    </main>
+	
+    <div class="footer-profile">
+        <%- include('partials/footer') %>
+    </div>
+
+</body>
+</html>
