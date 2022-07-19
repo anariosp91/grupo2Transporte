@@ -3,11 +3,15 @@
         <img class="nav-logo" src="/img/logo.svg" alt="Logo-Medellin-Travel">
     </div>
 
-    <form class="search">
-        <input type="text" class="search__input" placeholder="Type your text">
+    <form action="/search" method="POST" class="search">
+        <input type="search" name="search" class="search__input" placeholder="Buscar un tour...">
         <button class="search__button" type="submit">
             <i class="fa-solid fa-magnifying-glass" class="search__icon" aria-hidden="true" viewBox="0 0 24 24"></i>
         </button>
+        <% if (locals.errorSearch) { %>
+            <div style="color: red;" ><%= locals.errorSearch %> </div>
+        <% } %>
+       </div>
     </form>
 
     <input type="checkbox" id="toggler">

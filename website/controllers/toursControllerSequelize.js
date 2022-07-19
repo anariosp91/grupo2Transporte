@@ -1,10 +1,7 @@
-const {
-    validationResult
-} = require('express-validator');
+const { validationResult } = require('express-validator');
 const db = require('../database/models/index');
-const {
-    Op
-} = require('sequelize')
+const { Op } = require('sequelize');
+const { sequelize } = require('../database/models/index');
 
 let toursController = {
 
@@ -89,8 +86,5 @@ let toursController = {
             .then(tour => res.redirect('/tours/list'))
             .catch(err => console.log(err))
     }
-
-
-
 }
 module.exports = toursController
