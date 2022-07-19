@@ -19,11 +19,11 @@ let indexController = {
             }
         })
         .then(tours => {
-            if(tours == null){
+            if(tours == ""){
                 db.Tour.findAll()
                     .then(tour => {
                         res.locals.errorSearch = 'No se encontraron resultados para tu busqueda'
-                        res.render('index', {tour})
+                        res.render('search', {tours :  tour})
                     })
             }else{
                 res.render("search", {tours})
