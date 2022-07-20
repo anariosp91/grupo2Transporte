@@ -23,8 +23,8 @@ const publicPath = path.resolve(__dirname,'./public')
 app.use(express.static('public'))
 
 app.use(session({ secret: "Shhh, It's a secret",
-	resave: false,
-	saveUninitialized: false,
+resave: false,
+saveUninitialized: false,
 }));
 app.use(cookies());
 app.use(userLogged);
@@ -35,6 +35,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(methodOverride('_method'));
+
 
 //Routers
 app.use('/', indexRouter)

@@ -7,15 +7,15 @@
     </header>
 
     <main class="main-profile">
-        <form action="/users/edit/<%= user.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container form-user-edit">
+        <form action="/users/edit?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container form-user-edit">
             <h1 class="title"><i class="fa-solid fa-pen-to-square"></i>Editar usuario</h1>
             <div class="container-edit-user">
                 <div class="div-edit-user">
                     <label for="name" class="form-label" >Nombre:</label>
                     <input type="text" name="name" value="<%= user.name %> " class="input-tour input-user">
 
-                    <label for="lastName" class="form-label" >Apellido:</label>
-                    <input type="text" name="lastName" value="<%= user.lastName %> " class="input-tour input-user">
+                    <label for="last_name" class="form-label" >Apellido:</label>
+                    <input type="text" name="last_name" value="<%= user.last_name %> " class="input-tour input-user">
                 </div>
                 <div class="div-edit-user2">
                     <label for="phone" class="form-label" >Telefono:</label>
@@ -28,7 +28,7 @@
             
                 <label for="image" class="form-label">Imagen de perfil:</label>
                 <img src="/img/users/<%= user.image %> " class="editarImagen">
-                <input type="file" name="image1" value= "<%= user.image %> " class="tour-img-edit">
+                <input type="file" name="image" value= "<%= user.image %> " class="tour-img-edit">
            
             <div class="buttonsEdit edit">
                 <a href="/users/profile" class="button cancelButton" >Volver</a>
@@ -36,6 +36,12 @@
                 <button type="submit" class="button">Guardar</button>
             </div>
         </form>
+
+        <!-- <form action="/users/edit?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container form-user-edit">
+                    <input type="text" name="name">
+           
+                <button type="submit" class="button">Guardar</button>
+        </form> -->
     </main>
 	
     <div class="footer">
