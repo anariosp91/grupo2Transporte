@@ -62,10 +62,11 @@ let usersController = {
         res.render('login')
     },
     loginProcess: (req, res) => {
-        let userToLogin = db.User.findOne({
+        db.User.findOne({
             where: {email: req.body.email}
         })
         .then( user => {
+       
             
             if(user) {
                 
@@ -101,10 +102,32 @@ let usersController = {
 		res.render('favorites');
 	},
     profile: (req, res) => {
+        res.locals.userLogged = req.session.userLogged
+        res.locals.isLogged = true
         res.render('profile', {user: req.session.userLogged});
     },
     edit: (req, res) => {
+        res.locals.userLogged = req.session.userLogged
+        res.locals.isLogged = true
         res.render('edit-profile', {user: req.session.userLogged});
+    }, 
+    save: (req, res) => {
+        db.User.update({
+            ...req.body
+        },{
+            where: {id : req.session.userLogged.id}
+        })
+        .then(user => {
+            console.log('entro', user)
+
+            if (user !== null) {
+                console.log(user)
+                res.render('profile', {user: req.session.userLogged})
+            } else {
+                res.redirect('/')
+            }
+        })
+        .catch(error => console.log(error))
     }
     
 }

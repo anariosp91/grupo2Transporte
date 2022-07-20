@@ -32,6 +32,7 @@ let indexController = {
         })
     },
     error: (req, res) => {
+
         res.render("error")
     }
 }
