@@ -108,9 +108,6 @@ let usersController = {
             }
         }).then(user => {res.render("profile", {user})})
 
-        // res.locals.userLogged = req.session.userLogged.email
-        // res.locals.isLogged = true
-        // res.render('profile', {user: req.session.userLogged});
     },
     edit: (req, res) => {
         db.User.findOne({
@@ -120,8 +117,10 @@ let usersController = {
         }).then(user => {res.render("edit-profile", {user})})
     }, 
     save: (req, res) => {
+        console.log('DATOS IMAGEN:',req.file)
         db.User.update({
             ...req.body,
+            image: req.file.filename
         },{
             where: {id : req.session.userLogged.id}
         })
