@@ -102,18 +102,26 @@ let usersController = {
 		res.render('favorites');
 	},
     profile: (req, res) => {
-        res.locals.userLogged = req.session.userLogged
-        res.locals.isLogged = true
-        res.render('profile', {user: req.session.userLogged});
+        db.User.findOne({
+            where: {
+                email: {[Op.like]: req.session.userLogged.email}
+            }
+        }).then(user => {res.render("profile", {user})})
+
+        // res.locals.userLogged = req.session.userLogged.email
+        // res.locals.isLogged = true
+        // res.render('profile', {user: req.session.userLogged});
     },
     edit: (req, res) => {
-        res.locals.userLogged = req.session.userLogged
-        res.locals.isLogged = true
-        res.render('edit-profile', {user: req.session.userLogged});
+        db.User.findOne({
+            where: {
+                email: {[Op.like]: req.session.userLogged.email}
+            }
+        }).then(user => {res.render("edit-profile", {user})})
     }, 
     save: (req, res) => {
         db.User.update({
-            ...req.body
+            ...req.body,
         },{
             where: {id : req.session.userLogged.id}
         })
