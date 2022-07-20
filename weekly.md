@@ -90,3 +90,17 @@ Ana:
 _ Estuvo generando el middleware de autenticacion de administrador, genero el contador de caracteres de los textarea y trabajo en el diseño del diagrama de la base de datos
 _ seguimos sin poder solucionar el responsive del footer
 _ generar el modelo de la base de datos
+
+_Reunion miercoles 20 de Julio/2022
+
+Sofi:
+_ Arregle errores que teniamos en el footer en todas las vistas
+_ Creacion de las vistas de perfil y edicion del perfil de usuarios
+_ Correccion de los metodos de edicion y perfil de usuarios
+_ Algunos inconvenientes para arreglar el footer en todas las vistas
+
+Ana:
+_ Termine el crud de Tours
+_ Terminamos el crud de Users
+_ Tuve algunos inconvenientes para la creacion del metodo de edicion de tours y edicion de users
+_ Algunos conflitos con git y sus ramas, que ya fueron resueltos
