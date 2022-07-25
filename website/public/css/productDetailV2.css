@@ -81,6 +81,13 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+/* Input number quantity */
+.quantity {
+	text-align: center;
+	width: auto;
+}
+
 @media(min-width: 426px){
 	.carousel-inner img {
 		height: 300px;
