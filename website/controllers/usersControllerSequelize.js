@@ -92,14 +92,16 @@ let usersController = {
         }).catch(err => console.log(err))	
     },
     cart: (req, res) => {
-        res.render('productCart')
+        db.Tour.findAll()
+        .then(tours => res.render('productCart',{tours}))
     },
     users: (req, res) => {
         db.User.findAll()
         .then(users => res.render('users', {users}))
 	},
 	favorites: (req, res) => {
-		res.render('favorites');
+        db.Tour.findAll()
+        .then(tours => res.render('favorites',{tours}))
 	},
     profile: (req, res) => {
         db.User.findOne({

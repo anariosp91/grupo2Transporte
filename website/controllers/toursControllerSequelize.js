@@ -6,7 +6,8 @@ const { sequelize } = require('../database/models/index');
 let toursController = {
 
     create: (req, res) => {
-        res.render('create')
+        db.Tour.findAll()
+        .then(tours => res.render('create',{tours}))
     },
     processCreate: (req, res) => {
         const resultValidation = validationResult(req);
