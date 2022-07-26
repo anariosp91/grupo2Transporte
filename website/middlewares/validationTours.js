@@ -3,7 +3,7 @@ const {body} = require('express-validator');
 
 const validationTours = [
 
-   body('title').notEmpty().withMessage('Debes completar este campo'),
+   body('title').notEmpty().withMessage('Debes completar este campo').isLength({ min: 5 }).withMessage("El título debe tener mínimo 5 caracteres"),
    body('short_description').isLength({ min: 80, max: 100 }).withMessage('La descripción debe contener entre 80 y 100 caracteres'),
    body('long_description').isLength({ min: 150, max: 200 }).withMessage('La descripción debe contener entre 150 y 200 caracteres'),
    body('duration')
@@ -11,7 +11,7 @@ const validationTours = [
    body('price').isNumeric().withMessage('Debes completar este campo'),
    body('image1').custom((value, { req }) => {
 		let file = req.files[0];
-		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
 
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
@@ -26,7 +26,7 @@ const validationTours = [
 	}),
    body('image2').custom((value, { req }) => {
 		let file = req.files[1];
-		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
 
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
@@ -41,7 +41,7 @@ const validationTours = [
 	}),
    body('image3').custom((value, { req }) => {
 		let file = req.files[2];
-		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
 
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
