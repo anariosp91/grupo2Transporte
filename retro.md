@@ -77,3 +77,16 @@ _Continuar haciendo_:
 Seguiremos teniendo mas reuniones, para organizarnos y seguir avanzando. Seguiremos limpiando el codigo innecesario
 
 
+RETROSPECTIVA SPRINT6
+
+_Comenzar a hacer_:
+Utilizar mas nombres descriptivos, y generar comentarios que ayuden a ordenar y que el codigo sea mas entendible
+
+_Hacer más_:
+trabajar cada metodo o funcionalidad en ramas nuevas para evitar conflictos en git 
+
+_Hacer menos_: 
+Evitar conflictos en el manejo de Git
+
+_Continuar haciendo_:
+Seguiremos teniendo mas reuniones, para organizarnos y seguir avanzando. Seguiremos limpiando el codigo innecesario
