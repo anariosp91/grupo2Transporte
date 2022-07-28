@@ -37,9 +37,14 @@
 
 .error {
   color:red;
-  background-color: white;
-  
+  font-style: italic;
   margin-top: 10px;
+  font-size: 20px;
+  background-color: rgba(221, 221, 221, 0.7);
+}
+.text-danger {
+  font-size: 22px;
+  background-color: rgba(221, 221, 221, 0.7);
 }
 
 /*Input styles*/

@@ -14,64 +14,64 @@
       <h1 class="title-login">Registrate</h1>
       <div class="row">
         <div class="column">
-          <label for="name" class="form-label">Nombre:</label>
-          <input type="text" name="name" value="<%= locals.oldData ? oldData.name : null %>" placeholder="Juan" class="form-input" >
-          <% if (locals.errors && errors.name) { %>
-            <div class="text-danger">
-              <%= errors.name.msg %> 
-            </div>
-          <% } %>
+          <label for="name" class="form-label">Nombre <span class="error" id="err_name"></span> </label>
+            <input type="text" name="name" value="<%= locals.oldData ? oldData.name : null %>" placeholder="Juan" class="form-input input-validation" id="name">
+            <% if (locals.errors && errors.name) { %>
+              <div class="text-danger">
+                <%= errors.name.msg %> 
+              </div>
+            <% } %>
 
-          <label for="last_name" class="form-label">Apellido:</label>          
-          <input type="text" name="last_name" value="<%= locals.oldData ? oldData.last_name : null %>" placeholder="Perez" class="form-input" >
-          <% if (locals.errors && errors.last_name) { %>
-            <div class="text-danger">
-              <%= errors.last_name.msg %> 
-            </div>
-          <% } %>
+          <label for="last_name" class="form-label">Apellido <span class="error" id="err_last_name"></span></label>          
+            <input type="text" name="last_name" value="<%= locals.oldData ? oldData.last_name : null %>" placeholder="Perez" class="form-input input-validation" id="last_name">
+            <% if (locals.errors && errors.last_name) { %>
+              <div class="text-danger">
+                <%= errors.last_name.msg %> 
+              </div>
+            <% } %>
 
-          <label for="phone" class="form-label">Teléfono: No ingrese espacios vacios</label>
-          <input type="text" name="phone" value="<%= locals.oldData ? oldData.phone : null %>" placeholder="+549238328" class="form-input" >
-          <% if (locals.errors && errors.phone) { %>
-            <div class="text-danger">
-              <%= errors.phone.msg %> 
-            </div>
-          <% } %>
+          <label for="phone" class="form-label">Teléfono <span class="error" id="err_phone"></span></label>
+            <input type="text" name="phone" value="<%= locals.oldData ? oldData.phone : null %>" placeholder="+549238328" class="form-input input-validation" id="phone">
+            <% if (locals.errors && errors.phone) { %>
+              <div class="text-danger">
+                <%= errors.phone.msg %> 
+              </div>
+            <% } %>
 
         </div>
         <div class="column">
 
-          <label for="email" class="form-label">Correo:</label>
-          <input type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>" placeholder="jperez@gmail.com" class="form-input" >
-          <% if (locals.errors && errors.email) { %>
-            <div class="text-danger">
-              <%= errors.email.msg %> 
-            </div>
-          <% } %>
+          <label for="email" class="form-label">Correo <span class="error" id="err_email"></span></label>
+            <input type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>" placeholder="jperez@gmail.com" class="form-input input-validation" id="email">
+            <% if (locals.errors && errors.email) { %>
+              <div class="text-danger">
+                <%= errors.email.msg %> 
+              </div>
+            <% } %>
 
-          <label for="password" class="form-label">Contraseña:</label>
-          <input type="password" name="password" placeholder="●●●●●●●●" class="form-input" >
-          <% if (locals.errors && errors.password) { %>
-            <div class="text-danger">
-              <%= errors.password.msg %> 
-            </div>
-          <% } %>
+          <label for="password" class="form-label">Contraseña <span class="error" id="err_password"></span></label>
+            <input type="password" name="password" placeholder="●●●●●●●●" class="form-input input-validation" id="password">
+            <% if (locals.errors && errors.password) { %>
+              <div class="text-danger">
+                <%= errors.password.msg %> 
+              </div>
+            <% } %>
 
-          <label for="password_confirm" class="form-label">Confirmación de contraseña:</label>
-          <input type="password" name="password_confirm" placeholder="●●●●●●●●" class="form-input" >
-          <% if (locals.errors && errors.password_confirm) { %>
-            <div class="text-danger">
-              <%= errors.password_confirm.msg %> 
-            </div>
-          <% } %>
-        </div>
+          <label for="repassword" class="form-label">Confirma la contraseña <span class="error" id="err_repassword"></span></label>
+            <input type="password" name="repassword" placeholder="●●●●●●●●" class="form-input input-validation" id="repassword">
+            <% if (locals.errors && errors.repassword) { %>
+              <div class="text-danger">
+                <%= errors.repassword.msg %> 
+              </div>
+            <% } %>
+          </div>
 
       </div>
       
       <div class="row">
         <div class="column column-image">
-          <label for="image" class="form-label label-file">Imagen de perfil:</label>
-          <input type="file" name="image" class="form-input input-file">
+          <label for="image" class="form-label label-file">Imagen de perfil <span class="error" id="err_image"></span></label>
+          <input type="file" name="image" class="form-input input-file" id="image">
           <% if (locals.errors && errors.image) { %>
             <div class="text-danger">
               <%= errors.image.msg %> 
@@ -81,7 +81,7 @@
       </div>
 
       <div class="buttons">
-        <button type="submit" class="button">Continuar</button>
+        <button type="submit" class="button" id="registerBtn">Continuar</button>
         <a href="/users/login">
           <p class="moreOptions"> Inicia sesión</p>
         </a>
@@ -89,10 +89,10 @@
     </form>
   </main>
 
-  <!-- <div class="footer">
+  <div class="footer">
     <%- include("partials/footer") %>
-  </div> -->
-
+  </div>
+<script type="text/javascript" src="/js/register.js"></script>
 </body>
 
 </html>

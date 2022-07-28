@@ -161,6 +161,17 @@
 
 }
 
+/* JSFront validations*/
+
+.err {
+	font-size: 12px;
+	margin-bottom: 0;
+    color: red;
+    font-style: italic;
+    background-color: rgba(33, 33, 33, 0.7);
+}
+
+
 @media (min-width: 768px) {
     .form-login {
         font-size: 24px;
@@ -286,5 +297,8 @@
     .button1 {
         text-align: center;
         margin: 0%;
+    }
+    .err {
+        font-size: 16px;
     }
 }

@@ -19,7 +19,7 @@ const validationUsers = [
     .notEmpty().withMessage("Contraseña no deberia estar vacio")
     .isLength({ min: 8 }).withMessage("La contraseña debe tener mínimo 8 caracteres"),
 
-    check("password_confirm")
+    check("repassword")
     .notEmpty().withMessage("Confirmar contraseña no deberia estar vacio")
     .isLength({ min: 8 }).withMessage("La contraseña debe tener mínimo 8 caracteres")
     .custom((value,{req}) =>{
