@@ -12,19 +12,19 @@
 
 		<form method="POST" action="/users/login" class="form-login">
 			<h1 class="title-login">Inicia sesión</h1>
-			<label for="email" class="form-label">Correo:</label>
-			<input type="text" name="email" placeholder="jperez@gmail.com" class="form-input">
+			<label for="email" class="form-label">Correo: <span class="error" id="err_email"></span></label>
+			<input type="text" name="email" id="email" placeholder="jperez@gmail.com" class="form-input">
 			<% if (locals.errors && errors.email) { %>
-				<div class="text-danger">
+				<div class="error">
 					<%= errors.email.msg %>
 				</div>
 			<% } %>
 
-			<label for="password" class="form-label">Contraseña:</label>
-			<input type="password" name="password" placeholder="●●●●●●●●" class="form-input">
+			<label for="password" class="form-label">Contraseña: <span class="error" id="err_password"></span></label>
+			<input type="password" name="password" id="password" placeholder="●●●●●●●●" class="form-input">
 
 			<div class="button1">
-				<button type="submit" class="button">Continuar</button>
+				<button type="submit" class="button" id="loginBtn">Continuar</button>
 			</div>
 
 			<div class="buttons">
@@ -40,6 +40,7 @@
 	<div class="footer">
         <%- include("partials/footer") %>
     </div>
+	<script type="text/javascript" src="/js/login.js"></script>
 
 </body>
 

@@ -17,7 +17,7 @@
           <label for="name" class="form-label">Nombre <span class="error" id="err_name"></span> </label>
             <input type="text" name="name" value="<%= locals.oldData ? oldData.name : null %>" placeholder="Juan" class="form-input input-validation" id="name">
             <% if (locals.errors && errors.name) { %>
-              <div class="text-danger">
+              <div class="error">
                 <%= errors.name.msg %> 
               </div>
             <% } %>
@@ -25,7 +25,7 @@
           <label for="last_name" class="form-label">Apellido <span class="error" id="err_last_name"></span></label>          
             <input type="text" name="last_name" value="<%= locals.oldData ? oldData.last_name : null %>" placeholder="Perez" class="form-input input-validation" id="last_name">
             <% if (locals.errors && errors.last_name) { %>
-              <div class="text-danger">
+              <div class="error">
                 <%= errors.last_name.msg %> 
               </div>
             <% } %>
@@ -33,7 +33,7 @@
           <label for="phone" class="form-label">Teléfono <span class="error" id="err_phone"></span></label>
             <input type="text" name="phone" value="<%= locals.oldData ? oldData.phone : null %>" placeholder="+549238328" class="form-input input-validation" id="phone">
             <% if (locals.errors && errors.phone) { %>
-              <div class="text-danger">
+              <div class="error">
                 <%= errors.phone.msg %> 
               </div>
             <% } %>
@@ -44,7 +44,7 @@
           <label for="email" class="form-label">Correo <span class="error" id="err_email"></span></label>
             <input type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>" placeholder="jperez@gmail.com" class="form-input input-validation" id="email">
             <% if (locals.errors && errors.email) { %>
-              <div class="text-danger">
+              <div class="error">
                 <%= errors.email.msg %> 
               </div>
             <% } %>
@@ -52,7 +52,7 @@
           <label for="password" class="form-label">Contraseña <span class="error" id="err_password"></span></label>
             <input type="password" name="password" placeholder="●●●●●●●●" class="form-input input-validation" id="password">
             <% if (locals.errors && errors.password) { %>
-              <div class="text-danger">
+              <div class="error">
                 <%= errors.password.msg %> 
               </div>
             <% } %>
@@ -60,7 +60,7 @@
           <label for="repassword" class="form-label">Confirma la contraseña <span class="error" id="err_repassword"></span></label>
             <input type="password" name="repassword" placeholder="●●●●●●●●" class="form-input input-validation" id="repassword">
             <% if (locals.errors && errors.repassword) { %>
-              <div class="text-danger">
+              <div class="error">
                 <%= errors.repassword.msg %> 
               </div>
             <% } %>
@@ -71,9 +71,9 @@
       <div class="row">
         <div class="column column-image">
           <label for="image" class="form-label label-file">Imagen de perfil <span class="error" id="err_image"></span></label>
-          <input type="file" name="image" class="form-input input-file" id="image">
+          <input type="file" name="image" class="form-input input-file" id="image" onchange="return fileValidation()"> 
           <% if (locals.errors && errors.image) { %>
-            <div class="text-danger">
+            <div class="error">
               <%= errors.image.msg %> 
             </div>
           <% } %>
