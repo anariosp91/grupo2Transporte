@@ -8,14 +8,14 @@ window.addEventListener('load', () => {
     let image2 = document.getElementById('image2')
     let image3 = document.getElementById('image3')
     let duration = document.getElementById('duration')
-    let price = document.getElementById('price')
+    let total = document.getElementById('total')
     let button = document.getElementById('guardar')
 
     let errTitle = document.getElementById('errTitle')
     let errShort = document.getElementById('errShort')
     let errLong = document.getElementById('errLong')
     let errDuration = document.getElementById('errDuration')
-    let errPrice = document.getElementById('errPrice')
+    let errTotal = document.getElementById('errTotal')
 
     button.addEventListener('click', (e) => {
         e.preventDefault();  
@@ -57,18 +57,32 @@ window.addEventListener('load', () => {
         }
     })
 
-    // price.addEventListener('blur', () => {
-    //     if(price.value == ''){
-    //         errPrice.innerText = 'Debes Completar este campo'
-    //         errPrice.style.color = 'red'
-    //     }else if(!isNaN(price.value)){
-    //         console.log((!isNaN(price.value)))
-    //         errPrice.innerText = 'Este campo solo puede contener numeros'
-    //         errPrice.style.color = 'red'
-    //     }else{
-    //         errPrice.innerText = ''
-    //     }
-    // })
+    total.addEventListener('blur', () => {
+        if(total.value == ''){
+            errTotal.innerText = 'Debes Completar este campo'
+            errTotal.style.color = 'red'
+        }else if(isNaN(total.value)){
+            errTotal.innerText = 'Este campo solo puede contener numeros'
+            errTotal.style.color = 'red'
+        }else{
+            errTotal.innerText = ''
+        }
+    })
+
+    duration.addEventListener('blur', () => {
+        if(duration.value == ''){
+            errDuration.innerText = 'Debes Completar este campo'
+            errDuration.style.color = 'red'
+        }else if(isNaN(duration.value)){
+            errDuration.innerText = 'Este campo solo puede contener numeros'
+            errDuration.style.color = 'red'
+        }else{
+            errDuration.innerText = ''
+        }
+    })
 
 
 })
+
+     
+        

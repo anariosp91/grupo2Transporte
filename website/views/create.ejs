@@ -60,7 +60,8 @@
             </div>
             
 
-                <label for="duration" class="form-label">Duración:<% if ((locals.errors) && (locals.errors.duration)) {%><span class="error"><%=  errors.duration.msg %></span>
+                <label for="duration" class="form-label">Duración en Horas:<% if ((locals.errors) && (locals.errors.duration)) {%><span class="error"><%=  errors.duration.msg %></span>
+                    <% } else { %>
                     <span id="errDuration" ></span>
                     <% } %> 
                     </label>
@@ -68,11 +69,12 @@
                 <input type="text" name="duration" id="duration" value="<%= locals.oldData ? oldData.duration : null %>" placeholder="" class="input-tour tour-price">
                 
                 <label for="price" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.price)) {%><span class="error"><%=  errors.price.msg %></span> 
-                    <span id="errPrice" ></span>
+                    <% } else { %>
+                    <span id="errTotal" ></span>
                     <% } %> 
                     </label>
                 </label>
-                <input type="text" name="price" id="price" value="<%= locals.oldData ? oldData.price : null %>" placeholder="" class="input-tour tour-price">
+                <input type="text" name="price" id="total" value="<%= locals.oldData ? oldData.price : null %>" placeholder="" class="input-tour tour-price">
 
            
             
