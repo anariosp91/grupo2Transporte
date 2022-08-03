@@ -10,7 +10,7 @@
     </header>
     <main class="main-edition">
 
-        <form  method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
+        <form id="form_create" method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
             <h1 class="title"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
 
             <label for="title" class="form-label">Nombre:<% if ((locals.errors) && (locals.errors.title)) {%><span class="error"><%=  errors.title.msg %></span> 
@@ -49,13 +49,25 @@
 
             <div class="container-tour-img">
                 <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
-                <label for="image1" class="form-label">Imagen 1:  <% if ((locals.errors) && (locals.errors.image1)) {%><span class="error"><%=  errors.image1.msg %></span> <% } %></label>
+                <label for="image1" class="form-label">Imagen 1:  <% if ((locals.errors) && (locals.errors.image1)) {%><span class="error"><%=  errors.image1.msg %></span> 
+                    <% } else { %>
+                        <span id="errImage1" ></span>
+                    <% } %> 
+                </label>
                 <input type="file" id="image1" name="image1" class="tour-img">
     
-                <label for="image2" class="form-label">Imagen 2: <% if ((locals.errors) && (locals.errors.image2)) {%><span class="error"><%=  errors.image2.msg %></span> <% } %></label>
+                <label for="image2" class="form-label">Imagen 2: <% if ((locals.errors) && (locals.errors.image2)) {%><span class="error"><%=  errors.image2.msg %></span> 
+                    <% } else { %>
+                        <span id="errImage2" ></span>
+                    <% } %> 
+                </label>
                 <input type="file" id="image2"  name="image2" class="tour-img">
     
-                <label for="image3" class="form-label">Imagen 3: <% if ((locals.errors) && (locals.errors.image3)) {%><span class="error"><%=  errors.image3.msg %></span> <% } %></label>
+                <label for="image3" class="form-label">Imagen 3: <% if ((locals.errors) && (locals.errors.image3)) {%><span class="error"><%=  errors.image3.msg %></span> 
+                    <% } else { %>
+                        <span id="errImage3" ></span>
+                    <% } %> 
+                </label>
                 <input type="file" id="image3"  name="image3" class="tour-img">
             </div>
             

@@ -10,15 +10,27 @@ window.addEventListener('load', () => {
     let duration = document.getElementById('duration')
     let total = document.getElementById('total')
     let button = document.getElementById('guardar')
+    let form_create = document.getElementById('form_create')
 
     let errTitle = document.getElementById('errTitle')
     let errShort = document.getElementById('errShort')
     let errLong = document.getElementById('errLong')
     let errDuration = document.getElementById('errDuration')
     let errTotal = document.getElementById('errTotal')
+    let errImage1 = document.getElementById('errImage1')
+    let errImage2 = document.getElementById('errImage2')
+    let errImage3 = document.getElementById('errImage3')
 
     button.addEventListener('click', (e) => {
-        e.preventDefault();  
+
+        // if((errTitle == '') && (errShort == '') && (errLong == '') && (errTotal == '') && (errDuration == '') && (errImage1 == '') && (errImage2 == '') && (errImage3 == '')){
+        //     e.preventDefault();
+        //     errTitle.innerText = 'Debes Completar los campos del formulario' 
+        //     errTitle.style.color = 'red' 
+        // }else{
+        //     form_create.onsubmit()
+        // }
+
     })
 
     title.addEventListener('blur', () => {
@@ -81,6 +93,55 @@ window.addEventListener('load', () => {
         }
     })
 
+    image1.addEventListener('blur', () => {
+        if(image1.value == ''){
+            errImage1.innerText = 'Debes cargar una imagen'
+            errImage1.style.color = 'red'
+        }else{
+            let filePath = image1.value
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            if (!allowedExtensions.exec(filePath)) {
+                errImage1.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
+                errImage1.style.color = 'red'
+            }else{
+                errImage1.innerText = ''
+            }
+        }
+    })  
+    
+    image2.addEventListener('blur', () => {
+        if(image2.value == ''){
+            errImage2.innerText = 'Debes cargar una imagen'
+            errImage2.style.color = 'red'
+        }else{
+            let filePath = image2.value
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            if (!allowedExtensions.exec(filePath)) {
+                errImage2.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
+                errImage2.style.color = 'red'
+            }else{
+                errImage2.innerText = ''
+            }
+        }
+    })  
+
+    image3.addEventListener('blur', () => {
+        if(image3.value == ''){
+            errImage3.innerText = 'Debes cargar una imagen'
+            errImage3.style.color = 'red'
+        }else{
+            let filePath = image3.value
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            if (!allowedExtensions.exec(filePath)) {
+                errImage3.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
+                errImage3.style.color = 'red'
+            }else{
+                errImage3.innerText = ''
+            }
+        }
+    }) 
+         
+                
 
 })
 
