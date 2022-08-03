@@ -22,16 +22,20 @@ window.addEventListener('load', () => {
     let errImage3 = document.getElementById('errImage3')
 
     button.addEventListener('click', (e) => {
-
-        // if((errTitle == '') && (errShort == '') && (errLong == '') && (errTotal == '') && (errDuration == '') && (errImage1 == '') && (errImage2 == '') && (errImage3 == '')){
-        //     e.preventDefault();
-        //     errTitle.innerText = 'Debes Completar los campos del formulario' 
-        //     errTitle.style.color = 'red' 
-        // }else{
-        //     form_create.onsubmit()
-        // }
-
+        e.preventDefault();
+        errTitle.innerText = 'Debes Completar los campos del formulario' 
+        errTitle.style.color = 'red' 
     })
+    
+    // if((errTitle == '') && (errShort == '') && (errLong == '') && (errTotal == '') && (errDuration == '') && (errImage1 == '') && (errImage2 == '') && (errImage3 == '')){
+    //     errTitle.innerText = 'Debes Completar los campos del formulario' 
+    //     errTitle.style.color = 'red' 
+    // }else{
+    //     form_create.onsubmit()
+    // }
+    
+   
+    let estado = [];
 
     title.addEventListener('blur', () => {
         if(title.value == ''){
@@ -42,6 +46,7 @@ window.addEventListener('load', () => {
             errTitle.style.color = 'red'
         }else{
             errTitle.innerText = ''
+            estado.push('1')
         }
     })
 
@@ -54,6 +59,7 @@ window.addEventListener('load', () => {
             errShort.style.color = 'red'
         }else{
             errShort.innerText = ''
+            estado.push('2')
         }
     })
 
@@ -66,6 +72,7 @@ window.addEventListener('load', () => {
             errLong.style.color = 'red'
         }else{
             errLong.innerText = ''
+            estado.push('3')
         }
     })
 
@@ -78,6 +85,7 @@ window.addEventListener('load', () => {
             errTotal.style.color = 'red'
         }else{
             errTotal.innerText = ''
+            estado.push('4')
         }
     })
 
@@ -90,6 +98,7 @@ window.addEventListener('load', () => {
             errDuration.style.color = 'red'
         }else{
             errDuration.innerText = ''
+            estado.push('5')
         }
     })
 
@@ -105,6 +114,7 @@ window.addEventListener('load', () => {
                 errImage1.style.color = 'red'
             }else{
                 errImage1.innerText = ''
+                estado.push('6')
             }
         }
     })  
@@ -121,6 +131,7 @@ window.addEventListener('load', () => {
                 errImage2.style.color = 'red'
             }else{
                 errImage2.innerText = ''
+                estado.push('7')
             }
         }
     })  
@@ -137,9 +148,11 @@ window.addEventListener('load', () => {
                 errImage3.style.color = 'red'
             }else{
                 errImage3.innerText = ''
+                estado.push('8')
             }
         }
     }) 
+    console.log(estado)
          
                 
 
