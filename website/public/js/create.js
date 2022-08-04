@@ -146,7 +146,9 @@ window.addEventListener('load', () => {
     
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        if((errTitle == '') && (errShort == '') && (errLong == '') && (errTotal == '') && (errDuration == '') && (errImage1 == '') && (errImage2 == '') && (errImage3 == '')){
+        console.log(errTitle, errTitle.innerText)
+        if((errTitle.innerText == '') && (errShort.innerText == '') && (errLong.innerText == '') && (errTotal.innerText == '') && (errDuration.innerText == '') && (errImage1.innerText == '') && (errImage2.innerText == '') && (errImage3.innerText == '')){
+            console.log('entro')
             form_create.submit()
         }else{
             errTitle.innerText = 'Debes Completar los campos del formulario' 
