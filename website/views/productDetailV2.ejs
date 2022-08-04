@@ -47,7 +47,7 @@
     </div>
     </section>
           <div class="maincontainer">
-            <form action="/cart" method="POST" class="contenedor1">
+            <section class="contenedor1">
               <div class="tituloTour"> 
                 <h2><%= tour.title %> </h2>
                 <% if (locals.isLogged && locals.userLogged.admin) { %>
@@ -59,15 +59,14 @@
               <div> Personas: <input type="number" min="1" max="9" step="1" value="1" class="quantity">
               </div>
               <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
-              <div class="botonEliminar"> <button type="submit" class="myButton Color2">Agregar al carrito</button> 
+              <div class="botonEliminar"> <a href="#" class="myButton Color2">Agregar al carrito</a> 
                 <% if (locals.isLogged && locals.userLogged.admin) { %>
                 <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="POST">
                   <button type="submit"> <i class="fa-solid fa-trash-can"></i> </button>
                 </form>
                 <% } %>
               </div>
-              
-            </form>
+            </section>
             <section class="contenedor2">
               <div class="horario">
                 <i class="fa-solid fa-clock-rotate-left reloj"> </i>
