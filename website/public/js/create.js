@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    let input = document.querySelector('input')
+    let input = document.querySelectorAll('input')
     let title = document.getElementById('title')
     let short_description = document.getElementById('mensaje')
     let long_description = document.getElementById('mensaje1')
@@ -21,18 +21,8 @@ window.addEventListener('load', () => {
     let errImage2 = document.getElementById('errImage2')
     let errImage3 = document.getElementById('errImage3')
 
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        errTitle.innerText = 'Debes Completar los campos del formulario' 
-        errTitle.style.color = 'red' 
-    })
     
-    // if((errTitle == '') && (errShort == '') && (errLong == '') && (errTotal == '') && (errDuration == '') && (errImage1 == '') && (errImage2 == '') && (errImage3 == '')){
-    //     errTitle.innerText = 'Debes Completar los campos del formulario' 
-    //     errTitle.style.color = 'red' 
-    // }else{
-    //     form_create.onsubmit()
-    // }
+    
     
    
     let estado = [];
@@ -152,10 +142,20 @@ window.addEventListener('load', () => {
             }
         }
     }) 
-    console.log(estado)
+    
+    
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        if((errTitle == '') && (errShort == '') && (errLong == '') && (errTotal == '') && (errDuration == '') && (errImage1 == '') && (errImage2 == '') && (errImage3 == '')){
+            form_create.submit()
+        }else{
+            errTitle.innerText = 'Debes Completar los campos del formulario' 
+            errTitle.style.color = 'red' 
+        }
+        console.log(estado)
+    })
          
-                
-
+        
 })
 
      
