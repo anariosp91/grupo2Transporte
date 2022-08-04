@@ -10,19 +10,30 @@
     </header>
     <main class="main-edition">
 
-        <form  method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
+        <form id="form_create" method="POST"  enctype="multipart/form-data" action="/tours/create" class="form-container">
             <h1 class="title"><i class="fa-solid fa-circle-plus"></i> Nuevo tour</h1>
 
-            <label for="title" class="form-label">Nombre:<% if ((locals.errors) && (locals.errors.title)) {%><span class="error"><%=  errors.title.msg %></span> <% } %></label>
-            <input type="text" name="title" placeholder="Piedra del Peñol" class="input-tour" value="<%= locals.oldData ? oldData.title : null %>">
+            <label for="title" class="form-label">Nombre:<% if ((locals.errors) && (locals.errors.title)) {%><span class="error"><%=  errors.title.msg %></span> 
+              <% } else { %>
+                    <span id="errTitle" ></span>
+                <% } %> 
+            </label>
+            <input type="text" name="title" id="title" placeholder="Piedra del Peñol" class="input-tour" value="<%= locals.oldData ? oldData.title : null %>">
             
             
-            <label for="short_description" class="form-label">Descripción corta: <% if ((locals.errors) && (locals.errors.short_description)) {%><span class="error"><%=  errors.short_description.msg %></span> <% } %></label>
+            <label for="short_description" class="form-label">Descripción corta: <% if ((locals.errors) && (locals.errors.short_description)) {%><span class="error"><%=  errors.short_description.msg %></span> 
+                <% } else { %>
+                    <span id="errShort" ></span>
+                <% } %> 
+            </label>
             <textarea maxlength="100" id="mensaje" class="textarea1 form-textarea" name="short_description" placeholder="Conoce uno de los lugares mas lindos y llenos de historia de la región"><%= locals.oldData ? oldData.short_description : null %></textarea>
             <div id="contador" class="txtCounter">0/100</div>
            
 
-            <label for="long_description" class="form-label">Descripción detallada:<% if ((locals.errors) && (locals.errors.long_description)) {%><span class="error"><%=  errors.long_description.msg %></span> <% } %></label>
+            <label for="long_description" class="form-label">Descripción detallada:<% if ((locals.errors) && (locals.errors.long_description)) {%><span class="error"><%=  errors.long_description.msg %></span>  <% } else { %>
+                <span id="errLong" ></span>
+            <% } %> 
+            </label>
             <textarea maxlength="200" id="mensaje1" class="textarea2 form-textarea" name="long_description" placeholder="Salida del crucero: horarios en función de la temporada Embarque: en Port de l'Arsenal, 75012 Paris
             
             Bar a bordo a su disposición
@@ -38,28 +49,50 @@
 
             <div class="container-tour-img">
                 <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
-                <label for="image1" class="form-label">Imagen 1:  <% if ((locals.errors) && (locals.errors.image1)) {%><span class="error"><%=  errors.image1.msg %></span> <% } %></label>
-                <input type="file" name="image1" class="tour-img">
+                <label for="image1" class="form-label">Imagen 1:  <% if ((locals.errors) && (locals.errors.image1)) {%><span class="error"><%=  errors.image1.msg %></span> 
+                    <% } else { %>
+                        <span id="errImage1" ></span>
+                    <% } %> 
+                </label>
+                <input type="file" id="image1" name="image1" class="tour-img">
     
-                <label for="image2" class="form-label">Imagen 2: <% if ((locals.errors) && (locals.errors.image2)) {%><span class="error"><%=  errors.image2.msg %></span> <% } %></label>
-                <input type="file" name="image2" class="tour-img">
+                <label for="image2" class="form-label">Imagen 2: <% if ((locals.errors) && (locals.errors.image2)) {%><span class="error"><%=  errors.image2.msg %></span> 
+                    <% } else { %>
+                        <span id="errImage2" ></span>
+                    <% } %> 
+                </label>
+                <input type="file" id="image2"  name="image2" class="tour-img">
     
-                <label for="image3" class="form-label">Imagen 3: <% if ((locals.errors) && (locals.errors.image3)) {%><span class="error"><%=  errors.image3.msg %></span> <% } %></label>
-                <input type="file" name="image3" class="tour-img">
+                <label for="image3" class="form-label">Imagen 3: <% if ((locals.errors) && (locals.errors.image3)) {%><span class="error"><%=  errors.image3.msg %></span> 
+                    <% } else { %>
+                        <span id="errImage3" ></span>
+                    <% } %> 
+                </label>
+                <input type="file" id="image3"  name="image3" class="tour-img">
             </div>
             
 
-                <label for="duration" class="form-label">Duración:<% if ((locals.errors) && (locals.errors.duration)) {%><span class="error"><%=  errors.duration.msg %></span> <% } %></label>
-                <input type="text" name="duration" value="<%= locals.oldData ? oldData.duration : null %>" placeholder="" class="input-tour tour-price">
+                <label for="duration" class="form-label">Duración en Horas:<% if ((locals.errors) && (locals.errors.duration)) {%><span class="error"><%=  errors.duration.msg %></span>
+                    <% } else { %>
+                    <span id="errDuration" ></span>
+                    <% } %> 
+                    </label>
+                </label>
+                <input type="text" name="duration" id="duration" value="<%= locals.oldData ? oldData.duration : null %>" placeholder="" class="input-tour tour-price">
                 
-                <label for="price" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.price)) {%><span class="error"><%=  errors.price.msg %></span> <% } %></label>
-                <input type="text" name="price" value="<%= locals.oldData ? oldData.price : null %>" placeholder="" class="input-tour tour-price">
+                <label for="price" class="form-label">Precio:<% if ((locals.errors) && (locals.errors.price)) {%><span class="error"><%=  errors.price.msg %></span> 
+                    <% } else { %>
+                    <span id="errTotal" ></span>
+                    <% } %> 
+                    </label>
+                </label>
+                <input type="text" name="price" id="total" value="<%= locals.oldData ? oldData.price : null %>" placeholder="" class="input-tour tour-price">
 
            
             
             <div class="buttonsEdit">
                 <button type="reset" class="button cancelButton">Cancelar</button>
-                <button type="submit" class="button">Guardar</button>
+                <button type="submit" id="guardar" class="button">Guardar</button>
             </div>
         </form>
     </main>
@@ -67,6 +100,8 @@
     <div class="footer">
         <%- include("partials/footer") %>
     </div>
+    <script defer src="/js/contador.js"></script>
+    <script type="text/javascript" src="/js/create.js"></script>
 </body>
 
 </html>
