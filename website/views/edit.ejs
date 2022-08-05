@@ -10,42 +10,45 @@
     </header>
     <main class="main-edition">
 
-        <form action="/tours/edit/<%= tour.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container">
+        <form id="form_create" action="/tours/edit/<%= tour.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form-container">
             <h1 class="title"><i class="fa-solid fa-pen-to-square"></i> Editar tour</h1>
 
-            <label for="title" class="form-label" >Nombre:</label>
-            <input type="text" name="title" value="<%= tour.title %> " class="input-tour" required>
+            <label for="title" class="form-label" >Nombre:</label><span id="errTitle" ></span>
+            <input id="title" type="text" name="title" value="<%= tour.title %> " class="input-tour" required>
 
-            <label for="short_description" class="form-label">Mini descripción:</label>
+            <label for="short_description" class="form-label">Mini descripción:</label><span id="errShort" ></span>
             <textarea id="mensaje" maxlength="100" class="textarea1 form-textarea" name="short_description"><%= tour.short_description %></textarea>
             <div id="contador" class="txtCounter">0/100</div>
             
-            <label for="long_description" class="form-label">Descripción:</label>
+            <label for="long_description" class="form-label">Descripción:</label><span id="errLong" ></span>
             <textarea id="mensaje1" maxlength="200" class="textarea2 form-textarea" name="long_description" ><%= tour.long_description %></textarea>
             <div id="contador1" class="txtCounter">0/200</div>
 
             <label for="imagenes" class="form-label">Imagenes:</label>
             <p class="txt-clarification">Las imagenes deben tener una escala aproximada, donde el ancho sea el doble del alto:</p>
             <img src="/img/products/<%= tour.image1 %> " class="editarImagen">
-            <input type="file" name="image1" value= "<%= tour.image1 %> " class="tour-img-edit"  multiple>
+            <span id="errImage1" ></span>
+            <input id="image1" type="file" name="image1" value= "<%= tour.image1 %> " class="tour-img-edit"  multiple>
             
             <img src="/img/products/<%= tour.image2 %> " class="editarImagen">
-            <input type="file" name="image2" value= "<%= tour.image2 %> " class="tour-img-edit"  multiple>
+            <span id="errImage2" ></span>
+            <input id="image2" type="file" name="image2" value= "<%= tour.image2 %> " class="tour-img-edit"  multiple>
             
             <img src="/img/products/<%= tour.image3 %> " class="editarImagen">
-            <input type="file" name="image3" value= "<%= tour.image3 %> " class="tour-img-edit"  multiple>
+            <span id="errImage3" ></span>
+            <input id="image3" type="file" name="image3" value= "<%= tour.image3 %> " class="tour-img-edit"  multiple>
 
 
-            <label for="duration" class="form-label">Duración:</label>
-            <input type="text" name="duration" value="<%= tour.duration %> " class="input-tour" required>
+            <label for="duration" class="form-label">Duración:</label><span id="errDuration" ></span>
+            <input id="duration" type="text" name="duration" value="<%= tour.duration %> " class="input-tour" required>
 
-            <label for="price" class="form-label">Precio:</label>
-            <input type="text" name="price" value="<%= tour.price %> " class="input-tour" required>
+            <label for="price" class="form-label">Precio:</label><span id="errTotal" ></span>
+            <input id="total" type="text" name="price" value="<%= tour.price %> " class="input-tour" required>
 
             <div class="buttonsEdit edit">
                 <a href="/tours/list" class="button cancelButton" >Cancelar</a>
                 <button type="reset" class="button resetButton">Deshacer</button>
-                <button type="submit" class="button">Guardar</button>
+                <button id="guardar" type="submit" class="button">Guardar</button>
             </div>
         </form>
     </main>
@@ -54,6 +57,7 @@
         <%- include("partials/footer") %>
     </div>
     <script defer src="/js/contador.js"></script>
+    <script type="text/javascript" src="/js/validationTours.js"></script>
 </body>
 
 </html>

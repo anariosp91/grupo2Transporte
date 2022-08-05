@@ -21,11 +21,6 @@ window.addEventListener('load', () => {
     let errImage2 = document.getElementById('errImage2')
     let errImage3 = document.getElementById('errImage3')
 
-    
-    
-    
-   
-    let estado = [];
 
     title.addEventListener('blur', () => {
         if(title.value == ''){
@@ -36,7 +31,7 @@ window.addEventListener('load', () => {
             errTitle.style.color = 'red'
         }else{
             errTitle.innerText = ''
-            estado.push('1')
+            
         }
     })
 
@@ -49,7 +44,7 @@ window.addEventListener('load', () => {
             errShort.style.color = 'red'
         }else{
             errShort.innerText = ''
-            estado.push('2')
+            
         }
     })
 
@@ -62,7 +57,7 @@ window.addEventListener('load', () => {
             errLong.style.color = 'red'
         }else{
             errLong.innerText = ''
-            estado.push('3')
+            
         }
     })
 
@@ -75,7 +70,7 @@ window.addEventListener('load', () => {
             errTotal.style.color = 'red'
         }else{
             errTotal.innerText = ''
-            estado.push('4')
+            
         }
     })
 
@@ -88,7 +83,7 @@ window.addEventListener('load', () => {
             errDuration.style.color = 'red'
         }else{
             errDuration.innerText = ''
-            estado.push('5')
+          
         }
     })
 
@@ -104,7 +99,7 @@ window.addEventListener('load', () => {
                 errImage1.style.color = 'red'
             }else{
                 errImage1.innerText = ''
-                estado.push('6')
+                
             }
         }
     })  
@@ -121,7 +116,7 @@ window.addEventListener('load', () => {
                 errImage2.style.color = 'red'
             }else{
                 errImage2.innerText = ''
-                estado.push('7')
+                
             }
         }
     })  
@@ -138,7 +133,7 @@ window.addEventListener('load', () => {
                 errImage3.style.color = 'red'
             }else{
                 errImage3.innerText = ''
-                estado.push('8')
+                
             }
         }
     }) 
@@ -146,7 +141,7 @@ window.addEventListener('load', () => {
     
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(errTitle, errTitle.innerText)
+       
         if((errTitle.innerText == '') && (errShort.innerText == '') && (errLong.innerText == '') && (errTotal.innerText == '') && (errDuration.innerText == '') && (errImage1.innerText == '') && (errImage2.innerText == '') && (errImage3.innerText == '')){
             console.log('entro')
             form_create.submit()
@@ -154,7 +149,7 @@ window.addEventListener('load', () => {
             errTitle.innerText = 'Debes Completar los campos del formulario' 
             errTitle.style.color = 'red' 
         }
-        console.log(estado)
+        
     })
          
         
