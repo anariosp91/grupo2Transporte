@@ -16,7 +16,6 @@ let indexController = {
         db.Tour.findAll({
             where: {
                 title : {[Op.like]: '%'+ req.body.search + '%'},
-                short_description: {[Op.like]: '%' + req.body.search + '%'}
             }
         })
         .then(tours => {
@@ -32,7 +31,6 @@ let indexController = {
         })
     },
     error: (req, res) => {
-
         res.render("error")
     }
 }
