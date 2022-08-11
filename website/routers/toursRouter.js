@@ -18,18 +18,18 @@ const adminAuthMiddleware = require('../middlewares/adminAuthMiddleware');
 router.get('/detail/:id/', toursController.detail);
 
 // Tours create
-router.get('/create', adminAuthMiddleware, toursController.create);
-router.post('/create', upload.any() , validationTours, adminAuthMiddleware, toursController.processCreate)
+router.get('/create', authMiddleware, adminAuthMiddleware, toursController.create);
+router.post('/create', upload.any() , validationTours, authMiddleware, adminAuthMiddleware, toursController.processCreate)
 
 // Tours edit
-router.get('/edit/:id/', adminAuthMiddleware, toursController.edit);
-router.put('/edit/:id/', upload.any(), adminAuthMiddleware, toursController.update)
+router.get('/edit/:id/', authMiddleware, adminAuthMiddleware, toursController.edit);
+router.put('/edit/:id/', upload.any(), authMiddleware, adminAuthMiddleware, toursController.update)
 
 // Tours list
 router.get('/list', toursController.tours);
 
 // Tours delete
-router.delete('/delete/:id', adminAuthMiddleware, toursController.delete);
+router.delete('/delete/:id', authMiddleware, adminAuthMiddleware, toursController.delete);
 
 
 module.exports = router;
