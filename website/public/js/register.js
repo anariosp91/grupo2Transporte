@@ -74,12 +74,16 @@ window.addEventListener("load", () => {
 
         //Phone validations
         if (e.srcElement.name === "phone") {
+            let phoneRegex = /^\d{7,14}$/;
             if (phone.value === "") {
-                errors.phone = "Este campo debe estar completo"
+                errors.phone = "Ingrese un telefono valido"
             }
-            if (phone.value.indexOf(" ") !== -1) {
+            else if(isNaN(phone.value)){
+                errors.phone = "Este campo solo puede contener numeros"
+            }
+            else if (phone.value.indexOf(" ") !== -1) {
                 errors.phone = "No puede contener espacios"
-            } else if (phone.value !== "" && phone.value.indexOf(" ") === -1) {
+            } else if (phone.value !== "" && phone.value.indexOf(" ") === -1 || (!isNaN(phone.value))) {
                 errors.phone = null
             }
         }
