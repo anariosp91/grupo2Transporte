@@ -14,6 +14,9 @@ const indexRouter = require('./routers/indexRouter');
 const usersRouter = require('./routers/usersRouter');
 const toursRouter = require('./routers/toursRouter');
 
+//Constrollers APIs
+const apiUsersRoutes = require("./routers/api/usersRouter");
+
 app.listen(port, (req,resp) => console.log('iniciando servidor en el puerto ' + port));
 
 const publicPath = path.resolve(__dirname,'./public')
@@ -43,6 +46,10 @@ app.use('/', indexRouter)
 app.use('/tours', toursRouter);
 
 app.use('/users', usersRouter);
+
+//Routers APIs
+
+app.use('/apiUsers', apiUsersRoutes);
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));
