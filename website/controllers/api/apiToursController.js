@@ -4,7 +4,6 @@ const db = require('../../database/models');
 const apiToursController = {
 
     tours: (req, res) => {
-        
         db.Tour.findAll()
         .then(tours => {
             let toursResponse = tours.map(tour => {
@@ -31,7 +30,7 @@ const apiToursController = {
         })
     },
     detailTour: (req, res) => {
-        db.Tour.findByPk(req.params.id)
+        db.Tour.findByPk(req.params.id, {include: ['sold']})
         .then(tour => {
             let response = {
                 meta: {
@@ -43,8 +42,8 @@ const apiToursController = {
                     id : tour.id,
                     title : tour.title,
                     description : tour.short_description,
-                    urlImage: "http://localhost:8000/img/products/" + tour.image1
-                   
+                    urlImage: "http://localhost:8000/img/products/" + tour.image1,
+                    vendido : tour.sold
                 }
             }
             res.json(response);
