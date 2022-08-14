@@ -15,7 +15,9 @@ const usersRouter = require('./routers/usersRouter');
 const toursRouter = require('./routers/toursRouter');
 
 //Constrollers APIs
-const apiUsersRoutes = require("./routers/api/usersRouter");
+const apiUsersRoutes = require("./routers/api/apiUsersRouter");
+const apiToursRouter = require("./routers/api/apiToursRouter");
+
 
 app.listen(port, (req,resp) => console.log('iniciando servidor en el puerto ' + port));
 
@@ -50,6 +52,7 @@ app.use('/users', usersRouter);
 //Routers APIs
 
 app.use('/apiUsers', apiUsersRoutes);
+app.use('/apiTours', apiToursRouter);
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));

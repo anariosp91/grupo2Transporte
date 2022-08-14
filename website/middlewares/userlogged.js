@@ -5,7 +5,7 @@ function userLogged(req, res, next) {
 	res.locals.isLogged = false;
 	if(req.cookies.userEmail){
 		let emailInCookie = req.cookies.userEmail;
-		console.log(req.cookies.userEmail)
+		
 
 		db.User.findOne({
 			where: {email: emailInCookie}

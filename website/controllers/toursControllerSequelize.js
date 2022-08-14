@@ -18,7 +18,7 @@ let toursController = {
                 oldData: req.body
             })
         }
-        console.log(req.body, req.files)
+        
         db.Tour.create({
             ...req.body,
             image1 : req.files[0].filename,

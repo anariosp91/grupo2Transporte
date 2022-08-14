@@ -12,7 +12,7 @@ let indexController = {
         .then(tours => res.render('index',{tours}))
     },
     search: (req, res) => {
-        console.log(req.body)
+        
         db.Tour.findAll({
             where: {
                 title : {[Op.like]: '%'+ req.body.search + '%'},

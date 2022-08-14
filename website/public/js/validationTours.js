@@ -143,7 +143,7 @@ window.addEventListener('load', () => {
         e.preventDefault();
        
         if((errTitle.innerText == '') && (errShort.innerText == '') && (errLong.innerText == '') && (errTotal.innerText == '') && (errDuration.innerText == '') && (errImage1.innerText == '') && (errImage2.innerText == '') && (errImage3.innerText == '')){
-            console.log('entro')
+            
             form_create.submit()
         }else{
             errTitle.innerText = 'Debes Completar los campos del formulario' 

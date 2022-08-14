@@ -7,8 +7,8 @@ const usersController = {
             let response = {
                 meta: {
                     status: 200,
-                    total:  users.length,
-                    url: "apiUsers"
+                    count:  users.length,
+                    url: "/apiUsers"
                 },
                 data: users
             }

@@ -119,7 +119,7 @@ let usersController = {
         }).then(user => {res.render("edit-profile", {user})})
     }, 
     save: (req, res) => {
-        console.log('DATOS IMAGEN:',req.file)
+        
         db.User.update({
             ...req.body,
             image: req.file.filename
@@ -127,10 +127,10 @@ let usersController = {
             where: {id : req.session.userLogged.id}
         })
         .then(user => {
-            console.log('entro', user)
+           
 
             if (user !== null) {
-                console.log(user)
+                
                 res.render('profile', {user: req.session.userLogged})
             } else {
                 res.redirect('/')

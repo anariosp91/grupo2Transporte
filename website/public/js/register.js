@@ -98,18 +98,7 @@ window.addEventListener("load", () => {
             } else if (password.value >= 8 || (passwordValidation.test(password.value))) {
                 errors.password = null
             }
-            // password.addEventListener('blur', () => {
-            //     field = event.target;
-
-            //   passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}[^'\s]/
-
-            //     if (passwordValidation.test(field.value)) {
-            //         errors.password = null
-            //     } else {
-            //         console.log(passwordValidation.test(field.value))
-            //         errors.password = "Deberá tener letras mayúsculas, minúsculas, un número y un carácter especial."
-            //     }
-            // });
+    
         }
         if (e.srcElement.name === "repassword") {
             if (repassword.value !== password.value) {
