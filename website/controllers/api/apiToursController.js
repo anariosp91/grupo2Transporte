@@ -4,29 +4,42 @@ const db = require('../../database/models');
 const apiToursController = {
 
     tours: (req, res) => {
-        db.Tour.findAll()
-        .then(tours => {
-            let toursResponse = tours.map(tour => {
-                return {
-                    id : tour.id,
-                    title : tour.title,
-                    description : tour.short_description,
-                    detail : '/apiTours/' + tour.id,
-                    image : tour.image1
-                }
-            })
+        let page = req.query.page ? Number(req.query.page) : 1
+        let limit =req.query.limit ? Number(req.query.limit) : 10
+        let offset = ( limit * page ) - limit
+      
+        db.Tour.findAndCountAll({
+            offset: offset,
+            limit: limit
+        }).then(tours => {
            
-            let response = {
-                meta: {
-                    status: 200,
-                    total:  tours.length,
-                    url: "/apiTours"
-                },
-                data: {
-                    tours: toursResponse
-                }
-            }
-            res.json(response);
+            let toursResponse = tours.rows.map(tour => {
+                        return {
+                            id : tour.id,
+                            title : tour.title,
+                            description : tour.short_description,
+                            detail : '/apiTours/' + tour.id,
+                            image : tour.image1
+                        }
+                    })
+                   
+                    let response = {
+                        meta: {
+                            status: 200,
+                            url: "/apiTours",
+                            pagination: {
+                                totalPagina:  toursResponse.length,
+                                totalRegistro: tours.count,
+                                next: `/apiTours?limit=${limit}&page=${page+1}`,
+                                previus: `/apiTours?limit=${limit}&page=${page-1}`
+                            }
+
+                        },
+                        data: {
+                            tours: toursResponse
+                        }
+                    }
+                    res.json(response);
         })
     },
     detailTour: (req, res) => {
