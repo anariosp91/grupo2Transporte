@@ -77,30 +77,54 @@ Ana:
 _Reunion viernes 1 de Julio 1/2022
 
 Sofi:
-_ Mejorando los estilos del proyecto y diseñando el diagrama de la base de datos
-_ seguimos sin poder solucionar el responsive del footer
-_ Hacer el insert en la base de datos
+- Mejorando los estilos del proyecto y diseñando el diagrama de la base de datos
+- seguimos sin poder solucionar el responsive del footer
+- Hacer el insert en la base de datos
 
-_ Nico:
-_ Estuvo trabajando en mejorar el footer y diseñando el diagrama de la base de datos
-_ seguimos sin poder solucionar el responsive del footer
-_ Hacer el buscador de tours
+- Nico:
+- Estuvo trabajando en mejorar el footer y diseñando el diagrama de la base de datos
+- seguimos sin poder solucionar el responsive del footer
+- Hacer el buscador de tours
 
 Ana:
-_ Estuvo generando el middleware de autenticacion de administrador, genero el contador de caracteres de los textarea y trabajo en el diseño del diagrama de la base de datos
-_ seguimos sin poder solucionar el responsive del footer
-_ generar el modelo de la base de datos
+- Estuvo generando el middleware de autenticacion de administrador, genero el contador de caracteres de los textarea y trabajo en el diseño del diagrama de la base de datos
+- seguimos sin poder solucionar el responsive del footer
+- generar el modelo de la base de datos
 
 _Reunion miercoles 20 de Julio/2022
 
 Sofi:
-_ Arregle errores que teniamos en el footer en todas las vistas
-_ Creacion de las vistas de perfil y edicion del perfil de usuarios
-_ Correccion de los metodos de edicion y perfil de usuarios
-_ Algunos inconvenientes para arreglar el footer en todas las vistas
+- Arregle errores que teniamos en el footer en todas las vistas
+- Creacion de las vistas de perfil y edicion del perfil de usuarios
+- Correccion de los metodos de edicion y perfil de usuarios
+- Algunos inconvenientes para arreglar el footer en todas las vistas
 
 Ana:
-_ Termine el crud de Tours
-_ Terminamos el crud de Users
-_ Tuve algunos inconvenientes para la creacion del metodo de edicion de tours y edicion de users
-_ Algunos conflitos con git y sus ramas, que ya fueron resueltos
+- Termine el crud de Tours
+- Terminamos el crud de Users
+- Tuve algunos inconvenientes para la creacion del metodo de edicion de tours y edicion de users
+- Algunos conflitos con git y sus ramas, que ya fueron resueltos
+
+_Reunion miercoles 27 de Julio/2022
+
+Sofi:
+- Validaciones del front de los formularios de login y register
+
+Ana:
+- Validaciones del front de los formularios de creacion y edicion de tours
+
+_Reunion miercoles 3 de Agosto/2022
+
+Sofi:
+- Creacion de la api de usuarios
+
+Ana:
+- Creacion de la api de Tours
+
+_Reunion lunes 15 de Agosto/2022
+
+Sofi:
+- Empezamos a trabajar en el Dashboard para Administradores del sitio
+
+Ana:
+- Empezamos a trabajar en el Dashboard para Administradores del sitio

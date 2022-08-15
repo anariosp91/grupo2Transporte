@@ -90,3 +90,19 @@ Evitar conflictos en el manejo de Git
 
 _Continuar haciendo_:
 Seguiremos teniendo mas reuniones, para organizarnos y seguir avanzando. Seguiremos limpiando el codigo innecesario
+
+
+RETROSPECTIVA SPRINT7
+
+_Comenzar a hacer_:
+Empezaremos a aplicar todos los conceptos aprendidos sobre React
+
+_Hacer más_:
+Seguir trabajando de manera coordinada para evitar conflictos en Git
+
+_Hacer menos_: 
+
+
+_Continuar haciendo_:
+Seguiremos trabajando cada metodo o funcionalidad en ramas nuevas para evitar conflictos en git
+
