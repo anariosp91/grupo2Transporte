@@ -22,7 +22,7 @@ import React from 'react';
         error: false
     }
 
-const useApplyFetch = (url, objectInData) => {
+const useApplyFetch = (url) => {
     const [state, setState] = React.useState(initialState)
     
     const fetchData = () => {
@@ -30,8 +30,8 @@ const useApplyFetch = (url, objectInData) => {
         fetch(url)
         .then(res => res.json())
         .then(data => {
-            if(data[objectInData]){
-                setState({...successState, data: data[objectInData]})
+            if(data){
+                setState({...successState, data: data})
             } else {
                 setState(errorState)
             }

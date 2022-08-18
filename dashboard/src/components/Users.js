@@ -3,9 +3,9 @@ import '../assets/css/list.css'
 import useApplyFetch from "../hooks/useApplyFetch";
 
 
-export default function Tours ({columns}){
-    const {data, isLoading, error, errorMessage} = useApplyFetch('/api/tours');
-          
+export default function Users ({columns}){
+    const {data, isLoading, error, errorMessage} = useApplyFetch('/api/users');
+        
     
     return(
         <div>
@@ -19,22 +19,25 @@ export default function Tours ({columns}){
                     )}
                 </tr>
                 
-                    {data && data.data.tours.map((tour, i) => 
-                        <tr key={i + tour.title}>
+                    {data && data.data.users.map((user, i) => 
+                        <tr key={i + user.title}>
                             <td>
-                                {tour.title}
+                                {user.name}
                             </td>
                     
                             <td>
-                                {tour.description}
+                                {user.lastName}
                             </td>
                     
                             <td>
-                                {tour.detail}
+                                {user.email}
                             </td>
                     
                             <td>
-                                {tour.image}
+                                {user.detail}
+                            </td>
+                            <td>
+                                {user.image}
                             </td>
                         </tr>
                 )}
@@ -44,5 +47,3 @@ export default function Tours ({columns}){
         </div>
     )   
 }
-
-
