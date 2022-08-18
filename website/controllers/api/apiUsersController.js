@@ -18,7 +18,7 @@ const usersController = {
                             name : user.name,
                             lastName : user.last_name,
                             email: user.email,
-                            detail : "http://localhost:8000/apiUsers/" + user.id,
+                            detail : "http://localhost:8000/api/users/" + user.id,
                             image : user.image
                         }
                     })
@@ -26,12 +26,12 @@ const usersController = {
                     let response = {
                         meta: {
                             status: 200,
-                            url: "http://localhost:8000/apiUsers",
+                            url: "http://localhost:8000/api/users",
                             pagination: {
                                 totalPagina:  usersResponse.length,
                                 totalRegistro: users.count,
-                                next: `http://localhost:8000/apiUsers?limit=${limit}&page=${page+1}`,
-                                previus: `http://localhost:8000/apiUsers?limit=${limit}&page=${page-1}`
+                                next: `http://localhost:8000/api/users?limit=${limit}&page=${page+1}`,
+                                previus: `http://localhost:8000/api/users?limit=${limit}&page=${page-1}`
                             }
 
                         },
@@ -61,7 +61,7 @@ const usersController = {
                     meta: {
                         status: 200,
                         total:  user.length,
-                        url: "http://localhost:8000/apiUsers/" + req.params.id
+                        url: "http://localhost:8000/api/users/" + req.params.id
                     },
                     data: {
                         id: user.id,

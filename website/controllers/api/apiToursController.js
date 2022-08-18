@@ -18,7 +18,7 @@ const apiToursController = {
                             id : tour.id,
                             title : tour.title,
                             description : tour.short_description,
-                            detail : '/apiTours/' + tour.id,
+                            detail : '/api/tours/' + tour.id,
                             image : tour.image1
                         }
                     })
@@ -30,8 +30,8 @@ const apiToursController = {
                             pagination: {
                                 totalPagina:  toursResponse.length,
                                 totalRegistro: tours.count,
-                                next: `/apiTours?limit=${limit}&page=${page+1}`,
-                                previus: `/apiTours?limit=${limit}&page=${page-1}`
+                                next: `/api/tours?limit=${limit}&page=${page+1}`,
+                                previus: `/api/tours?limit=${limit}&page=${page-1}`
                             }
 
                         },
@@ -49,7 +49,7 @@ const apiToursController = {
                 meta: {
                     status: 200,
                     total:  tour.length,
-                    url: "apiUsers/" + req.params.id
+                    url: "api/tours/" + req.params.id
                 },
                 data: {
                     id : tour.id,
