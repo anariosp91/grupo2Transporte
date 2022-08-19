@@ -8,7 +8,8 @@ export default function Tours ({columns}){
           
     
     return(
-        <div>
+        <div className="container-table">
+            <h2>Listado de Tours</h2>
             <table className="table">
             
                 <tr >
@@ -21,19 +22,19 @@ export default function Tours ({columns}){
                 
                     {data && data.data.tours.map((tour, i) => 
                         <tr key={i + tour.title}>
-                            <td>
+                            <td  className="table-td">
                                 {tour.title}
                             </td>
                     
-                            <td>
+                            <td className="table-td">
                                 {tour.description}
                             </td>
                     
-                            <td>
+                            <td className="table-td">
                                 {tour.detail}
                             </td>
                     
-                            <td>
+                            <td className="table-td">
                                 {tour.image}
                             </td>
                         </tr>

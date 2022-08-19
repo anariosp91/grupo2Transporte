@@ -15,6 +15,7 @@ export default function NavBar (){
 
             <div className="menu">
                 <ul className="list">
+                    <li className="li-menu-item"> <Link to='/'> <i className="fa-solid fa-house"></i> </Link> </li>
                     <li className="li-menu-item"> <Link to='/users'> Listado de Usuarios </Link> </li>
                     <li className="li-menu-item"> <Link to='/tours'> Listado de Tours </Link> </li>
                 </ul>

@@ -10,6 +10,9 @@ a {
 }
 
 body {
+    background-image: url("https://i.imgur.com/e7Q6fp6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Fira Sans", sans-serif;
 }
 

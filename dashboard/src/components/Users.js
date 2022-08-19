@@ -8,7 +8,8 @@ export default function Users ({columns}){
         
     
     return(
-        <div>
+        <div className="container-table">
+            <h2> Listado de Usuarios </h2>
             <table className="table">
             
                 <tr >
@@ -20,24 +21,24 @@ export default function Users ({columns}){
                 </tr>
                 
                     {data && data.data.users.map((user, i) => 
-                        <tr key={i + user.title}>
-                            <td>
+                        <tr key={i + user.id}>
+                            <td className="table-td">
                                 {user.name}
                             </td>
                     
-                            <td>
+                            <td className="table-td">
                                 {user.lastName}
                             </td>
                     
-                            <td>
+                            <td className="table-td"> 
                                 {user.email}
                             </td>
                     
-                            <td>
+                            <td className="table-td">
                                 <a href={user.detail}>{user.detail}</a>
                                 
                             </td>
-                            <td>
+                            <td className="table-td">
                                 {user.image}
                             </td>
                         </tr>

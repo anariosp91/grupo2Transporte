@@ -1,15 +1,12 @@
-import React from "react"
-import { Route, Switch } from "react-router-dom"
-import ToursList from "../pages/ToursList"
-import UsersList from "../pages/UsersList"
-import NotFound from "../pages/notFound"
+import React from "react";
+import ToursList from "../pages/ToursList";
+import UsersList from "../pages/UsersList";
 
-export default function ContentWrapper(){
+export default function ContentMiddle(){
     return(
-                <Switch>
-                    <Route path="/tours" component={ToursList} /> 
-                    <Route path="/users" component={UsersList} />
-                    <Route component={NotFound} />
-                </Switch>
+        <div>
+            <ToursList />
+            <UsersList />
+        </div>
     )
 }
