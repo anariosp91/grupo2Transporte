@@ -27,8 +27,9 @@ const usersController = {
                         meta: {
                             status: 200,
                             url: "http://localhost:8000/api/users",
+                            count:  usersResponse.length,
                             pagination: {
-                                totalPagina:  usersResponse.length,
+                                totalPag:  usersResponse.length,
                                 totalRegistro: users.count,
                                 next: `http://localhost:8000/api/users?limit=${limit}&page=${page+1}`,
                                 previus: `http://localhost:8000/api/users?limit=${limit}&page=${page-1}`
@@ -60,7 +61,6 @@ const usersController = {
                 let response = {
                     meta: {
                         status: 200,
-                        total:  user.length,
                         url: "http://localhost:8000/api/users/" + req.params.id
                     },
                     data: {

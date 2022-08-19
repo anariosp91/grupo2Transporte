@@ -34,7 +34,8 @@ export default function Users ({columns}){
                             </td>
                     
                             <td>
-                                {user.detail}
+                                <a href={user.detail}>{user.detail}</a>
+                                
                             </td>
                             <td>
                                 {user.image}
