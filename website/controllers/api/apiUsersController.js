@@ -18,6 +18,7 @@ const usersController = {
                             name : user.name,
                             lastName : user.last_name,
                             email: user.email,
+                            phone: user.phone,
                             detail : "http://localhost:8000/api/users/" + user.id,
                             image : user.image
                         }
@@ -68,6 +69,7 @@ const usersController = {
                         name: user.name,
                         lastName: user.last_name,
                         email: user.email,
+                        phone: user.phone,
                         urlImage: "http://localhost:8000/img/users/" + user.image
                     }
                 }

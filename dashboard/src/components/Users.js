@@ -11,16 +11,18 @@ export default function Users ({columns}){
         <div className="container-table">
             <h2> Listado de Usuarios </h2>
             <table className="table">
-            
-                <tr >
-                    {columns.map((column, i) => 
-                        <th key={i + column}>
-                            {column}
-                        </th>
-                    )}
-                </tr>
+                <thead>
+                    <tr >
+                        {columns.map((column, i) => 
+                            <th key={i + column}>
+                                {column}
+                            </th>
+                        )}
+                    </tr>
+                </thead>
                 
-                    {data && data.data.users.map((user, i) => 
+                <tbody>
+                {data && data.data.users.map((user, i) => 
                         <tr key={i + user.id}>
                             <td className="table-td">
                                 {user.name}
@@ -43,9 +45,10 @@ export default function Users ({columns}){
                             </td>
                         </tr>
                 )}
+                </tbody>    
+            </table>
             {isLoading && <div className="alert alert-info text-center">Cargando...</div>}
             {error && <div className="alert alert-warning text-center">{errorMessage}</div>}
-            </table>
         </div>
     )   
 }

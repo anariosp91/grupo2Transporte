@@ -11,7 +11,7 @@ export default function Tours ({columns}){
         <div className="container-table">
             <h2>Listado de Tours</h2>
             <table className="table">
-            
+                <thead>
                 <tr >
                     {columns.map((column, i) => 
                         <th key={i + column}>
@@ -19,8 +19,10 @@ export default function Tours ({columns}){
                         </th>
                     )}
                 </tr>
+                </thead>
                 
-                    {data && data.data.tours.map((tour, i) => 
+                <tbody>
+                {data && data.data.tours.map((tour, i) => 
                         <tr key={i + tour.title}>
                             <td  className="table-td">
                                 {tour.title}
@@ -39,9 +41,10 @@ export default function Tours ({columns}){
                             </td>
                         </tr>
                 )}
+                </tbody>
+            </table>
             {isLoading && <div className="alert alert-info text-center">Cargando...</div>}
             {error && <div className="alert alert-warning text-center">{errorMessage}</div>}
-            </table>
         </div>
     )   
 }

@@ -11,7 +11,7 @@ export default function NavBar (){
             </div>
 
             <input type="checkbox" id="toggler"/>
-            <label for="toggler"><i className="fa-solid fa-bars"></i></label>
+            <label ><i className="fa-solid fa-bars"></i></label>
 
             <div className="menu">
                 <ul className="list">

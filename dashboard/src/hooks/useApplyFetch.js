@@ -30,6 +30,7 @@ const useApplyFetch = (url) => {
         fetch(url)
         .then(res => res.json())
         .then(data => {
+        console.log("🚀 ~ file: useApplyFetch.js ~ line 33 ~ fetchData ~ data", data)
             if(data){
                 setState({...successState, data: data})
             } else {
@@ -43,7 +44,7 @@ const useApplyFetch = (url) => {
     React.useEffect(()=>{
         fetchData()
     },[])
-
+    
     return {...state, fetchData}
 }
 
