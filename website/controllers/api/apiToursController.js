@@ -28,8 +28,8 @@ const apiToursController = {
                             status: 200,
                             url: "/apiTours",
                             pagination: {
-                                totalPagina:  toursResponse.length,
-                                totalRegistro: tours.count,
+                                totalPage:  toursResponse.length,
+                                totalRegister: tours.count,
                                 next: `/api/tours?limit=${limit}&page=${page+1}`,
                                 previus: `/api/tours?limit=${limit}&page=${page-1}`
                             }

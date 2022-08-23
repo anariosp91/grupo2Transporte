@@ -30,8 +30,8 @@ const usersController = {
                             url: "http://localhost:8000/api/users",
                             count:  usersResponse.length,
                             pagination: {
-                                totalPag:  usersResponse.length,
-                                totalRegistro: users.count,
+                                totalPage:  usersResponse.length,
+                                totalRegister: users.count,
                                 next: `http://localhost:8000/api/users?limit=${limit}&page=${page+1}`,
                                 previus: `http://localhost:8000/api/users?limit=${limit}&page=${page-1}`
                             }

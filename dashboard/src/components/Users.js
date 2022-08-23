@@ -2,8 +2,10 @@ import React from "react"
 import '../assets/css/list.css'
 import useApplyFetch from "../hooks/useApplyFetch";
 
+let columns = ['Nombre', 'Apellido', 'Email', 'Detalle', 'Imagen']
 
-export default function Users ({columns}){
+
+export default function Users (){
     const {data, isLoading, error, errorMessage} = useApplyFetch('/api/users');
         
     

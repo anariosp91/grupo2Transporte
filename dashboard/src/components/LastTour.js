@@ -2,13 +2,13 @@ import React from "react"
 import useApplyFetch from "../hooks/useApplyFetch";
 import '../assets/css/profile.css'
 
-export default function LastUser(){
-    const {data, isLoading, error, errorMessage} = useApplyFetch('/api/users');
-    let user = null
+export default function LastTour(){
+    const {data, isLoading, error, errorMessage} = useApplyFetch('/api/tours');
+    let tour = null
     
     if(data){
         
-        user = data.data.users[data.data.users.length - 1]
+        tour = data.data.tours[data.data.tours.length - 1]
     }
     // console.log('user:',user)
 
@@ -17,15 +17,14 @@ export default function LastUser(){
         <main className="main-profile">
             {isLoading && <div className="alert alert-info text-center">Cargando...</div>}
             {
-                user != null ? 
+                tour != null ? 
                 <div className="container-profile">
                 <div className="img-profile-div">
-                    <img src={`/img/users/${user.image}`} className="img-profile"/>
+                    <img src={`/img/products/${tour.image}`} className="img-profile"/>
                 </div>
                 <div  className="detail-profile-div">  
-                    <h2> {user.name}  {user.lastName} </h2>
-                    <p> {user.email} </p>
-                    <p> {user.phone} <i className="fa-solid fa-phone"></i></p>
+                    <h2> {tour.title} </h2>
+                    <p> {tour.description} </p>
                 </div>
             </div>
                 : <div className="alert alert-warning text-center">{errorMessage}</div>}
@@ -34,12 +33,3 @@ export default function LastUser(){
         </main>
     )
 }
-
-
-
-
-
-
-    
-	
-    

@@ -1,14 +1,14 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import NavBar from '../src/components/NavBar';
-import ContentWrapper from './components/ContentMiddle';
 import Footer from './components/Footer';
+import ContentMiddle from './components/ContentMiddle';
 
 function App() {
   return (
      <BrowserRouter>
         <NavBar />
-        <ContentWrapper />
+        <ContentMiddle />
         {/* <Footer /> */}
      </BrowserRouter> 
   );

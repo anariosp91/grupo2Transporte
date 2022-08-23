@@ -2,8 +2,10 @@ import React from "react"
 import '../assets/css/list.css'
 import useApplyFetch from "../hooks/useApplyFetch";
 
+let columns = ['Titulo', 'Descripcion', 'Detalle', 'Imagen']
 
-export default function Tours ({columns}){
+
+export default function Tours (){
     const {data, isLoading, error, errorMessage} = useApplyFetch('/api/tours');
           
     
