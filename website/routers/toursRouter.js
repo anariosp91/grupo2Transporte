@@ -32,4 +32,6 @@ router.get('/list', toursController.tours);
 router.delete('/delete/:id', authMiddleware, adminAuthMiddleware, toursController.delete);
 
 
+
+
 module.exports = router;

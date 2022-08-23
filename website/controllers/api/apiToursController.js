@@ -1,6 +1,5 @@
 const db = require('../../database/models');
 
-
 const apiToursController = {
 
     tours: (req, res) => {
@@ -61,6 +60,33 @@ const apiToursController = {
             }
             res.json(response);
         })
+    },
+    moreSaleTour: async (req, res) => {
+        // db.SaleTour.findOne({
+        //     group: tour_id,
+        //     order: ['tour_id']
+        // })
+        
+        const [results, metadata] = await db.sequelize.query("SELECT tour_id, count(tour_id) AS contador FROM sales_tour GROUP BY tour_id ORDER BY contador DESC LIMIT 1");
+        let tour_id = results[0].tour_id
+        db.Tour.findOne({
+            where: { id : tour_id}
+        })
+        .then(tour => {
+            let response = {
+                meta: {
+                    status: 200,
+                    tour_id:  tour.id
+                },
+                data: {
+                    id : tour.id,
+                    title : tour.title,
+                    description : tour.short_description,
+                    image : tour.image1
+                }
+            }
+            res.json(response);
+        })       
     }
 }
     

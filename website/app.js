@@ -51,8 +51,8 @@ app.use('/users', usersRouter);
 
 //Routers APIs
 
-app.use('/api/Users', apiUsersRoutes);
-app.use('/api/Tours', apiToursRouter);
+app.use('/api/users', apiUsersRoutes);
+app.use('/api/tours', apiToursRouter);
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));
