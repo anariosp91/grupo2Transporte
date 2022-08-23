@@ -3,7 +3,7 @@ import useApplyFetch from "../hooks/useApplyFetch";
 import '../assets/css/profile.css'
 
 export default function LastUser(){
-    const {data, isLoading, error, errorMessage} = useApplyFetch('/api/users');
+    const {data, isLoading, errorMessage} = useApplyFetch('/api/users');
     let user = null
     
     if(data){
@@ -22,7 +22,8 @@ export default function LastUser(){
                 <div className="img-profile-div">
                     <img src={`/img/users/${user.image}`} className="img-profile"/>
                 </div>
-                <div  className="detail-profile-div">  
+                <div  className="detail-profile-div"> 
+                    <h1>ULTIMO USUARIO REGISTRADO</h1> 
                     <h2> {user.name}  {user.lastName} </h2>
                     <p> {user.email} </p>
                     <p> {user.phone} <i className="fa-solid fa-phone"></i></p>

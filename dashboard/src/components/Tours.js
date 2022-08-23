@@ -11,9 +11,11 @@ export default function Tours (){
     
     return(
         <div className="container-table">
-            <h2>Listado de Tours</h2>
             <table className="table">
                 <thead>
+                <tr>
+                <h2>Listado de Tours</h2>
+                </tr>
                 <tr >
                     {columns.map((column, i) => 
                         <th key={i + column}>

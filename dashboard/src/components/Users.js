@@ -14,6 +14,9 @@ export default function Users (){
             <h2> Listado de Usuarios </h2>
             <table className="table">
                 <thead>
+                    <tr>
+                        <h2>Listado de Usuarios</h2>
+                    </tr>
                     <tr >
                         {columns.map((column, i) => 
                             <th key={i + column}>

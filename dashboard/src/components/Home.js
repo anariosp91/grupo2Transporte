@@ -1,4 +1,5 @@
 import React from "react";
+import BestSellingTour from "./BestSellingTour";
 import LastTour from "./LastTour";
 import LastUser from "./LastUser";
 import TotalTours from "./TotalTours";
@@ -11,10 +12,11 @@ export default function Home(){
         <div>
             <TotalTours />
             <TotalUsers />
+            <BestSellingTour/>
             <LastTour />
             <LastUser/>
-            <Tours />
-            <Users />
+            {/* <Tours /> Sofi me parece que los listados se podrian sacar de la home y que queden disponibles solo con el link de la navbar, queda mas bonito pero tu decides
+            <Users /> */} 
         </div>
     )
 }
