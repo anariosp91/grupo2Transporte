@@ -62,10 +62,6 @@ const apiToursController = {
         })
     },
     moreSaleTour: async (req, res) => {
-        // db.SaleTour.findOne({
-        //     group: tour_id,
-        //     order: ['tour_id']
-        // })
         
         const [results, metadata] = await db.sequelize.query("SELECT tour_id, count(tour_id) AS contador FROM sales_tour GROUP BY tour_id ORDER BY contador DESC LIMIT 1");
         let tour_id = results[0].tour_id

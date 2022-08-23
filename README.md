@@ -25,6 +25,18 @@ Integrantes del equipo
 - Mi nombre es Sofia, tengo 17 años y vivo en Buenos Aires. Soy estudiante de programación, en mi tiempo libre me gusta leer. 
 - Mi nombre es Nicolás, tengo 22 años y vivo en La Plata. Soy estudiante de diseño gráfico. Me gusta leer e ir al gimnasio.
 
+API ENDPOINTS
+
+- http://localhost:8000/api/tours   //listado de tours
+- http://localhost:8000/api/users   //listado de usuarios
+- http://localhost:8000/api/tours/sale  // tour mas vendido 
+- http://localhost:8000/api/tours/:id  // detalle de cada tour por id
+- http://localhost:8000/api/users/:id  // detalle de cada usuario por id
+
+- http://localhost:8000/api/tours?limit=2&page=1 //listado de tours con paginado
+- http://localhost:8000/api/users?limit=2&page=1 //listado de users con paginado
+
+
 Referencias de sitios:
 
     https://www.turismo-elpuente.com.ar 

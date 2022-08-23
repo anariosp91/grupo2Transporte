@@ -128,3 +128,17 @@ Sofi:
 
 Ana:
 - Empezamos a trabajar en el Dashboard para Administradores del sitio
+
+_Reunion Martes 23 de Agosto/2022
+
+Sofi:
+- Me encargue de hacer las rutas funcionales para el dashboard
+- Trabajamos en los componentes de total de usuarios y de tours
+- Impedimentos con la version de react router que no permitia usar Switch y Router
+- Terminar de mejorar los estilos del dashboard
+
+Ana:
+- Estuve organizando los componentes de listado de tours, listado de usuarios y el de tour mas vendido
+- Trabajamos en los componentes de total de usuarios y de tours
+- Algunos impedimentos con la nueva sintaxis, y con la version de react router dom
+- estuvimos trabajando en el endpoint de la api para buscar el tour mas vendido, con algunos impedimentos tambien
