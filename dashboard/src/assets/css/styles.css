@@ -18,12 +18,6 @@ body {
 
 /* navbar responsive */
 
-.main-header {
-    background-image: url("https://i.imgur.com/Z7JNekS.jpg?1");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
-}
 
 .main-navbar {
     background-color: rgba(1, 1, 1, 0.6);
@@ -99,96 +93,6 @@ i:hover {
     max-height: 100%;
 }
 
-/* search bar */
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-  }
-  
-  .search__input {
-    font-family: inherit;
-    font-size: inherit;
-    background-color: #f4f2f2;
-    border: none;
-    color: #646464;
-    padding: 0.7rem 1rem;
-    border-radius: 30px;
-    width: 12em;
-    transition: all ease-in-out .5s;
-    margin-right: -2rem;
-    height: 2px;
-  }
-  
-  .search__input:hover, .search__input:focus {
-    box-shadow: 0 0 1em #00000013;
-  }
-  
-  .search__input:focus {
-    outline: none;
-    background-color: #f0eeee;
-  }
-  
-  .search__input::-webkit-input-placeholder {
-    font-weight: 100;
-    color: #ccc;
-  }
-  
-  .search__input:focus + .search__button {
-    background-color: #f0eeee;
-  }
-  
-  .search__button {
-    border: none;
-    background-color: #f4f2f2;
-    margin-top: .1em;
-  }
-  
-  .search__button:hover {
-    cursor: pointer;
-  }
-
-  .search__input::placeholder {
-    color: #646464;
-  }
-  
-  .search__icon {
-    height: 1.3em;
-    width: 1.3em;
-    fill: #b4b4b4;
-  }
-
-/* Footer */
-
-.main-footer {
-    background-color: rgb(100, 107, 147);
-    padding: 10px;
-}
-
-.container-footer-logo {
-    max-width: 100px;
-}
-
-.logo-footer {
-    width: 100%;
-}
-
-.main-footer a {
-    text-decoration: none;
-    color: #ffffff;
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 14px;
-}
-
-.main-footer li {
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 
 /* Media queries */
 
@@ -237,51 +141,5 @@ i:hover {
     .main-navbar li {
         margin: 5px 10px;
     }
-
-    /* search bar */
-    .search__input {
-        height: 35px;
-    }
-
-
-    /* Footer */
-
-    .main-footer {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .main-footer a:hover {
-        color: #081454;
-    }
-
-    .main-footer li {
-        text-align: left;
-    }
-
-    .container-footer-logo {
-        max-width: 15%;
-    }
-
-}
-
-@media (min-width: 1200px) {
-
-    /* search bar */
-    .search__input {
-        width: 35em;
-    }
-    
-
-    /* Footer */
-    
-    .main-footer {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .main-footer a {
-        font-size: 17px;
-    }
+  
 }

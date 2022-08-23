@@ -11,7 +11,6 @@ export default function Users (){
     
     return(
         <div className="container-table">
-            <h2> Listado de Usuarios </h2>
             <table className="table">
                 <thead>
                     <tr>

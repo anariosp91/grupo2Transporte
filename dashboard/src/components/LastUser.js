@@ -1,6 +1,6 @@
 import React from "react"
 import useApplyFetch from "../hooks/useApplyFetch";
-import '../assets/css/profile.css'
+import '../assets/css/card.css'
 
 export default function LastUser(){
     const {data, isLoading, errorMessage} = useApplyFetch('/api/users');
@@ -14,17 +14,17 @@ export default function LastUser(){
 
     return(
        
-        <main className="main-profile">
+        <main className="main-card">
             {isLoading && <div className="alert alert-info text-center">Cargando...</div>}
             {
                 user != null ? 
-                <div className="container-profile">
-                <div className="img-profile-div">
-                    <img src={`/img/users/${user.image}`} className="img-profile"/>
+                <div className="container-card">
+                <div className="img-card-div">
+                    <img src={`/img/users/${user.image}`} className="img-card"/>
                 </div>
-                <div  className="detail-profile-div"> 
-                    <h1>ULTIMO USUARIO REGISTRADO</h1> 
-                    <h2> {user.name}  {user.lastName} </h2>
+                <div  className="detail-card-div"> 
+                    <h2>ULTIMO USUARIO REGISTRADO</h2> 
+                    <h4> {user.name}  {user.lastName} </h4>
                     <p> {user.email} </p>
                     <p> {user.phone} <i className="fa-solid fa-phone"></i></p>
                 </div>

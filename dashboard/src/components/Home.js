@@ -9,11 +9,15 @@ import TotalUsers from "./TotalUsers";
 export default function Home(){
     return(
         <div>
-            <TotalTours />
-            <TotalUsers />
+            <div className="last-container total-div">
+                <TotalTours />
+                <TotalUsers />
+            </div>
             <BestSellingTour/>
-            <LastTour />
-            <LastUser/>
+            <div className="last-container">
+                <LastTour />
+                <LastUser/>
+            </div>
         </div>
     )
 }

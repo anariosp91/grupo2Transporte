@@ -1,6 +1,6 @@
 import React from "react"
 import useApplyFetch from "../hooks/useApplyFetch";
-import '../assets/css/profile.css'
+import '../assets/css/card.css'
 
 export default function BestSellingTour(){
     const {data, isLoading, errorMessage} = useApplyFetch('/api/tours/sale');
@@ -13,17 +13,17 @@ export default function BestSellingTour(){
 
     return(
        
-        <main className="main-profile">
+        <main className="main-card">
             {isLoading && <div className="alert alert-info text-center">Cargando...</div>}
             {
                 tour != null ? 
-                <div className="container-profile">
-                <div className="img-profile-div">
-                    <img src={`/img/products/${tour.image}`} className="img-profile"/>
+                <div className="container-card">
+                <div className="img-card-div">
+                    <img src={`/img/products/${tour.image}`} className="img-card"/>
                 </div>
-                <div  className="detail-profile-div"> 
-                    <h1>TOUR MAS VENDIDO</h1>
-                    <h2> {tour.title} </h2>
+                <div  className="detail-card-div"> 
+                    <h2>TOUR MAS VENDIDO</h2>
+                    <h4> {tour.title} </h4>
                     <p> {tour.description} </p>
                 </div>
             </div>

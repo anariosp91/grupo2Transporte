@@ -12,7 +12,7 @@
     border-collapse: collapse;
     width: 90%;
     margin: 10px;
-    background-color: #f5f5f5;
+    background-color: rgba(260, 260, 260, 0.3);
 }
 
 td, th {
