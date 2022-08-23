@@ -10,7 +10,7 @@ export default function LastUser(){
         
         user = data.data.users[data.data.users.length - 1]
     }
-    // console.log('user:',user)
+    
 
     return(
        

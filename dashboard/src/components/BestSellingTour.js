@@ -9,7 +9,7 @@ export default function BestSellingTour(){
     if(data){
         tour = data.data
     }
-    console.log(tour)
+  
 
     return(
        
