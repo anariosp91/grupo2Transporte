@@ -108,7 +108,9 @@ let usersController = {
             where: {
                 email: {[Op.like]: req.session.userLogged.email}
             }
-        }).then(user => {res.render("profile", {user})})
+        }).then(user => {
+            console.log(user)
+            res.render("profile", {user})})
 
     },
     edit: (req, res) => {
@@ -119,25 +121,25 @@ let usersController = {
         }).then(user => {res.render("edit-profile", {user})})
     }, 
     save: (req, res) => {
+        console.log(req.file)
+        let userUpdate = {
+            ...req.body
+        }
 
-        // if(req.file.filename == undefined) {
-        //     image = req.session.userLogged.image
-        // } else {
-        //     image = req.file.filename
-        // }
+        if(req.file == undefined) {
+            userUpdate.image = req.session.userLogged.image
+        } else {
+            userUpdate.image = req.file.filename
+        }
         
-        db.User.update({
-            ...req.body,
-            image: req.file.filename
-        },{
+        db.User.update(userUpdate,{
             where: {id : req.session.userLogged.id}
         })
         .then(user => {
            
-
             if (user !== null) {
-                
-                res.render('profile', {user: req.session.userLogged})
+                console.log(userUpdate)
+                res.render('profile', {user:userUpdate})
             } else {
                 res.redirect('/')
             }
