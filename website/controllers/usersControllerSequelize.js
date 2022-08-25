@@ -119,6 +119,12 @@ let usersController = {
         }).then(user => {res.render("edit-profile", {user})})
     }, 
     save: (req, res) => {
+
+        // if(req.file.filename == undefined) {
+        //     image = req.session.userLogged.image
+        // } else {
+        //     image = req.file.filename
+        // }
         
         db.User.update({
             ...req.body,

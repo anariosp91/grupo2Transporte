@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
-
-    let input = document.querySelectorAll('input')
+    
+    let inputs = document.querySelectorAll('input')[0].value
     let title = document.getElementById('title')
     let short_description = document.getElementById('mensaje')
     let long_description = document.getElementById('mensaje1')
@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
     let errImage2 = document.getElementById('errImage2')
     let errImage3 = document.getElementById('errImage3')
 
-
+    title.focus()
     title.addEventListener('blur', () => {
         if(title.value == ''){
             errTitle.innerText = 'Debes Completar este campo'
@@ -137,15 +137,17 @@ window.addEventListener('load', () => {
             }
         }
     }) 
-    
+   
     
     button.addEventListener('click', (e) => {
+
         e.preventDefault();
-       
+
         if((errTitle.innerText == '') && (errShort.innerText == '') && (errLong.innerText == '') && (errTotal.innerText == '') && (errDuration.innerText == '') && (errImage1.innerText == '') && (errImage2.innerText == '') && (errImage3.innerText == '')){
             
             form_create.submit()
-        }else{
+        }
+        else{
             errTitle.innerText = 'Debes Completar los campos del formulario' 
             errTitle.style.color = 'red' 
         }
