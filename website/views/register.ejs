@@ -71,7 +71,7 @@
       <div class="row">
         <div class="column column-image">
           <label for="image" class="form-label label-file">Imagen de perfil <span class="error" id="err_image"></span></label>
-          <input type="file" name="image" class="form-input input-file" id="image" onchange="return fileValidation()"> 
+          <input type="file" name="image" class="form-input input-file" id="image"> 
           <% if (locals.errors && errors.image) { %>
             <div class="error">
               <%= errors.image.msg %> 

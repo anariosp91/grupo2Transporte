@@ -4,10 +4,12 @@ window.addEventListener("load", () => {
     let password = document.querySelector("#password");
     let errPassword = document.querySelector("#err_password");
     let button = document.querySelector("#loginBtn");
-    let form = document.querySelector("#form");
+    let form = document.querySelector("form");
     let inputForm = document.querySelectorAll("input");
 
     let errors = {};
+
+    email.focus();
 
 
     inputForm.forEach(input => input.addEventListener("blur", (e) => {

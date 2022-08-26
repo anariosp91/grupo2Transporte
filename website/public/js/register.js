@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     let image = document.querySelector("#image");
     let errImage = document.querySelector("#err_image");
     let button = document.querySelector("#registerBtn");
-    let form = document.querySelector("#form");
+    let form = document.querySelector("form");
     let inputForm = document.querySelectorAll("input")
 
     const expressions = {
@@ -57,19 +57,6 @@ window.addEventListener("load", () => {
             } else if ((email.value !== "") || (emailRegex.test(email.value))) {
                 errors.email = null
             }
-
-            // // email.addEventListener('blur', (event) => {
-            //     field = event.target;
-
-            //     emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-
-            //     if (emailRegex.test(field.value)) {
-            //         errors.email = null
-            //     } else {
-            //         errors.email = "Ingrese un correo valido"
-            //     }
-            // // });
-
         }
 
         //Phone validations
