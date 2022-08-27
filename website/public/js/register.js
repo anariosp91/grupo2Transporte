@@ -27,9 +27,10 @@ window.addEventListener("load", () => {
         emailExpresion: /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
     }
 
+    name.focus();
 
+    let errors = [];
 
-    let errors = {};
     inputForm.forEach(input => input.addEventListener("blur", (e) => {
         //Name validations
         if (e.srcElement.name === "name") {
@@ -105,6 +106,19 @@ window.addEventListener("load", () => {
                 errors.image = null
             }
         }
+
+         // Validation empty input
+         if(!input.value.length) {
+            e.preventDefault();
+            button.disabled = true
+            button.style.backgroundColor = "gray"
+            button.style.cursor = "not-allowed"
+       } else {
+           button.disabled = false
+           button.style.backgroundColor = "#081454"
+           button.style.cursor = "pointer"
+       }
+
 
         //check the errors
         if (Object.keys(errors).length >= 1) {

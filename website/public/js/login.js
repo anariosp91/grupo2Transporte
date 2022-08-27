@@ -7,10 +7,9 @@ window.addEventListener("load", () => {
     let form = document.querySelector("form");
     let inputForm = document.querySelectorAll("input");
 
-    let errors = {};
-
     email.focus();
-
+    
+    let errors = [];
 
     inputForm.forEach(input => input.addEventListener("blur", (e) => {
 
@@ -34,6 +33,18 @@ window.addEventListener("load", () => {
                 errors.password = null
             }
         }
+
+        // Validation empty input
+        if(!input.value.length) {
+            e.preventDefault();
+            button.disabled = true
+            button.style.backgroundColor = "gray"
+            button.style.cursor = "not-allowed"
+       } else {
+           button.disabled = false
+           button.style.backgroundColor = "#081454"
+           button.style.cursor = "pointer"
+       }
 
         //check the errors
         if (Object.keys(errors).length >= 1) {
