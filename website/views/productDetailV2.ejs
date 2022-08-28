@@ -72,16 +72,7 @@
                 <i class="fa-solid fa-clock-rotate-left reloj"> </i>
                 <p class="margen">Duración del tour, <%= tour.duration %>  aproximadamente</p>
               </div>
-              <p>Salida del crucero: horarios en función de la temporada
-                Embarque: en Port de l'Arsenal, 75012 Paris</p>
-              <p> Bar a bordo a su disposición</p>
-              <p>Ambiente de guinguette en cuanto los pasajeros llegan al Port de l'Arsenal</p>
-              <p>Opcional:</p>
-              <ul>
-                <li>Copa de Champagne</li>
-                <li>Copa de vino</li>
-                <li>Tabla de embutidos y quesos franceses (para 2 personas)</li>
-              </ul>
+              <div><%= tour.long_description %> </div>
             </section>
           </div>
           <%- include("partials/wpp-button") %> 

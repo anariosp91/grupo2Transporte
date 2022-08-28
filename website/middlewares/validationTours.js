@@ -5,7 +5,7 @@ const validationTours = [
 
    body('title').notEmpty().withMessage('Debes completar este campo').isLength({ min: 5 }).withMessage("El título debe tener mínimo 5 caracteres"),
    body('short_description').isLength({ min: 80, max: 100 }).withMessage('La descripción debe contener entre 80 y 100 caracteres'),
-   body('long_description').isLength({ min: 150, max: 200 }).withMessage('La descripción debe contener entre 150 y 200 caracteres'),
+   body('long_description').isLength({ min: 150, max: 500 }).withMessage('La descripción debe contener entre 150 y 500 caracteres'),
    body('duration')
     .isNumeric().withMessage('Debes completar este campo'),
    body('price').isNumeric().withMessage('Debes completar este campo'),

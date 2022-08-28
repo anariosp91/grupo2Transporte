@@ -52,8 +52,8 @@ window.addEventListener('load', () => {
         if(long_description.value == ''){
             errLong.innerText = 'Debes Completar este campo'
             errLong.style.color = 'red'
-        }else if((long_description.value.length < 150) || (short_description.value.length > 200)){
-            errLong.innerText = 'La descripcion debe tener entre 150 y 200 caracteres'
+        }else if((long_description.value.length < 150) || (short_description.value.length > 500)){
+            errLong.innerText = 'La descripcion debe tener entre 150 y 500 caracteres'
             errLong.style.color = 'red'
         }else{
             errLong.innerText = ''
