@@ -93,9 +93,9 @@ window.addEventListener('load', () => {
             errImage1.style.color = 'red'
         }else{
             let filePath = image1.value
-            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
             if (!allowedExtensions.exec(filePath)) {
-                errImage1.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
+                errImage1.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif/.webp';
                 errImage1.style.color = 'red'
             }else{
                 errImage1.innerText = ''
@@ -110,9 +110,9 @@ window.addEventListener('load', () => {
             errImage2.style.color = 'red'
         }else{
             let filePath = image2.value
-            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
             if (!allowedExtensions.exec(filePath)) {
-                errImage2.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
+                errImage2.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif/.webp';
                 errImage2.style.color = 'red'
             }else{
                 errImage2.innerText = ''
@@ -127,9 +127,9 @@ window.addEventListener('load', () => {
             errImage3.style.color = 'red'
         }else{
             let filePath = image3.value
-            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
             if (!allowedExtensions.exec(filePath)) {
-                errImage3.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
+                errImage3.innerText = 'Las extensiones validas son .jpeg/.jpg/.png/.gif/.webp';
                 errImage3.style.color = 'red'
             }else{
                 errImage3.innerText = ''

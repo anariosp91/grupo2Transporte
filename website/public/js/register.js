@@ -99,7 +99,7 @@ window.addEventListener("load", () => {
 
         if (e.srcElement.name === "image") {
             let filePath = image.value;
-            let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+            let allowedExtensions = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
             if (!allowedExtensions.exec(filePath)) {
                 errors.image = 'Las extensiones validas son .jpeg/.jpg/.png/.gif';
             } else {

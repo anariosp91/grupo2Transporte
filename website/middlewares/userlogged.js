@@ -28,6 +28,7 @@ function userLogged(req, res, next) {
 	}else{
 		next()
 	}
+	
 }
 
 module.exports = userLogged;

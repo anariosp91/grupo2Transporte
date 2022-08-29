@@ -11,7 +11,7 @@ const validationTours = [
    body('price').isNumeric().withMessage('Debes completar este campo'),
    body('image1').custom((value, { req }) => {
 		let file = req.files[0];
-		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
+		let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg', '.webp'];
 
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
@@ -26,7 +26,7 @@ const validationTours = [
 	}),
    body('image2').custom((value, { req }) => {
 		let file = req.files[1];
-		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
+		let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg', '.webp'];
 
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
@@ -41,7 +41,7 @@ const validationTours = [
 	}),
    body('image3').custom((value, { req }) => {
 		let file = req.files[2];
-		let acceptedExtensions = ['.jpg', '.png', '.gif', 'jpeg'];
+		let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg', '.webp'];
 
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
