@@ -32,7 +32,7 @@ router.get("/list", authMiddleware, adminAuthMiddleware, usersController.users)
 router.get("/profile", authMiddleware, usersController.profile);
 
 // User edit
-router.get("/edit", authMiddleware, adminAuthMiddleware, usersController.edit);
+router.get("/edit", authMiddleware, usersController.edit);
 router.put('/edit', upload.single('image'), usersController.save)
 //router.post("/edit/:id", authMiddleware, usersController.profile);
 
