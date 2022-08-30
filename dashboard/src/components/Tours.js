@@ -24,7 +24,6 @@ export default function Tours (){
                     )}
                 </tr>
                 </thead>
-                
                 <tbody>
                 {data && data.data.tours.map((tour, i) => 
                         <tr key={i + tour.title}>
