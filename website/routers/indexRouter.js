@@ -7,7 +7,7 @@ const indexController = require('../controllers/indexController')
 router.get('/', indexController.index);
 
 // Tours search 
-router.post('/search', indexController.search);
+//router.post('/search', indexController.search);
 
 // Error 404
 router.get("/error", indexController.error);

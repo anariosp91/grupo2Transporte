@@ -5,7 +5,7 @@ const router = express.Router();
 // const {check, validationResult} = require('express-validator');
 
 // Controller
-const toursController = require('../controllers/toursControllerSequelize');
+const toursController = require('../controllers/toursController');
 
 // Middlewares
 const upload = require('../middlewares/multerTours');

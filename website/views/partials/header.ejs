@@ -3,13 +3,13 @@
         <img class="nav-logo" src="/img/logo.svg" alt="Logo-Medellin-Travel">
     </div>
 
-    <form action="/search" method="POST" class="search">
+    <!-- <form action="/search" method="POST" class="search">
         <input type="search" name="search" class="search__input" placeholder="Buscar un tour...">
         <button class="search__button" type="submit">
             <i class="fa-solid fa-magnifying-glass" class="search__icon" aria-hidden="true" viewBox="0 0 24 24"></i>
         </button>
        </div>
-    </form>
+    </form> -->
 
     <input type="checkbox" id="toggler">
     <label for="toggler"><i class="fa-solid fa-bars"></i></label>
@@ -30,7 +30,7 @@
                 </div>
             </li>
             <% if (locals.isLogged) { %>
-            <li class="li-menu-item"><a href="/users/favorites"><i class="fa-solid fa-heart"></i></a></li>
+            <!-- <li class="li-menu-item"><a href="/users/favorites"><i class="fa-solid fa-heart"></i></a></li> -->
             <li class="li-menu-item">
                 <div class="dropdown">
                     <button class="dropbtn userLogged"><a href=""><img src="/img/users/<%= locals.userLogged.image %>" class="userImage"></a></button>
@@ -39,16 +39,16 @@
                         <a class="dropdown-item" href="/tours/create">Crear Tour</a>
                         <a class="dropdown-item" href="/users/list">Lista de Usuarios</a>
                         <% } %>
-                        <a class="dropdown-item" href="/users/profile">Perfil</a>
+                        <!-- <a class="dropdown-item" href="/users/profile">Perfil</a> -->
                         <a class="dropdown-item" href="/users/logout">Logout</a>
                     </div>
                 </div>
             </li>  
             <li class="li-menu-item" style="color: white;"><a><%=locals.userLogged.name%></a></li>  
-            <li class="li-menu-item"><a href="/users/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <!-- <li class="li-menu-item"><a href="/users/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
             <% } else { %>
-            <li class="li-menu-item"><a href="/users/register"> Registrarse </a></li>
-            <li class="li-menu-item"><a href="/users/login"> Inicia Sesión</a></li>
+            <!-- <li class="li-menu-item"><a href="/users/register"> Registrarse </a></li>
+            <li class="li-menu-item"><a href="/users/login"> Inicia Sesión</a></li> -->
             <% } %>
         </ul>
     </div>

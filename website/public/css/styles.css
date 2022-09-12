@@ -214,6 +214,7 @@ i:hover {
     .list {
         flex-direction: row;
         align-items: flex-end;
+        padding-right: 50px;
     }
 
     #toggler,

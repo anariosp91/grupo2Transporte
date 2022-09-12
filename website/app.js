@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 const app = express();
 const port = 8000;
 
-const userLogged = require("./middlewares/userlogged");
+const userAuth = require("./middlewares/userAuth");
 
 //Routers require
 const indexRouter = require('./routers/indexRouter');
@@ -15,8 +15,8 @@ const usersRouter = require('./routers/usersRouter');
 const toursRouter = require('./routers/toursRouter');
 
 //Constrollers APIs
-const apiUsersRoutes = require("./routers/api/apiUsersRouter");
-const apiToursRouter = require("./routers/api/apiToursRouter");
+// const apiUsersRoutes = require("./routers/api/apiUsersRouter");
+// const apiToursRouter = require("./routers/api/apiToursRouter");
 
 
 app.listen(port, (req,resp) => console.log('iniciando servidor en el puerto ' + port));
@@ -32,7 +32,7 @@ resave: false,
 saveUninitialized: false,
 }));
 app.use(cookies());
-app.use(userLogged);
+app.use(userAuth);
 
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -51,8 +51,8 @@ app.use('/users', usersRouter);
 
 //Routers APIs
 
-app.use('/api/users', apiUsersRoutes);
-app.use('/api/tours', apiToursRouter);
+//app.use('/api/users', apiUsersRoutes);
+//app.use('/api/tours', apiToursRouter);
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));

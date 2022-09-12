@@ -54,12 +54,14 @@
                 <a href="/tours/edit/<%= tour.id %> "><i class="fa-solid fa-pen-to-square"></i></a>
                 <% } %>
               </div>
-              <h2> $<%= tour.price %>  </h2>
+              <h5> Precio para 4 personas: $<%= tour.price %>  </h5>
               <div> Fecha: <input type="date"> </div>
               <div> Personas: <input type="number" min="1" max="9" step="1" value="1" class="quantity">
               </div>
-              <div> <a href="/users/productCart" class="myButton">Reservar</a> </div>
-              <div class="botonEliminar"> <a href="#" class="myButton Color2">Agregar al carrito</a> 
+              <% let resultado = encodeURIComponent('Hola!! Necesito información a cerca de los tours que vi en la pagina web') %>
+              <div> <a target="_blank" href="https://api.whatsapp.com/send?phone=573147252991&text=<%= resultado %> " class="myButton">Reservar</a> </div>
+              <div class="botonEliminar"> 
+                <!-- <a href="#" class="myButton Color2">Agregar al carrito</a>  -->
                 <% if (locals.isLogged && locals.userLogged.admin) { %>
                 <form action="/tours/delete/<%= tour.id %>?_method=DELETE" method="POST">
                   <button type="submit"> <i class="fa-solid fa-trash-can"></i> </button>

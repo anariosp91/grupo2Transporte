@@ -1,38 +1,21 @@
-// const path = require('path');
-// const fs = require('fs');
-const {validationResult} = require('express-validator');
-const db = require ('../database/models/index');
-const {Op} = require('sequelize')
+const path = require('path');
+const fs = require('fs');
 
+const toursFile = path.join(__dirname, '../data/tours.json');
+const tours = JSON.parse(fs.readFileSync(toursFile, 'utf-8'));
 
+let index = {
 
-let indexController = {
-    index: (req, res) => {
-        db.Tour.findAll()
-        .then(tours => res.render('index',{tours}))
+    index : (req, res) => {
+        res.render('index', {tours: tours});
     },
-    search: (req, res) => {
-        
-        db.Tour.findAll({
-            where: {
-                title : {[Op.like]: '%'+ req.body.search + '%'},
-            }
-        })
-        .then(tours => {
-            if(tours == ""){
-                db.Tour.findAll()
-                    .then(tour => {
-                        res.locals.errorSearch = 'No se encontraron resultados para tu busqueda'
-                        res.render('search', {tours :  tour})
-                    })
-            }else{
-                res.render("search", {tours})
-            }
-        })
-    },
+    // search: (req, res) => {
+
+    // },
     error: (req, res) => {
         res.render("error")
     }
+
 }
 
-module.exports = indexController;
+module.exports = index
