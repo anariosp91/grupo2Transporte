@@ -20,26 +20,5 @@
   "password_confirm": "$2a$10$sxwTWmRlq6yD1GIVsIqyReP/zJ7k0i2SbHRb1Huzu44tUVEC714K2",
   "image": "user-1655500161339.jpg",
   "admin": true
- },
- {
-  "id": 3,
-  "name": "Nicolas",
-  "lastName": "Cerone",
-  "cell": "57576555665",
-  "email": "nico@gmail.com",
-  "password": "$2a$10$N/7aJI2Ajtta7r1gj4kixeAV0JvI0ckeYLtTkdJVNu9WDcruBTyv2",
-  "password_confirm": "$2a$10$XY6YmbgIWGE02aZO.3lY4ua0R0qNP7p95BwiubP.ISGhPUpfDcS6i",
-  "image": "user-1655650003056.jpg",
-  "admin": true
- },
- {
-  "id": 4,
-  "name": "ana",
-  "lastName": "RIOS PABON",
-  "cell": "3147252991",
-  "email": "grupodepoder10@gmail.com",
-  "password": "$2a$10$7atZNb/0JRts2BhtdWh4bOzJOcaCkSMNiJQzAzIWD4fiafBelP32a",
-  "password_confirm": "$2a$10$i2wRyCKtFhm6ObmWd6ghAOvPjdPeosE.L/R.RB3AuNKBQjQtp5fWq",
-  "image": "user-1656445462611.png"
  }
 ]
